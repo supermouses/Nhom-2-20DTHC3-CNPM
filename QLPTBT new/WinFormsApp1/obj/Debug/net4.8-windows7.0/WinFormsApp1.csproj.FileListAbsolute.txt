@@ -15,3 +15,20 @@ C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT\WinFormsApp1\obj\Debug
 C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.AssemblyInfoInputs.cache
 C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.AssemblyInfo.cs
 C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.csproj.CoreCompileInputs.cache
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.csproj.AssemblyReference.cache
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.DangNhapQlyPhongTro.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.DSPhong.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.MENU.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.MenuQlyPhong.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.QLNhanVien.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.QlyBoiThuong.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.QlyHDon.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.QlyHopDong.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.QlyKH.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.QlyNV.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.csproj.GenerateResource.cache
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.AssemblyInfoInputs.cache
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.AssemblyInfo.cs
+D:\GitHub\Nhom-2-20DTHC3-CNPM\QLPTBT new\WinFormsApp1\obj\Debug\net4.8-windows7.0\WinFormsApp1.csproj.CoreCompileInputs.cache

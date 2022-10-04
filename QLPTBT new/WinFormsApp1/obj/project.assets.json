@@ -9,19 +9,19 @@
     ".NETFramework,Version=v4.8": []
   },
   "packageFolders": {
-    "C:\\Users\\ACER\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ACER\\Documents\\GitHub\\Nhom-2-20DTHC3-CNPM\\QLPTBT\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectUniqueName": "D:\\GitHub\\Nhom-2-20DTHC3-CNPM\\QLPTBT new\\WinFormsApp1\\WinFormsApp1.csproj",
       "projectName": "WinFormsApp1",
-      "projectPath": "C:\\Users\\ACER\\Documents\\GitHub\\Nhom-2-20DTHC3-CNPM\\QLPTBT\\WinFormsApp1\\WinFormsApp1.csproj",
-      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ACER\\Documents\\GitHub\\Nhom-2-20DTHC3-CNPM\\QLPTBT\\WinFormsApp1\\obj\\",
+      "projectPath": "D:\\GitHub\\Nhom-2-20DTHC3-CNPM\\QLPTBT new\\WinFormsApp1\\WinFormsApp1.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\Nhom-2-20DTHC3-CNPM\\QLPTBT new\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
