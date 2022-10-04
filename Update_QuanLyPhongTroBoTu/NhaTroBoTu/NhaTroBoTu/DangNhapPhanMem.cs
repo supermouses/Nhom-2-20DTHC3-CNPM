@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace NhaTroBoTu
 {
     public partial class DangNhapPhanMem : Form
@@ -21,7 +20,7 @@ namespace NhaTroBoTu
 
         private void DangNhapPhanMem_Load(object sender, EventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
 
         private void btnDNhap_Click(object sender, EventArgs e)
