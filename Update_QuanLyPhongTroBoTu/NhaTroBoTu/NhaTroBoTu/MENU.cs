@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp1;
 
 namespace NhaTroBoTu
 {
@@ -22,6 +23,18 @@ namespace NhaTroBoTu
             QuanLyNhanVien NV = new QuanLyNhanVien();
             Hide();
             NV.ShowDialog();
+        }
+
+        private void MENU_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQlyPhong_Click(object sender, EventArgs e)
+        {
+            MenuQlyPhong menuQlyPhong = new MenuQlyPhong();
+            Hide();
+            menuQlyPhong.ShowDialog();
         }
     }
 }

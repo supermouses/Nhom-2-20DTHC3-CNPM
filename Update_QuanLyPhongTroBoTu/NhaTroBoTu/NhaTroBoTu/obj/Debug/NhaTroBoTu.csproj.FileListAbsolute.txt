@@ -18,7 +18,6 @@ C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.AssemblyReference.cache
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.SuggestedBindingRedirects.cache
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.DangNhap.resources
-C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.DangNhapPhanMem.resources
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.MENU.resources
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.Properties.Resources.resources
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.QuanLyNhanVien.resources
@@ -26,3 +25,10 @@ C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.CoreCompileInputs.cache
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.exe
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.pdb
+C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\WinFormsApp1.MenuQlyPhong.resources
+C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\WinFormsApp1.QlyKH.resources
+C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.dll
+C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.xml
+C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.CopyComplete
