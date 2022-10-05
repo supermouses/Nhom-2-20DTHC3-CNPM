@@ -12,6 +12,7 @@ C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.exe
 C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.pdb
 C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.QuanLyNhanVien.resources
 C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.DangNhapPhanMem.resources
+<<<<<<< Updated upstream
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\NhaTroBoTu.exe.config
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\NhaTroBoTu.exe
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\NhaTroBoTu.pdb
@@ -32,3 +33,26 @@ C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.xml
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.CopyComplete
+=======
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\NhaTroBoTu.exe.config
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\NhaTroBoTu.exe
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\NhaTroBoTu.pdb
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.AssemblyReference.cache
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.DangNhap.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.DangNhapPhanMem.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.MENU.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.Properties.Resources.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.QuanLyNhanVien.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.GenerateResource.cache
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.CoreCompileInputs.cache
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.exe
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.pdb
+>>>>>>> Stashed changes
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\WinFormsApp1.MenuQlyPhong.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\WinFormsApp1.QlyKH.resources
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.dll
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.xml
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\Nhom-2-20DTHC3-CNPM\Update_QuanLyPhongTroBoTu\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.CopyComplete

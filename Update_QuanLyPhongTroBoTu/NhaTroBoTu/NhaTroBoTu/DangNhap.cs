@@ -44,9 +44,9 @@ namespace NhaTroBoTu
             return false;
         }
 
-        private void DangNhap_Load(object sender, FormClosedEventArgs e)
+        private void DangNhap_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
