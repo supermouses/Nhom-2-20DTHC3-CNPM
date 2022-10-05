@@ -1,0 +1,17 @@
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.AssemblyReference.cache
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.SuggestedBindingRedirects.cache
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.DangNhap.resources
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.MENU.resources
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.Properties.Resources.resources
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.GenerateResource.cache
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.CoreCompileInputs.cache
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\bin\Debug\NhaTroBoTu.exe.config
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\bin\Debug\NhaTroBoTu.exe
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\bin\Debug\NhaTroBoTu.pdb
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.exe
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.pdb
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.QuanLyNhanVien.resources
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.ThemNhanVien.resources
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.XoaNhanVien.resources
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.SuaNhanVien.resources
+C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.TimKiemNhanVien.resources
