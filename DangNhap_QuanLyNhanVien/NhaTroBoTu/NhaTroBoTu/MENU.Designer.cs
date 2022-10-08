@@ -41,7 +41,7 @@
             // 
             this.btnDangXuat.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat.Location = new System.Drawing.Point(422, 383);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(92, 44);
             this.btnDangXuat.TabIndex = 9;
@@ -56,7 +56,7 @@
             this.label1.Location = new System.Drawing.Point(239, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 65);
+            this.label1.Size = new System.Drawing.Size(210, 81);
             this.label1.TabIndex = 8;
             this.label1.Text = "MENU";
             // 
@@ -64,7 +64,7 @@
             // 
             this.btnQlyPBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQlyPBT.Location = new System.Drawing.Point(141, 202);
-            this.btnQlyPBT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQlyPBT.Margin = new System.Windows.Forms.Padding(2);
             this.btnQlyPBT.Name = "btnQlyPBT";
             this.btnQlyPBT.Size = new System.Drawing.Size(374, 51);
             this.btnQlyPBT.TabIndex = 3;
@@ -75,7 +75,7 @@
             // 
             this.btnQlyPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQlyPhong.Location = new System.Drawing.Point(141, 150);
-            this.btnQlyPhong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQlyPhong.Margin = new System.Windows.Forms.Padding(2);
             this.btnQlyPhong.Name = "btnQlyPhong";
             this.btnQlyPhong.Size = new System.Drawing.Size(374, 47);
             this.btnQlyPhong.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             this.btnQlyHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQlyHD.Location = new System.Drawing.Point(141, 313);
-            this.btnQlyHD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQlyHD.Margin = new System.Windows.Forms.Padding(2);
             this.btnQlyHD.Name = "btnQlyHD";
             this.btnQlyHD.Size = new System.Drawing.Size(374, 50);
             this.btnQlyHD.TabIndex = 5;
@@ -98,18 +98,19 @@
             // 
             this.btnQlyBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQlyBT.Location = new System.Drawing.Point(141, 258);
-            this.btnQlyBT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQlyBT.Margin = new System.Windows.Forms.Padding(2);
             this.btnQlyBT.Name = "btnQlyBT";
             this.btnQlyBT.Size = new System.Drawing.Size(374, 50);
             this.btnQlyBT.TabIndex = 6;
             this.btnQlyBT.Text = "Quản Lý Bảo Trì ";
             this.btnQlyBT.UseVisualStyleBackColor = true;
+            this.btnQlyBT.Click += new System.EventHandler(this.btnQlyBT_Click);
             // 
             // btnQlyNV
             // 
             this.btnQlyNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQlyNV.Location = new System.Drawing.Point(141, 90);
-            this.btnQlyNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQlyNV.Margin = new System.Windows.Forms.Padding(2);
             this.btnQlyNV.Name = "btnQlyNV";
             this.btnQlyNV.Size = new System.Drawing.Size(374, 54);
             this.btnQlyNV.TabIndex = 7;
@@ -129,7 +130,7 @@
             this.Controls.Add(this.btnQlyHD);
             this.Controls.Add(this.btnQlyBT);
             this.Controls.Add(this.btnQlyNV);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MENU";
             this.Text = "MENU";
             this.ResumeLayout(false);

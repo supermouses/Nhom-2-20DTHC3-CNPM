@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnSuaCancelKH = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtSuaSDTKH = new System.Windows.Forms.TextBox();
@@ -49,8 +50,22 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdSuaNamKH = new System.Windows.Forms.RadioButton();
             this.txtSuaCCCDKH = new System.Windows.Forms.TextBox();
+            this.qlyTroBoTuDataSet = new NhaTroBoTu.QlyTroBoTuDataSet();
+            this.qlyTroBoTuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khachThueTroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khachThueTroTableAdapter = new NhaTroBoTu.QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter();
+            this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioiTinhKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sDTKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cCCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaySinhKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataSuaKhach)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSuaCancelKH
@@ -67,7 +82,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.label6.Location = new System.Drawing.Point(348, 9);
+            this.label6.Location = new System.Drawing.Point(267, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(343, 50);
             this.label6.TabIndex = 39;
@@ -137,12 +152,22 @@
             this.dataSuaKhach.AllowUserToDeleteRows = false;
             this.dataSuaKhach.AllowUserToResizeColumns = false;
             this.dataSuaKhach.AllowUserToResizeRows = false;
+            this.dataSuaKhach.AutoGenerateColumns = false;
             this.dataSuaKhach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataSuaKhach.Location = new System.Drawing.Point(308, 110);
+            this.dataSuaKhach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maKHDataGridViewTextBoxColumn,
+            this.tenKHDataGridViewTextBoxColumn,
+            this.gioiTinhKHDataGridViewTextBoxColumn,
+            this.diaChiKHDataGridViewTextBoxColumn,
+            this.sDTKHDataGridViewTextBoxColumn,
+            this.cCCDDataGridViewTextBoxColumn,
+            this.ngaySinhKHDataGridViewTextBoxColumn});
+            this.dataSuaKhach.DataSource = this.khachThueTroBindingSource;
+            this.dataSuaKhach.Location = new System.Drawing.Point(286, 84);
             this.dataSuaKhach.Name = "dataSuaKhach";
             this.dataSuaKhach.ReadOnly = true;
             this.dataSuaKhach.RowTemplate.Height = 25;
-            this.dataSuaKhach.Size = new System.Drawing.Size(674, 231);
+            this.dataSuaKhach.Size = new System.Drawing.Size(720, 257);
             this.dataSuaKhach.TabIndex = 42;
             this.dataSuaKhach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataXoaKhach_CellContentClick);
             // 
@@ -267,11 +292,80 @@
             this.txtSuaCCCDKH.Size = new System.Drawing.Size(194, 20);
             this.txtSuaCCCDKH.TabIndex = 33;
             // 
+            // qlyTroBoTuDataSet
+            // 
+            this.qlyTroBoTuDataSet.DataSetName = "QlyTroBoTuDataSet";
+            this.qlyTroBoTuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // qlyTroBoTuDataSetBindingSource
+            // 
+            this.qlyTroBoTuDataSetBindingSource.DataSource = this.qlyTroBoTuDataSet;
+            this.qlyTroBoTuDataSetBindingSource.Position = 0;
+            // 
+            // khachThueTroBindingSource
+            // 
+            this.khachThueTroBindingSource.DataMember = "KhachThueTro";
+            this.khachThueTroBindingSource.DataSource = this.qlyTroBoTuDataSetBindingSource;
+            // 
+            // khachThueTroTableAdapter
+            // 
+            this.khachThueTroTableAdapter.ClearBeforeFill = true;
+            // 
+            // maKHDataGridViewTextBoxColumn
+            // 
+            this.maKHDataGridViewTextBoxColumn.DataPropertyName = "MaKH";
+            this.maKHDataGridViewTextBoxColumn.HeaderText = "MaKH";
+            this.maKHDataGridViewTextBoxColumn.Name = "maKHDataGridViewTextBoxColumn";
+            this.maKHDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenKHDataGridViewTextBoxColumn
+            // 
+            this.tenKHDataGridViewTextBoxColumn.DataPropertyName = "TenKH";
+            this.tenKHDataGridViewTextBoxColumn.HeaderText = "TenKH";
+            this.tenKHDataGridViewTextBoxColumn.Name = "tenKHDataGridViewTextBoxColumn";
+            this.tenKHDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // gioiTinhKHDataGridViewTextBoxColumn
+            // 
+            this.gioiTinhKHDataGridViewTextBoxColumn.DataPropertyName = "GioiTinhKH";
+            this.gioiTinhKHDataGridViewTextBoxColumn.HeaderText = "GioiTinhKH";
+            this.gioiTinhKHDataGridViewTextBoxColumn.Name = "gioiTinhKHDataGridViewTextBoxColumn";
+            this.gioiTinhKHDataGridViewTextBoxColumn.ReadOnly = true;
+            this.gioiTinhKHDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // diaChiKHDataGridViewTextBoxColumn
+            // 
+            this.diaChiKHDataGridViewTextBoxColumn.DataPropertyName = "DiaChiKH";
+            this.diaChiKHDataGridViewTextBoxColumn.HeaderText = "DiaChiKH";
+            this.diaChiKHDataGridViewTextBoxColumn.Name = "diaChiKHDataGridViewTextBoxColumn";
+            this.diaChiKHDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sDTKHDataGridViewTextBoxColumn
+            // 
+            this.sDTKHDataGridViewTextBoxColumn.DataPropertyName = "SDTKH";
+            this.sDTKHDataGridViewTextBoxColumn.HeaderText = "SDTKH";
+            this.sDTKHDataGridViewTextBoxColumn.Name = "sDTKHDataGridViewTextBoxColumn";
+            this.sDTKHDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cCCDDataGridViewTextBoxColumn
+            // 
+            this.cCCDDataGridViewTextBoxColumn.DataPropertyName = "CCCD";
+            this.cCCDDataGridViewTextBoxColumn.HeaderText = "CCCD";
+            this.cCCDDataGridViewTextBoxColumn.Name = "cCCDDataGridViewTextBoxColumn";
+            this.cCCDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ngaySinhKHDataGridViewTextBoxColumn
+            // 
+            this.ngaySinhKHDataGridViewTextBoxColumn.DataPropertyName = "NgaySinhKH";
+            this.ngaySinhKHDataGridViewTextBoxColumn.HeaderText = "NgaySinhKH";
+            this.ngaySinhKHDataGridViewTextBoxColumn.Name = "ngaySinhKHDataGridViewTextBoxColumn";
+            this.ngaySinhKHDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // SuaKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 401);
+            this.ClientSize = new System.Drawing.Size(1009, 398);
             this.Controls.Add(this.btnSuaCancelKH);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSuaKH);
@@ -283,6 +377,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataSuaKhach)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,5 +408,16 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdSuaNamKH;
         private System.Windows.Forms.TextBox txtSuaCCCDKH;
+        private System.Windows.Forms.BindingSource qlyTroBoTuDataSetBindingSource;
+        private QlyTroBoTuDataSet qlyTroBoTuDataSet;
+        private System.Windows.Forms.BindingSource khachThueTroBindingSource;
+        private QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinhKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sDTKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cCCDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhKHDataGridViewTextBoxColumn;
     }
 }

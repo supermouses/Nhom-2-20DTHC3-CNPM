@@ -16,7 +16,7 @@ namespace NhaTroBoTu
     {
         SqlConnection conn;
         SqlCommand cmd;
-        string str = "Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QuanLyPhongTroBoTu;Integrated Security=True";
+        string str = "Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QlyTroBoTu;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable dt = new DataTable();
         public SuaKhachHang()
@@ -51,7 +51,7 @@ namespace NhaTroBoTu
         void loaddata()
         {
             cmd = conn.CreateCommand();
-            cmd.CommandText = "select MAKH,TENKH,GIOITINH,DC,SDT,CCCD,NAMSINH from KhachThueTro";
+            cmd.CommandText = "select MaKH,TenKH,GioiTinhKH,DiaChiKH,SDTKH,CCCD,NgaySinhKH from KhachThueTro";
             adapter.SelectCommand = cmd;
             dt.Clear();
             adapter.Fill(dt);
@@ -60,10 +60,12 @@ namespace NhaTroBoTu
 
         private void SuaKhachHang_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qlyTroBoTuDataSet.KhachThueTro' table. You can move, or remove it, as needed.
+            this.khachThueTroTableAdapter.Fill(this.qlyTroBoTuDataSet.KhachThueTro);
             DataTable table1 = new DataTable();
             conn = new SqlConnection(str);
             cmd = conn.CreateCommand();
-            cmd.CommandText = "select MAKH,TENKH,GIOITINH,DC,SDT,CCCD,NAMSINH from KhachThueTro";
+            cmd.CommandText = "select MaKH,TenKH,GioiTinhKH,DiaChiKH,SDTKH,CCCD,NgaySinhKH from KhachThueTro";
             adapter.SelectCommand = cmd;
             adapter.Fill(dt);
             conn.Open();
@@ -78,7 +80,7 @@ namespace NhaTroBoTu
                 {
                     gt = "Nam";
                 }
-                if (rdSuaNuKH.Checked)
+                else if (rdSuaNuKH.Checked)
                 {
                     gt = "Nu";
                 }
@@ -87,7 +89,7 @@ namespace NhaTroBoTu
                     gt = "Khác";
                 }
                 //cmd.CommandText = "update KhachThueTro set TENKH = N'" + txtTenSuaKH.Text + "',GIOITINH=N'" + gt + "',SDT'" + txtSuaSDTKH.Text + "' ,DC=N'" + txtSuaDiaChiKH.Text + "',CCCD'" + txtSuaCCCDKH.Text + "',NAMSINH=N'" + dtSuaKH.Value.ToString() + "'where MAKH = N'" + txtmaSuaKhach.Text + "'";
-                  cmd.CommandText = "update KhachThueTro set TENKH = N'" + txtTenSuaKH.Text + "' ,GIOITINH=N'" + gt + "',DC=N'" + txtSuaDiaChiKH.Text + "',SDT = '" + txtSuaSDTKH.Text + "',CCCD ='" + txtSuaCCCDKH.Text + "',NAMSINH=N'" + dtSuaKH.Value.ToString() + "'where MAKH = N'" + txtmaSuaKhach.Text + "'";
+                  cmd.CommandText = "update KhachThueTro set TenKH = N'" + txtTenSuaKH.Text + "' ,GioiTinhKH=N'" + gt + "',DiaChiKH=N'" + txtSuaDiaChiKH.Text + "',SDTKH = '" + txtSuaSDTKH.Text + "',CCCD ='" + txtSuaCCCDKH.Text + "',NgaySinhKH=N'" + dtSuaKH.Value.ToString() + "'where MaKH = N'" + txtmaSuaKhach.Text + "'";
                 cmd.ExecuteNonQuery();
             /*MAKH = N'" + txtmaSuaKhach.Text + "',*/
             loaddata();

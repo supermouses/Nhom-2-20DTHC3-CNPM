@@ -16,7 +16,7 @@ namespace WinFormsApp1
 {
     public partial class QlyKH : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QuanLyPhongTroBoTu;Integrated Security=True");
+        SqlConnection conn = new SqlConnection("Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QlyTroBoTu;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter adp = new SqlDataAdapter();
 
@@ -36,6 +36,8 @@ namespace WinFormsApp1
         }
         private void Form4_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qlyTroBoTuDataSet.KhachThueTro' table. You can move, or remove it, as needed.
+            this.khachThueTroTableAdapter1.Fill(this.qlyTroBoTuDataSet.KhachThueTro);
             // TODO: This line of code loads data into the 'quanLyPhongTroBoTuDataSet.KhachThueTro' table. You can move, or remove it, as needed.
             this.khachThueTroTableAdapter.Fill(this.quanLyPhongTroBoTuDataSet.KhachThueTro);
             conn.Open();

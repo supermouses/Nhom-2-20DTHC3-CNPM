@@ -54,13 +54,19 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdThemKhacKH = new System.Windows.Forms.RadioButton();
             this.khachThueTroTableAdapter = new NhaTroBoTu.QuanLyPhongTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter();
-            this.mAKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tENKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gIOITINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sDTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quanLyPhongTroBoTuDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.khachThueTroBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.khachThueTroBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.qlyTroBoTuDataSet = new NhaTroBoTu.QlyTroBoTuDataSet();
+            this.khachThueTroBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.khachThueTroTableAdapter2 = new NhaTroBoTu.QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter();
+            this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioiTinhKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sDTKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cCCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nAMSINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaySinhKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataThemKhach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyPhongTroBoTuDataSetBindingSource)).BeginInit();
@@ -76,14 +82,14 @@
             this.dataThemKhach.AutoGenerateColumns = false;
             this.dataThemKhach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataThemKhach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.mAKHDataGridViewTextBoxColumn,
-            this.tENKHDataGridViewTextBoxColumn,
-            this.gIOITINHDataGridViewTextBoxColumn,
-            this.sDTDataGridViewTextBoxColumn,
-            this.dCDataGridViewTextBoxColumn,
+            this.maKHDataGridViewTextBoxColumn,
+            this.tenKHDataGridViewTextBoxColumn,
+            this.gioiTinhKHDataGridViewTextBoxColumn,
+            this.diaChiKHDataGridViewTextBoxColumn,
+            this.sDTKHDataGridViewTextBoxColumn,
             this.cCCDDataGridViewTextBoxColumn,
-            this.nAMSINHDataGridViewTextBoxColumn});
-            this.dataThemKhach.DataSource = this.khachThueTroBindingSource;
+            this.ngaySinhKHDataGridViewTextBoxColumn});
+            this.dataThemKhach.DataSource = this.khachThueTroBindingSource5;
             this.dataThemKhach.Location = new System.Drawing.Point(323, 62);
             this.dataThemKhach.Name = "dataThemKhach";
             this.dataThemKhach.RowTemplate.Height = 25;
@@ -310,35 +316,61 @@
             // 
             this.khachThueTroTableAdapter.ClearBeforeFill = true;
             // 
-            // mAKHDataGridViewTextBoxColumn
+            // quanLyPhongTroBoTuDataSet1
             // 
-            this.mAKHDataGridViewTextBoxColumn.DataPropertyName = "MAKH";
-            this.mAKHDataGridViewTextBoxColumn.HeaderText = "MAKH";
-            this.mAKHDataGridViewTextBoxColumn.Name = "mAKHDataGridViewTextBoxColumn";
             // 
-            // tENKHDataGridViewTextBoxColumn
+            // khachThueTroBindingSource1
             // 
-            this.tENKHDataGridViewTextBoxColumn.DataPropertyName = "TENKH";
-            this.tENKHDataGridViewTextBoxColumn.HeaderText = "TENKH";
-            this.tENKHDataGridViewTextBoxColumn.Name = "tENKHDataGridViewTextBoxColumn";
             // 
-            // gIOITINHDataGridViewTextBoxColumn
+            // khachThueTroTableAdapter1
             // 
-            this.gIOITINHDataGridViewTextBoxColumn.DataPropertyName = "GIOITINH";
-            this.gIOITINHDataGridViewTextBoxColumn.HeaderText = "GIOITINH";
-            this.gIOITINHDataGridViewTextBoxColumn.Name = "gIOITINHDataGridViewTextBoxColumn";
             // 
-            // sDTDataGridViewTextBoxColumn
             // 
-            this.sDTDataGridViewTextBoxColumn.DataPropertyName = "SDT";
-            this.sDTDataGridViewTextBoxColumn.HeaderText = "SDT";
-            this.sDTDataGridViewTextBoxColumn.Name = "sDTDataGridViewTextBoxColumn";
             // 
-            // dCDataGridViewTextBoxColumn
             // 
-            this.dCDataGridViewTextBoxColumn.DataPropertyName = "DC";
-            this.dCDataGridViewTextBoxColumn.HeaderText = "DC";
-            this.dCDataGridViewTextBoxColumn.Name = "dCDataGridViewTextBoxColumn";
+            // qlyTroBoTuDataSet
+            // 
+            this.qlyTroBoTuDataSet.DataSetName = "QlyTroBoTuDataSet";
+            this.qlyTroBoTuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // khachThueTroBindingSource5
+            // 
+            this.khachThueTroBindingSource5.DataMember = "KhachThueTro";
+            this.khachThueTroBindingSource5.DataSource = this.qlyTroBoTuDataSet;
+            // 
+            // khachThueTroTableAdapter2
+            // 
+            this.khachThueTroTableAdapter2.ClearBeforeFill = true;
+            // 
+            // maKHDataGridViewTextBoxColumn
+            // 
+            this.maKHDataGridViewTextBoxColumn.DataPropertyName = "MaKH";
+            this.maKHDataGridViewTextBoxColumn.HeaderText = "MaKH";
+            this.maKHDataGridViewTextBoxColumn.Name = "maKHDataGridViewTextBoxColumn";
+            // 
+            // tenKHDataGridViewTextBoxColumn
+            // 
+            this.tenKHDataGridViewTextBoxColumn.DataPropertyName = "TenKH";
+            this.tenKHDataGridViewTextBoxColumn.HeaderText = "TenKH";
+            this.tenKHDataGridViewTextBoxColumn.Name = "tenKHDataGridViewTextBoxColumn";
+            // 
+            // gioiTinhKHDataGridViewTextBoxColumn
+            // 
+            this.gioiTinhKHDataGridViewTextBoxColumn.DataPropertyName = "GioiTinhKH";
+            this.gioiTinhKHDataGridViewTextBoxColumn.HeaderText = "GioiTinhKH";
+            this.gioiTinhKHDataGridViewTextBoxColumn.Name = "gioiTinhKHDataGridViewTextBoxColumn";
+            // 
+            // diaChiKHDataGridViewTextBoxColumn
+            // 
+            this.diaChiKHDataGridViewTextBoxColumn.DataPropertyName = "DiaChiKH";
+            this.diaChiKHDataGridViewTextBoxColumn.HeaderText = "DiaChiKH";
+            this.diaChiKHDataGridViewTextBoxColumn.Name = "diaChiKHDataGridViewTextBoxColumn";
+            // 
+            // sDTKHDataGridViewTextBoxColumn
+            // 
+            this.sDTKHDataGridViewTextBoxColumn.DataPropertyName = "SDTKH";
+            this.sDTKHDataGridViewTextBoxColumn.HeaderText = "SDTKH";
+            this.sDTKHDataGridViewTextBoxColumn.Name = "sDTKHDataGridViewTextBoxColumn";
             // 
             // cCCDDataGridViewTextBoxColumn
             // 
@@ -346,11 +378,11 @@
             this.cCCDDataGridViewTextBoxColumn.HeaderText = "CCCD";
             this.cCCDDataGridViewTextBoxColumn.Name = "cCCDDataGridViewTextBoxColumn";
             // 
-            // nAMSINHDataGridViewTextBoxColumn
+            // ngaySinhKHDataGridViewTextBoxColumn
             // 
-            this.nAMSINHDataGridViewTextBoxColumn.DataPropertyName = "NAMSINH";
-            this.nAMSINHDataGridViewTextBoxColumn.HeaderText = "NAMSINH";
-            this.nAMSINHDataGridViewTextBoxColumn.Name = "nAMSINHDataGridViewTextBoxColumn";
+            this.ngaySinhKHDataGridViewTextBoxColumn.DataPropertyName = "NgaySinhKH";
+            this.ngaySinhKHDataGridViewTextBoxColumn.HeaderText = "NgaySinhKH";
+            this.ngaySinhKHDataGridViewTextBoxColumn.Name = "ngaySinhKHDataGridViewTextBoxColumn";
             // 
             // ThemKhachHang
             // 
@@ -403,12 +435,19 @@
         private QuanLyPhongTroBoTuDataSet quanLyPhongTroBoTuDataSet;
         private System.Windows.Forms.BindingSource khachThueTroBindingSource;
         private QuanLyPhongTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mAKHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tENKHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gIOITINHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sDTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dCDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource khachThueTroBindingSource2;
+        private System.Windows.Forms.BindingSource quanLyPhongTroBoTuDataSetBindingSource1;
+        private System.Windows.Forms.BindingSource khachThueTroBindingSource3;
+        private System.Windows.Forms.BindingSource khachThueTroBindingSource4;
+        private QlyTroBoTuDataSet qlyTroBoTuDataSet;
+        private System.Windows.Forms.BindingSource khachThueTroBindingSource5;
+        private QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinhKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sDTKHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cCCDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nAMSINHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhKHDataGridViewTextBoxColumn;
     }
 }

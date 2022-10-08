@@ -16,7 +16,7 @@ namespace NhaTroBoTu
     {
         SqlConnection conn;
         SqlCommand cmd;
-        string str = "Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QuanLyPhongTroBoTu;Integrated Security=True";
+        string str = "Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QlyTroBoTu;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable dt = new DataTable();
         public XoaKhachHang()
@@ -26,7 +26,7 @@ namespace NhaTroBoTu
         void loadata()
         {
             cmd = conn.CreateCommand();
-            cmd.CommandText = "select MAKH,TENKH,GIOITINH,DC,SDT,CCCD,NAMSINH from KhachThueTro";
+            cmd.CommandText = "select MaKH,TenKH,GioiTinhKH,DiaChiKH,SDTKH,CCCD,NgaySinhKH from KhachThueTro";
             adapter.SelectCommand = cmd;
             dt.Clear();
             adapter.Fill(dt);
@@ -60,7 +60,7 @@ namespace NhaTroBoTu
         private void btnXoaKH_Click(object sender, EventArgs e)
         {
             cmd = conn.CreateCommand();
-            cmd.CommandText = "delete from KhachThueTro where MAKH= '" + txtmaXoaKhach.Text + "'";
+            cmd.CommandText = "delete from KhachThueTro where MaKH= '" + txtmaXoaKhach.Text + "'";
             cmd.ExecuteNonQuery();
             loadata();
             MessageBox.Show("Xóa dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);
@@ -76,10 +76,12 @@ namespace NhaTroBoTu
 
         private void XoaKhachHang_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qlyTroBoTuDataSet.KhachThueTro' table. You can move, or remove it, as needed.
+            this.khachThueTroTableAdapter.Fill(this.qlyTroBoTuDataSet.KhachThueTro);
             DataTable table1 = new DataTable();
             conn = new SqlConnection(str);
             cmd = conn.CreateCommand();
-            cmd.CommandText = "select * from MAKH";
+            cmd.CommandText = "select * from MaKH";
             adapter.SelectCommand = cmd;
             conn.Open();
             loadata();

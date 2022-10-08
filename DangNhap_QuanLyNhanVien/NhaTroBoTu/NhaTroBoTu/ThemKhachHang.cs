@@ -17,7 +17,7 @@ namespace NhaTroBoTu
     {
         SqlConnection conn;
         SqlCommand cmd;
-        string str = "Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QuanLyPhongTroBoTu;Integrated Security=True";
+        string str = "Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QlyTroBoTu;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable dt = new DataTable();
         //static string str = "Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QuanLyPhongTroBoTu;Integrated Security=True";
@@ -113,7 +113,7 @@ namespace NhaTroBoTu
             {
                 gt = "Khac";
             }
-            cmd.CommandText = "insert into KhachThueTro values('" + txtThemMAKH.Text + "' , N'" + txtThemTENKH.Text + "' ,'" + gt + "', '" + txtThemSDTKH.Text + "' ,N'" + txtDiaChiKH.Text + "', '" + txThemCCCDKH.Text + "','" + dtThemKH.Value.ToString() + "')";
+            cmd.CommandText = "insert into KhachThueTro values('" + txtThemMAKH.Text + "' , N'" + txtThemTENKH.Text + "' ,'" + gt + "', '" + txtThemSDTKH.Text + "' ,N'" + txtDiaChiKH.Text + "' ,N'" + txThemCCCDKH.Text + "','" + dtThemKH.Value.ToString() + "')";
             cmd.ExecuteNonQuery();
             loadata();
             MessageBox.Show("Thêm dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);
@@ -121,6 +121,8 @@ namespace NhaTroBoTu
 
         private void ThemKhachHang_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qlyTroBoTuDataSet.KhachThueTro' table. You can move, or remove it, as needed.
+            this.khachThueTroTableAdapter2.Fill(this.qlyTroBoTuDataSet.KhachThueTro);
             // TODO: This line of code loads data into the 'quanLyPhongTroBoTuDataSet.KhachThueTro' table. You can move, or remove it, as needed.
             this.khachThueTroTableAdapter.Fill(this.quanLyPhongTroBoTuDataSet.KhachThueTro);
             DataTable table1 = new DataTable();

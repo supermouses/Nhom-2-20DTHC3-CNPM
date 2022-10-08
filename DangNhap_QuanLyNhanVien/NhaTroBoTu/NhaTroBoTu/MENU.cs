@@ -39,5 +39,12 @@ namespace NhaTroBoTu
             Hide();
             menuQlyPhong.Show();
         }
+
+        private void btnQlyBT_Click(object sender, EventArgs e)
+        {
+            QlyBT qlyBT = new QlyBT();
+            Hide();
+            qlyBT.Show();
+        }
     }
 }

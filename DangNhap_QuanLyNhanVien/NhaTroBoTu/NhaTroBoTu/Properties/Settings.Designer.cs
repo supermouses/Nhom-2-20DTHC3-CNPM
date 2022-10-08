@@ -33,5 +33,15 @@ namespace NhaTroBoTu.Properties {
                 return ((string)(this["QuanLyPhongTroBoTuConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QlyTroBoTu;Integrated Security=True")]
+        public string QlyTroBoTuConnectionString {
+            get {
+                return ((string)(this["QlyTroBoTuConnectionString"]));
+            }
+        }
     }
 }
