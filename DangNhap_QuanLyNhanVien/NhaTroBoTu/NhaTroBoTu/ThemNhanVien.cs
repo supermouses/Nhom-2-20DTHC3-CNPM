@@ -27,7 +27,7 @@ namespace NhaTroBoTu
             cmd = conn.CreateCommand();
             cmd.CommandText = "select MaNV,TenNV,SĐT,DiaChi,NgaySinh,GioiTinh,TenCV from NhanVien,ChucVuNV where NhanVien.MaCV = ChucVuNV.MaCV";
             adapter.SelectCommand = cmd;
-            dt.Clear();
+            dt.Clear(); 
             adapter.Fill(dt);
             dataThemNhanVien.DataSource = dt;
         }

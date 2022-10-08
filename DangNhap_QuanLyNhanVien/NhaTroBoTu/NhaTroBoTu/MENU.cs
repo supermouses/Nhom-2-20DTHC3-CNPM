@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp1;
 
 namespace NhaTroBoTu
 {
@@ -30,6 +31,13 @@ namespace NhaTroBoTu
             Hide();
             dangNhap.ShowDialog();
             this.Close();
+        }
+
+        private void btnQlyPhong_Click(object sender, EventArgs e)
+        {
+            MenuQlyPhong menuQlyPhong = new MenuQlyPhong();
+            Hide();
+            menuQlyPhong.Show();
         }
     }
 }
