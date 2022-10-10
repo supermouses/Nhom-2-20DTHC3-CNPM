@@ -75,9 +75,13 @@ namespace NhaTroBoTu
         }
 
         private void XoaKhachHang_Load(object sender, EventArgs e)
+<<<<<<< Updated upstream
         {
             // TODO: This line of code loads data into the 'qlyTroBoTuDataSet.KhachThueTro' table. You can move, or remove it, as needed.
             this.khachThueTroTableAdapter.Fill(this.qlyTroBoTuDataSet.KhachThueTro);
+=======
+        {;
+>>>>>>> Stashed changes
             DataTable table1 = new DataTable();
             conn = new SqlConnection(str);
             cmd = conn.CreateCommand();

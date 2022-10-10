@@ -37,15 +37,15 @@
             this.txtTim = new System.Windows.Forms.TextBox();
             this.cmbTim = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.quanLyPhongTroBoTuDataSet = new NhaTroBoTu.QuanLyPhongTroBoTuDataSet();
-            this.quanLyPhongTroBoTuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.khachThueTroBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.khachThueTroTableAdapter = new NhaTroBoTu.QuanLyPhongTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter();
+            //this.quanLyPhongTroBoTuDataSet = new NhaTroBoTu.QuanLyPhongTroBoTuDataSet();
+            //this.quanLyPhongTroBoTuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            //this.khachThueTroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            //this.khachThueTroTableAdapter = new NhaTroBoTu.QuanLyPhongTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataTimNhanVien)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyPhongTroBoTuDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyPhongTroBoTuDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.quanLyPhongTroBoTuDataSet)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.quanLyPhongTroBoTuDataSetBindingSource)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -142,22 +142,22 @@
             // 
             // quanLyPhongTroBoTuDataSet
             // 
-            this.quanLyPhongTroBoTuDataSet.DataSetName = "QuanLyPhongTroBoTuDataSet";
-            this.quanLyPhongTroBoTuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // quanLyPhongTroBoTuDataSetBindingSource
-            // 
-            this.quanLyPhongTroBoTuDataSetBindingSource.DataSource = this.quanLyPhongTroBoTuDataSet;
-            this.quanLyPhongTroBoTuDataSetBindingSource.Position = 0;
-            // 
-            // khachThueTroBindingSource
-            // 
-            this.khachThueTroBindingSource.DataMember = "KhachThueTro";
-            this.khachThueTroBindingSource.DataSource = this.quanLyPhongTroBoTuDataSetBindingSource;
-            // 
-            // khachThueTroTableAdapter
-            // 
-            this.khachThueTroTableAdapter.ClearBeforeFill = true;
+            //this.quanLyPhongTroBoTuDataSet.DataSetName = "QuanLyPhongTroBoTuDataSet";
+            //this.quanLyPhongTroBoTuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //// 
+            //// quanLyPhongTroBoTuDataSetBindingSource
+            //// 
+            //this.quanLyPhongTroBoTuDataSetBindingSource.DataSource = this.quanLyPhongTroBoTuDataSet;
+            //this.quanLyPhongTroBoTuDataSetBindingSource.Position = 0;
+            //// 
+            //// khachThueTroBindingSource
+            //// 
+            //this.khachThueTroBindingSource.DataMember = "KhachThueTro";
+            //this.khachThueTroBindingSource.DataSource = this.quanLyPhongTroBoTuDataSetBindingSource;
+            //// 
+            //// khachThueTroTableAdapter
+            //// 
+            //this.khachThueTroTableAdapter.ClearBeforeFill = true;
             // 
             // TimKiemNhanVien
             // 
@@ -174,9 +174,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataTimNhanVien)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyPhongTroBoTuDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyPhongTroBoTuDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.quanLyPhongTroBoTuDataSet)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.quanLyPhongTroBoTuDataSetBindingSource)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,8 +193,8 @@
         private System.Windows.Forms.ComboBox cmbTim;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.BindingSource quanLyPhongTroBoTuDataSetBindingSource;
-        private QuanLyPhongTroBoTuDataSet quanLyPhongTroBoTuDataSet;
-        private System.Windows.Forms.BindingSource khachThueTroBindingSource;
-        private QuanLyPhongTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;
+        //private QuanLyPhongTroBoTuDataSet quanLyPhongTroBoTuDataSet;
+        //private System.Windows.Forms.BindingSource khachThueTroBindingSource;
+        //private QuanLyPhongTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;
     }
 }

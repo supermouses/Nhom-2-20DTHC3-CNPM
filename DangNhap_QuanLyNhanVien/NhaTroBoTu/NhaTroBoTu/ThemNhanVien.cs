@@ -15,7 +15,7 @@ namespace NhaTroBoTu
     {
         SqlConnection conn;
         SqlCommand cmd;
-        string str = "Data Source=LAPTOP-AA8F4MMK;Initial Catalog=QuanLyNhaTroBoTu;Integrated Security=True";
+        string str = "Data Source=LAPTOP-AA8F4MMK;Initial Catalog=QlyTroBoTu;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable dt = new DataTable();
         public ThemNhanVien()

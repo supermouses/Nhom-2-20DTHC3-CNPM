@@ -50,10 +50,13 @@
             this.btnXoaCancelKH = new System.Windows.Forms.Button();
             this.dataXoaKhach = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.qlyTroBoTuDataSet = new NhaTroBoTu.QlyTroBoTuDataSet();
             this.qlyTroBoTuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khachThueTroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khachThueTroTableAdapter = new NhaTroBoTu.QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter();
+=======
+>>>>>>> Stashed changes
             this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gioiTinhKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -273,7 +276,10 @@
             this.sDTKHDataGridViewTextBoxColumn,
             this.cCCDDataGridViewTextBoxColumn,
             this.ngaySinhKHDataGridViewTextBoxColumn});
+<<<<<<< Updated upstream
             this.dataXoaKhach.DataSource = this.khachThueTroBindingSource;
+=======
+>>>>>>> Stashed changes
             this.dataXoaKhach.Location = new System.Drawing.Point(294, 62);
             this.dataXoaKhach.Name = "dataXoaKhach";
             this.dataXoaKhach.RowHeadersWidth = 51;
@@ -294,6 +300,7 @@
             // 
             // qlyTroBoTuDataSet
             // 
+<<<<<<< Updated upstream
             this.qlyTroBoTuDataSet.DataSetName = "QlyTroBoTuDataSet";
             this.qlyTroBoTuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
@@ -310,62 +317,101 @@
             // khachThueTroTableAdapter
             // 
             this.khachThueTroTableAdapter.ClearBeforeFill = true;
+=======
+            // 
+            // qlyTroBoTuDataSetBindingSource
+            // 
+            // 
+            // khachThueTroBindingSource
+            // 
+            // 
+            // khachThueTroTableAdapter
+            // 
+>>>>>>> Stashed changes
             // 
             // maKHDataGridViewTextBoxColumn
             // 
             this.maKHDataGridViewTextBoxColumn.DataPropertyName = "MaKH";
             this.maKHDataGridViewTextBoxColumn.HeaderText = "MaKH";
+<<<<<<< Updated upstream
             this.maKHDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.maKHDataGridViewTextBoxColumn.Name = "maKHDataGridViewTextBoxColumn";
             this.maKHDataGridViewTextBoxColumn.Width = 125;
+=======
+            this.maKHDataGridViewTextBoxColumn.Name = "maKHDataGridViewTextBoxColumn";
+>>>>>>> Stashed changes
             // 
             // tenKHDataGridViewTextBoxColumn
             // 
             this.tenKHDataGridViewTextBoxColumn.DataPropertyName = "TenKH";
             this.tenKHDataGridViewTextBoxColumn.HeaderText = "TenKH";
+<<<<<<< Updated upstream
             this.tenKHDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tenKHDataGridViewTextBoxColumn.Name = "tenKHDataGridViewTextBoxColumn";
             this.tenKHDataGridViewTextBoxColumn.Width = 125;
+=======
+            this.tenKHDataGridViewTextBoxColumn.Name = "tenKHDataGridViewTextBoxColumn";
+>>>>>>> Stashed changes
             // 
             // gioiTinhKHDataGridViewTextBoxColumn
             // 
             this.gioiTinhKHDataGridViewTextBoxColumn.DataPropertyName = "GioiTinhKH";
             this.gioiTinhKHDataGridViewTextBoxColumn.HeaderText = "GioiTinhKH";
+<<<<<<< Updated upstream
             this.gioiTinhKHDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.gioiTinhKHDataGridViewTextBoxColumn.Name = "gioiTinhKHDataGridViewTextBoxColumn";
             this.gioiTinhKHDataGridViewTextBoxColumn.Width = 125;
+=======
+            this.gioiTinhKHDataGridViewTextBoxColumn.Name = "gioiTinhKHDataGridViewTextBoxColumn";
+>>>>>>> Stashed changes
             // 
             // diaChiKHDataGridViewTextBoxColumn
             // 
             this.diaChiKHDataGridViewTextBoxColumn.DataPropertyName = "DiaChiKH";
             this.diaChiKHDataGridViewTextBoxColumn.HeaderText = "DiaChiKH";
+<<<<<<< Updated upstream
             this.diaChiKHDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.diaChiKHDataGridViewTextBoxColumn.Name = "diaChiKHDataGridViewTextBoxColumn";
             this.diaChiKHDataGridViewTextBoxColumn.Width = 125;
+=======
+            this.diaChiKHDataGridViewTextBoxColumn.Name = "diaChiKHDataGridViewTextBoxColumn";
+>>>>>>> Stashed changes
             // 
             // sDTKHDataGridViewTextBoxColumn
             // 
             this.sDTKHDataGridViewTextBoxColumn.DataPropertyName = "SDTKH";
             this.sDTKHDataGridViewTextBoxColumn.HeaderText = "SDTKH";
+<<<<<<< Updated upstream
             this.sDTKHDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sDTKHDataGridViewTextBoxColumn.Name = "sDTKHDataGridViewTextBoxColumn";
             this.sDTKHDataGridViewTextBoxColumn.Width = 125;
+=======
+            this.sDTKHDataGridViewTextBoxColumn.Name = "sDTKHDataGridViewTextBoxColumn";
+>>>>>>> Stashed changes
             // 
             // cCCDDataGridViewTextBoxColumn
             // 
             this.cCCDDataGridViewTextBoxColumn.DataPropertyName = "CCCD";
             this.cCCDDataGridViewTextBoxColumn.HeaderText = "CCCD";
+<<<<<<< Updated upstream
             this.cCCDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.cCCDDataGridViewTextBoxColumn.Name = "cCCDDataGridViewTextBoxColumn";
             this.cCCDDataGridViewTextBoxColumn.Width = 125;
+=======
+            this.cCCDDataGridViewTextBoxColumn.Name = "cCCDDataGridViewTextBoxColumn";
+>>>>>>> Stashed changes
             // 
             // ngaySinhKHDataGridViewTextBoxColumn
             // 
             this.ngaySinhKHDataGridViewTextBoxColumn.DataPropertyName = "NgaySinhKH";
             this.ngaySinhKHDataGridViewTextBoxColumn.HeaderText = "NgaySinhKH";
+<<<<<<< Updated upstream
             this.ngaySinhKHDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ngaySinhKHDataGridViewTextBoxColumn.Name = "ngaySinhKHDataGridViewTextBoxColumn";
             this.ngaySinhKHDataGridViewTextBoxColumn.Width = 125;
+=======
+            this.ngaySinhKHDataGridViewTextBoxColumn.Name = "ngaySinhKHDataGridViewTextBoxColumn";
+>>>>>>> Stashed changes
             // 
             // XoaKhachHang
             // 
@@ -383,9 +429,15 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataXoaKhach)).EndInit();
+<<<<<<< Updated upstream
             ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).EndInit();
+=======
+            //((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSet)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSetBindingSource)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).EndInit();
+>>>>>>> Stashed changes
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,9 +467,15 @@
         private System.Windows.Forms.DataGridView dataXoaKhach;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.BindingSource qlyTroBoTuDataSetBindingSource;
+<<<<<<< Updated upstream
         private QlyTroBoTuDataSet qlyTroBoTuDataSet;
         private System.Windows.Forms.BindingSource khachThueTroBindingSource;
         private QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;
+=======
+        //private QlyTroBoTuDataSet qlyTroBoTuDataSet;
+        //private System.Windows.Forms.BindingSource khachThueTroBindingSource;
+        //private QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;
+>>>>>>> Stashed changes
         private System.Windows.Forms.DataGridViewTextBoxColumn maKHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenKHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinhKHDataGridViewTextBoxColumn;

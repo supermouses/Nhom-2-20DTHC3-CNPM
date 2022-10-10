@@ -43,6 +43,7 @@ C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\Nha
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\obj\Debug\WinFormsApp1.MenuQlyPhong.resources
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.SuaKhachHang.resources
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.TimKiemKhachHang.resources
+<<<<<<< Updated upstream
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.AssemblyReference.cache
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.SuggestedBindingRedirects.cache
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.DangNhap.resources
@@ -72,3 +73,7 @@ C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\Nh
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.CopyComplete
 C:\Users\super\Desktop\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.QlyBT.resources
+=======
+C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.QlyBT.resources
+C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\DangNhap_QuanLyNhanVien\NhaTroBoTu\NhaTroBoTu\bin\Debug\NhaTroBoTu.xml
+>>>>>>> Stashed changes

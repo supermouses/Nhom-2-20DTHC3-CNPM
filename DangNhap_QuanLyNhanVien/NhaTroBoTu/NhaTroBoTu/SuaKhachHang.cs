@@ -34,7 +34,7 @@ namespace NhaTroBoTu
             {
                 rdSuaNamKH.Checked = true;
             }
-            if (dataSuaKhach.Rows[i].Cells[2].Value.ToString() == "Nữ")
+            else if(dataSuaKhach.Rows[i].Cells[2].Value.ToString() == "Nữ")
             {
                 rdSuaNuKH.Checked = true;
 
@@ -89,7 +89,11 @@ namespace NhaTroBoTu
                     gt = "Khác";
                 }
                 //cmd.CommandText = "update KhachThueTro set TENKH = N'" + txtTenSuaKH.Text + "',GIOITINH=N'" + gt + "',SDT'" + txtSuaSDTKH.Text + "' ,DC=N'" + txtSuaDiaChiKH.Text + "',CCCD'" + txtSuaCCCDKH.Text + "',NAMSINH=N'" + dtSuaKH.Value.ToString() + "'where MAKH = N'" + txtmaSuaKhach.Text + "'";
+<<<<<<< Updated upstream
                   cmd.CommandText = "update KhachThueTro set TenKH = N'" + txtTenSuaKH.Text + "' ,GioiTinhKH=N'" + gt + "',DiaChiKH=N'" + txtSuaDiaChiKH.Text + "',SDTKH = '" + txtSuaSDTKH.Text + "',CCCD ='" + txtSuaCCCDKH.Text + "',NgaySinhKH=N'" + dtSuaKH.Value.ToString() + "'where MaKH = N'" + txtmaSuaKhach.Text + "'";
+=======
+                  cmd.CommandText = "update KhachThueTro set TenKH = N'" + txtTenSuaKH.Text + "' ,GioiTinhKH=N'" + gt + "',DiaChiKH=N'" + txtSuaDiaChiKH.Text + "',SDTKH = '" + txtSuaSDTKH.Text + "',CCCD ='" + txtSuaCCCDKH.Text + "',NgaySinhKH=N'" + dtSuaKH.Value.ToString() + "'where MAKH = N'" + txtmaSuaKhach.Text + "'";
+>>>>>>> Stashed changes
                 cmd.ExecuteNonQuery();
             /*MAKH = N'" + txtmaSuaKhach.Text + "',*/
             loaddata();
