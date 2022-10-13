@@ -34,7 +34,7 @@ namespace NhaTroBoTu
         private void TimKiemNhanVien_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanLyPhongTroBoTuDataSet.KhachThueTro' table. You can move, or remove it, as needed.
-            this.khachThueTroTableAdapter.Fill(this.quanLyPhongTroBoTuDataSet.KhachThueTro);
+            //this.khachThueTroTableAdapter.Fill(this.quanLyPhongTroBoTuDataSet.KhachThueTro);
             loaddata();
         }
     }

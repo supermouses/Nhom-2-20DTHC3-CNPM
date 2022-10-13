@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label6 = new System.Windows.Forms.Label();
             this.dataTimKhach = new System.Windows.Forms.DataGridView();
             this.khachThueTroBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -41,6 +40,7 @@
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.khachThueTroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khachThueTroTableAdapter = new NhaTroBoTu.QuanLyPhongTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter();
             this.btnQuayLai = new System.Windows.Forms.Button();
@@ -66,13 +66,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource3)).BeginInit();
+=======
+            this.btnQuayLai = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTimKhach)).BeginInit();
+            this.groupBox1.SuspendLayout();
+>>>>>>> Stashed changes
             this.SuspendLayout();
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.label6.Location = new System.Drawing.Point(389, 9);
+            this.label6.Location = new System.Drawing.Point(519, 11);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(439, 62);
             this.label6.TabIndex = 35;
@@ -80,6 +86,7 @@
             // 
             // dataTimKhach
             // 
+<<<<<<< Updated upstream
             this.dataTimKhach.AllowUserToAddRows = false;
             this.dataTimKhach.AllowUserToDeleteRows = false;
             this.dataTimKhach.AutoGenerateColumns = false;
@@ -100,6 +107,15 @@
             this.dataTimKhach.Size = new System.Drawing.Size(745, 267);
             this.dataTimKhach.TabIndex = 36;
             this.dataTimKhach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTimKhach_CellContentClick);
+=======
+            this.dataTimKhach.ColumnHeadersHeight = 29;
+            this.dataTimKhach.Location = new System.Drawing.Point(336, 161);
+            this.dataTimKhach.Margin = new System.Windows.Forms.Padding(4);
+            this.dataTimKhach.Name = "dataTimKhach";
+            this.dataTimKhach.RowHeadersWidth = 51;
+            this.dataTimKhach.Size = new System.Drawing.Size(863, 325);
+            this.dataTimKhach.TabIndex = 39;
+>>>>>>> Stashed changes
             // 
             // khachThueTroBindingSource2
             // 
@@ -125,9 +141,11 @@
             this.groupBox1.Controls.Add(this.txtTimKiem);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(236, 62);
+            this.groupBox1.Location = new System.Drawing.Point(315, 76);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(674, 63);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(899, 78);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm Kiếm Khách Hàng";
@@ -135,30 +153,43 @@
             // rdTen
             // 
             this.rdTen.AutoSize = true;
-            this.rdTen.Location = new System.Drawing.Point(162, 23);
+            this.rdTen.Location = new System.Drawing.Point(215, 31);
+            this.rdTen.Margin = new System.Windows.Forms.Padding(4);
             this.rdTen.Name = "rdTen";
+<<<<<<< Updated upstream
             this.rdTen.Size = new System.Drawing.Size(49, 19);
+=======
+            this.rdTen.Size = new System.Drawing.Size(52, 20);
+>>>>>>> Stashed changes
             this.rdTen.TabIndex = 5;
             this.rdTen.TabStop = true;
             this.rdTen.Text = "Tên";
             this.rdTen.UseVisualStyleBackColor = true;
+            this.rdTen.CheckedChanged += new System.EventHandler(this.rdTen_CheckedChanged);
             // 
             // rdMa
             // 
             this.rdMa.AutoSize = true;
-            this.rdMa.Location = new System.Drawing.Point(108, 25);
+            this.rdMa.Location = new System.Drawing.Point(144, 31);
+            this.rdMa.Margin = new System.Windows.Forms.Padding(4);
             this.rdMa.Name = "rdMa";
+<<<<<<< Updated upstream
             this.rdMa.Size = new System.Drawing.Size(46, 19);
+=======
+            this.rdMa.Size = new System.Drawing.Size(47, 20);
+>>>>>>> Stashed changes
             this.rdMa.TabIndex = 4;
             this.rdMa.TabStop = true;
             this.rdMa.Text = "Mã";
             this.rdMa.UseVisualStyleBackColor = true;
+            this.rdMa.CheckedChanged += new System.EventHandler(this.rdMa_CheckedChanged);
             // 
             // btnTimKiemKH
             // 
-            this.btnTimKiemKH.Location = new System.Drawing.Point(534, 23);
+            this.btnTimKiemKH.Location = new System.Drawing.Point(712, 28);
+            this.btnTimKiemKH.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimKiemKH.Name = "btnTimKiemKH";
-            this.btnTimKiemKH.Size = new System.Drawing.Size(75, 23);
+            this.btnTimKiemKH.Size = new System.Drawing.Size(100, 28);
             this.btnTimKiemKH.TabIndex = 3;
             this.btnTimKiemKH.Text = "Tìm Kiếm ";
             this.btnTimKiemKH.UseVisualStyleBackColor = true;
@@ -166,25 +197,34 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(356, 25);
+            this.txtTimKiem.Location = new System.Drawing.Point(475, 31);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(172, 20);
+            this.txtTimKiem.Size = new System.Drawing.Size(228, 22);
             this.txtTimKiem.TabIndex = 2;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(310, 28);
+            this.label2.Location = new System.Drawing.Point(413, 34);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
+<<<<<<< Updated upstream
             this.label2.Size = new System.Drawing.Size(45, 15);
+=======
+            this.label2.Size = new System.Drawing.Size(49, 16);
+>>>>>>> Stashed changes
             this.label2.TabIndex = 0;
             this.label2.Text = "Từ Tìm";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 26);
+            this.label1.Location = new System.Drawing.Point(32, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
+<<<<<<< Updated upstream
             this.label1.Size = new System.Drawing.Size(91, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tìm Kiếm Theo";
@@ -198,16 +238,24 @@
             // 
             this.khachThueTroTableAdapter.ClearBeforeFill = true;
             // 
+=======
+            this.label1.Size = new System.Drawing.Size(98, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Tìm Kiếm Theo";
+            // 
+>>>>>>> Stashed changes
             // btnQuayLai
             // 
-            this.btnQuayLai.Location = new System.Drawing.Point(979, 352);
+            this.btnQuayLai.Location = new System.Drawing.Point(1335, 435);
+            this.btnQuayLai.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuayLai.Name = "btnQuayLai";
-            this.btnQuayLai.Size = new System.Drawing.Size(78, 61);
+            this.btnQuayLai.Size = new System.Drawing.Size(104, 75);
             this.btnQuayLai.TabIndex = 38;
             this.btnQuayLai.Text = "Quay Lại";
             this.btnQuayLai.UseVisualStyleBackColor = true;
             this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
             // 
+<<<<<<< Updated upstream
             // khachThueTroBindingSource1
             // 
             this.khachThueTroBindingSource1.DataMember = "KhachThueTro";
@@ -295,15 +343,18 @@
             this.ngaySinhKHDataGridViewTextBoxColumn.ReadOnly = true;
             this.ngaySinhKHDataGridViewTextBoxColumn.Width = 125;
             // 
+=======
+>>>>>>> Stashed changes
             // TimKiemKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1089, 425);
+            this.ClientSize = new System.Drawing.Size(1452, 523);
             this.Controls.Add(this.btnQuayLai);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataTimKhach);
             this.Controls.Add(this.label6);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TimKiemKhachHang";
             this.Text = "TimKiemKhachHang";
             this.Load += new System.EventHandler(this.TimKiemKhachHang_Load);
@@ -313,11 +364,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.quanLyPhongTroBoTuDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+<<<<<<< Updated upstream
             ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource3)).EndInit();
+=======
+>>>>>>> Stashed changes
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,13 +386,14 @@
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnTimKiemKH;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.BindingSource quanLyPhongTroBoTuDataSetBindingSource;
-        private QuanLyPhongTroBoTuDataSet quanLyPhongTroBoTuDataSet;
-        private System.Windows.Forms.BindingSource khachThueTroBindingSource;
-        private QuanLyPhongTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;
+        //private System.Windows.Forms.BindingSource quanLyPhongTroBoTuDataSetBindingSource;
+        //private QuanLyPhongTroBoTuDataSet quanLyPhongTroBoTuDataSet;
+        //private System.Windows.Forms.BindingSource khachThueTroBindingSource;
+        //private QuanLyPhongTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;
         private System.Windows.Forms.Button btnQuayLai;
         private System.Windows.Forms.RadioButton rdTen;
         private System.Windows.Forms.RadioButton rdMa;
+<<<<<<< Updated upstream
         private System.Windows.Forms.BindingSource khachThueTroBindingSource1;
         private System.Windows.Forms.BindingSource khachThueTroBindingSource2;
         private System.Windows.Forms.BindingSource qlyTroBoTuDataSetBindingSource;
@@ -352,5 +407,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sDTKHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cCCDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhKHDataGridViewTextBoxColumn;
+=======
+        private System.Windows.Forms.BindingSource qlyTroBoTuDataSetBindingSource;
+        //private System.Windows.Forms.BindingSource khachThueTroBindingSource1;
+>>>>>>> Stashed changes
     }
 }

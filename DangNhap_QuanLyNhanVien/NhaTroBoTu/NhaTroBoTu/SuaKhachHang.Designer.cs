@@ -39,6 +39,8 @@
             this.dtSuaKH = new System.Windows.Forms.DateTimePicker();
             this.btnSuaKH = new System.Windows.Forms.Button();
             this.dataSuaKhach = new System.Windows.Forms.DataGridView();
+            //this.qlyTroBoTuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            //this.qlyTroBoTuDataSet = new NhaTroBoTu.QlyTroBoTuDataSet();
             this.rdSuaKhacKH = new System.Windows.Forms.RadioButton();
             this.rdSuaNuKH = new System.Windows.Forms.RadioButton();
             this.txtTenSuaKH = new System.Windows.Forms.TextBox();
@@ -50,10 +52,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdSuaNamKH = new System.Windows.Forms.RadioButton();
             this.txtSuaCCCDKH = new System.Windows.Forms.TextBox();
+<<<<<<< Updated upstream
             this.qlyTroBoTuDataSet = new NhaTroBoTu.QlyTroBoTuDataSet();
             this.qlyTroBoTuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khachThueTroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khachThueTroTableAdapter = new NhaTroBoTu.QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter();
+=======
+            //this.khachThueTroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            //this.khachThueTroTableAdapter = new NhaTroBoTu.QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter();
+>>>>>>> Stashed changes
             this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gioiTinhKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,10 +69,17 @@
             this.cCCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaySinhKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataSuaKhach)).BeginInit();
+<<<<<<< Updated upstream
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).BeginInit();
+=======
+            //((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSetBindingSource)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSet)).BeginInit();
+            //this.groupBox1.SuspendLayout();
+            //((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).BeginInit();
+>>>>>>> Stashed changes
             this.SuspendLayout();
             // 
             // btnSuaCancelKH
@@ -162,14 +176,29 @@
             this.sDTKHDataGridViewTextBoxColumn,
             this.cCCDDataGridViewTextBoxColumn,
             this.ngaySinhKHDataGridViewTextBoxColumn});
+<<<<<<< Updated upstream
             this.dataSuaKhach.DataSource = this.khachThueTroBindingSource;
             this.dataSuaKhach.Location = new System.Drawing.Point(286, 84);
+=======
+            //this.dataSuaKhach.DataSource = this.khachThueTroBindingSource;
+            this.dataSuaKhach.Location = new System.Drawing.Point(308, 110);
+>>>>>>> Stashed changes
             this.dataSuaKhach.Name = "dataSuaKhach";
             this.dataSuaKhach.ReadOnly = true;
             this.dataSuaKhach.RowTemplate.Height = 25;
             this.dataSuaKhach.Size = new System.Drawing.Size(720, 257);
             this.dataSuaKhach.TabIndex = 42;
             this.dataSuaKhach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataXoaKhach_CellContentClick);
+            // 
+            // qlyTroBoTuDataSetBindingSource
+            // 
+            //this.qlyTroBoTuDataSetBindingSource.DataSource = this.qlyTroBoTuDataSet;
+            //this.qlyTroBoTuDataSetBindingSource.Position = 0;
+            //// 
+            //// qlyTroBoTuDataSet
+            //// 
+            //this.qlyTroBoTuDataSet.DataSetName = "QlyTroBoTuDataSet";
+            //this.qlyTroBoTuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // rdSuaKhacKH
             // 
@@ -292,6 +321,7 @@
             this.txtSuaCCCDKH.Size = new System.Drawing.Size(194, 20);
             this.txtSuaCCCDKH.TabIndex = 33;
             // 
+<<<<<<< Updated upstream
             // qlyTroBoTuDataSet
             // 
             this.qlyTroBoTuDataSet.DataSetName = "QlyTroBoTuDataSet";
@@ -310,6 +340,16 @@
             // khachThueTroTableAdapter
             // 
             this.khachThueTroTableAdapter.ClearBeforeFill = true;
+=======
+            // khachThueTroBindingSource
+            // 
+            //this.khachThueTroBindingSource.DataMember = "KhachThueTro";
+            //this.khachThueTroBindingSource.DataSource = this.qlyTroBoTuDataSetBindingSource;
+            // 
+            // khachThueTroTableAdapter
+            // 
+            //////this.khachThueTroTableAdapter.ClearBeforeFill = true;
+>>>>>>> Stashed changes
             // 
             // maKHDataGridViewTextBoxColumn
             // 
@@ -331,7 +371,10 @@
             this.gioiTinhKHDataGridViewTextBoxColumn.HeaderText = "GioiTinhKH";
             this.gioiTinhKHDataGridViewTextBoxColumn.Name = "gioiTinhKHDataGridViewTextBoxColumn";
             this.gioiTinhKHDataGridViewTextBoxColumn.ReadOnly = true;
+<<<<<<< Updated upstream
             this.gioiTinhKHDataGridViewTextBoxColumn.Width = 80;
+=======
+>>>>>>> Stashed changes
             // 
             // diaChiKHDataGridViewTextBoxColumn
             // 
@@ -375,11 +418,17 @@
             this.Text = "Sửa Khách Hàng";
             this.Load += new System.EventHandler(this.SuaKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSuaKhach)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSetBindingSource)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+<<<<<<< Updated upstream
             ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qlyTroBoTuDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).EndInit();
+=======
+            //((System.ComponentModel.ISupportInitialize)(this.khachThueTroBindingSource)).EndInit();
+>>>>>>> Stashed changes
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,10 +457,17 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdSuaNamKH;
         private System.Windows.Forms.TextBox txtSuaCCCDKH;
+<<<<<<< Updated upstream
         private System.Windows.Forms.BindingSource qlyTroBoTuDataSetBindingSource;
         private QlyTroBoTuDataSet qlyTroBoTuDataSet;
         private System.Windows.Forms.BindingSource khachThueTroBindingSource;
         private QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;
+=======
+        //private System.Windows.Forms.BindingSource qlyTroBoTuDataSetBindingSource;
+        //private QlyTroBoTuDataSet qlyTroBoTuDataSet;
+        //private System.Windows.Forms.BindingSource khachThueTroBindingSource;
+        //private QlyTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;
+>>>>>>> Stashed changes
         private System.Windows.Forms.DataGridViewTextBoxColumn maKHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenKHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinhKHDataGridViewTextBoxColumn;

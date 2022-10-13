@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NhaTroBoTu</name>
+    </assembly>
+    <members>
+        <member name="F:NhaTroBoTu.DangNhap.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.DangNhap.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.DangNhap.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:NhaTroBoTu.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:NhaTroBoTu.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:NhaTroBoTu.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.QlyBT.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.QlyBT.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.QlyBT.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.SuaKhachHang.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.SuaKhachHang.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.SuaKhachHang.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.MENU.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.MENU.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.MENU.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.QuanLyNhanVien.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.QuanLyNhanVien.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.QuanLyNhanVien.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.SuaNhanVien.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.SuaNhanVien.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.SuaNhanVien.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.ThemKhachHang.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.ThemKhachHang.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.ThemKhachHang.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.ThemNhanVien.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.ThemNhanVien.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.ThemNhanVien.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.TimKiemKhachHang.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.TimKiemKhachHang.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.TimKiemKhachHang.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.TimKiemNhanVien.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.TimKiemNhanVien.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.TimKiemNhanVien.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.XoaKhachHang.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.XoaKhachHang.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.XoaKhachHang.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.XoaNhanVien.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.XoaNhanVien.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.XoaNhanVien.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:WinFormsApp1.MenuQlyPhong.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.MenuQlyPhong.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WinFormsApp1.MenuQlyPhong.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:WinFormsApp1.QlyKH.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.QlyKH.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WinFormsApp1.QlyKH.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

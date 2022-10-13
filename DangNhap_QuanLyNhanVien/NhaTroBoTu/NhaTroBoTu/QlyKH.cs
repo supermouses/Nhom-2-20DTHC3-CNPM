@@ -39,9 +39,9 @@ namespace WinFormsApp1
             // TODO: This line of code loads data into the 'qlyTroBoTuDataSet.KhachThueTro' table. You can move, or remove it, as needed.
             this.khachThueTroTableAdapter1.Fill(this.qlyTroBoTuDataSet.KhachThueTro);
             // TODO: This line of code loads data into the 'quanLyPhongTroBoTuDataSet.KhachThueTro' table. You can move, or remove it, as needed.
-            this.khachThueTroTableAdapter.Fill(this.quanLyPhongTroBoTuDataSet.KhachThueTro);
-            conn.Open();
+            //this.khachThueTroTableAdapter.Fill(this.quanLyPhongTroBoTuDataSet.KhachThueTro);
             load();
+            conn.Open();
 
         }
 
@@ -101,6 +101,11 @@ namespace WinFormsApp1
             Hide();
             timKiemKhachHang.Show();
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -43,6 +43,7 @@ namespace NhaTroBoTu
 
         private void QuanLyNhanVien_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qlyTroBoTuDataSet.NhanVien' table. You can move, or remove it, as needed.
             DataTable table1 = new DataTable();
             conn = new SqlConnection(str);
             cmd = conn.CreateCommand();

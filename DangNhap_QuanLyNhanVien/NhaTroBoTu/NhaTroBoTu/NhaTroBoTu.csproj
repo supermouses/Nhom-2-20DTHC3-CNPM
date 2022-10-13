@@ -25,6 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\NhaTroBoTu.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -65,12 +66,21 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+>>>>>>> Stashed changes
     <Compile Include="QlyBT.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QlyBT.Designer.cs">
       <DependentUpon>QlyBT.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="QlyTroBoTu.cs" />
     <Compile Include="QlyTroBoTuDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -80,13 +90,14 @@
     <Compile Include="QuanLyPhongTroBoTuDataSet.cs">
       <DependentUpon>QuanLyPhongTroBoTuDataSet.xsd</DependentUpon>
     </Compile>
+=======
+>>>>>>> Stashed changes
     <Compile Include="SuaKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SuaKhachHang.Designer.cs">
       <DependentUpon>SuaKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhachThueTro.cs" />
     <Compile Include="MENU.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,9 +110,6 @@
     <Compile Include="MenuQlyPhong.designer.cs">
       <DependentUpon>MenuQlyPhong.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs" />
-    <Compile Include="NhanVien.cs" />
-    <Compile Include="PhongTro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QlyKH.cs">
@@ -115,11 +123,6 @@
     </Compile>
     <Compile Include="QuanLyNhanVien.Designer.cs">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLyPhongTroBoTuDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuanLyPhongTroBoTuDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SuaNhanVien.cs">
       <SubType>Form</SubType>
@@ -181,14 +184,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+<<<<<<< Updated upstream
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+=======
+>>>>>>> Stashed changes
     <EmbeddedResource Include="QlyKH.resx">
       <DependentUpon>QlyKH.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +232,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+<<<<<<< Updated upstream
     <None Include="QlyTroBoTuDataSet.xsc">
       <DependentUpon>QlyTroBoTuDataSet.xsd</DependentUpon>
     </None>
@@ -248,15 +255,21 @@
     <None Include="QuanLyPhongTroBoTuDataSet.xss">
       <DependentUpon>QuanLyPhongTroBoTuDataSet.xsd</DependentUpon>
     </None>
+=======
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <None Include="Resources\search.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back_2.png" />
+=======
+    <Folder Include="Resources\" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
