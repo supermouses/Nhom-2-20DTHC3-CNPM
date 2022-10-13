@@ -1,0 +1,18 @@
+﻿DormitoryManagement
+
+
+winexe
+C#
+.cs
+H:\C Sharp Workspace\DormitoryManagement\DormitoryManagement\obj\Debug\
+DormitoryManagement
+none
+false
+DEBUG;TRACE
+H:\C Sharp Workspace\DormitoryManagement\DormitoryManagement\App.xaml
+191829946893
+186038101
+23-1811067352
+18-1659535730
+BureauBlue.xaml;UC\UCElectricityAndWater.xaml;UC\UCGuestList.xaml;UC\UCReceiptList.xaml;UC\UCRoomList.xaml;UC\UCRoomTypeAndStatus.xaml;Windows\WindowAboutMe.xaml;Windows\WindowAddGuest.xaml;Windows\WindowAddReceipt.xaml;Windows\WindowAddRoom.xaml;Windows\WindowAddRoomType.xaml;Windows\WindowAddStatus.xaml;Windows\WindowEditGuest.xaml;Windows\WindowEditReceipt.xaml;Windows\WindowEditRoom.xaml;Windows\WindowEditRoomType.xaml;Windows\WindowEditStatus.xaml;Windows\WindowExpireRooms.xaml;Windows\WindowMain.xaml;
+

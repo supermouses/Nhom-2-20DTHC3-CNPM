@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.75, 9.875" name="DM">
+  <DataContextMoniker Name="/DMDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9edfee2a-bda2-4330-99c4-747dddc236ac" absoluteBounds="6.25, 2.875, 2, 1.4248478190104161">
+      <DataClassMoniker Name="/DMDataContext/tblElectricity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ec6459c-f618-4988-828d-334c9c529f08" absoluteBounds="6.265, 3.335, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e69fe4f5-8758-4d03-a068-e64509e9df0e" absoluteBounds="6.25, 5.125, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/DMDataContext/tblWater" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea68b14c-9363-416f-9569-84383b452ceb" absoluteBounds="6.265, 5.585, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4fd2a5b-e1c3-428c-8dfa-15f0e5cf4da7" absoluteBounds="0.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/DMDataContext/tblFee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f08d40b0-992e-472a-8957-7f4eec56cc09" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3749dd9c-0758-4e59-ab98-1a6ea8097c75" absoluteBounds="6.25, 7.25, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/DMDataContext/tblGuest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8110192f-805d-4fb3-9909-1de9ec4e8344" absoluteBounds="6.265, 7.71, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ec6605da-824a-4591-8627-8a7fc27033bc" absoluteBounds="8.75, 3, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/DMDataContext/tblPrivilege" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33b4363a-80b2-4ce4-ac3e-c67a92ee303e" absoluteBounds="8.765, 3.46, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a79cdcfc-c13e-49e3-877a-2c0ac09cc2bd" absoluteBounds="9.25, 5.125, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/DMDataContext/tblReceipt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1b4c66e-4ff0-4c2a-9bd4-c76ddd7635bc" absoluteBounds="9.265, 5.585, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="782704e9-f93d-42ac-b98c-0d89d36e0126" absoluteBounds="6.5, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/DMDataContext/tblReceiptStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e60b740d-6f94-4b21-a324-7b0310ff0886" absoluteBounds="6.515, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85dffc60-3450-4921-82bf-5842c0bef4fa" absoluteBounds="3.5, 5.25, 2, 2.0822371419270826">
+      <DataClassMoniker Name="/DMDataContext/tblRoom" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15b0e97f-8fb3-4565-aaa9-a939f6f1d02f" absoluteBounds="3.515, 5.71, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="51ca6711-468e-45e8-a425-a46b75e77bfd" absoluteBounds="0.75, 3.625, 2, 1.2605004882812509">
+      <DataClassMoniker Name="/DMDataContext/tblRoomType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb78209b-dab3-45f1-a6c7-b0a76419d24e" absoluteBounds="0.765, 4.085, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d1d5144a-1d08-4f83-a629-d693a722faa1" absoluteBounds="0.75, 5.75, 2, 1.0961531575520827">
+      <DataClassMoniker Name="/DMDataContext/tblStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a21c0208-ab77-4055-a959-6ff879776187" absoluteBounds="0.765, 6.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="977a3c59-add5-48d9-8e1a-32946fb2a9a9" absoluteBounds="11.5, 2.875, 2, 1.2605004882812509">
+      <DataClassMoniker Name="/DMDataContext/tblUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9579fea0-8a80-4d58-8018-8142790833c6" absoluteBounds="11.515, 3.335, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.40625 : 1.84615315755208); (8.40625 : 6.89992390950521); (9.25 : 6.89992390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DMDataContext/tblReceiptStatus/tblReceiptStatus_tblReceipt" />
+      <nodes>
+        <classShapeMoniker Id="782704e9-f93d-42ac-b98c-0d89d36e0126" />
+        <classShapeMoniker Id="a79cdcfc-c13e-49e3-877a-2c0ac09cc2bd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 5.25); (4.5 : 3.58742390950521); (6.25 : 3.58742390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DMDataContext/tblRoom/tblRoom_tblElectricity" />
+      <nodes>
+        <classShapeMoniker Id="85dffc60-3450-4921-82bf-5842c0bef4fa" />
+        <classShapeMoniker Id="9edfee2a-bda2-4330-99c4-747dddc236ac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.89992390950521); (6.25 : 5.89992390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DMDataContext/tblRoom/tblRoom_tblWater" />
+      <nodes>
+        <classShapeMoniker Id="85dffc60-3450-4921-82bf-5842c0bef4fa" />
+        <classShapeMoniker Id="e69fe4f5-8758-4d03-a068-e64509e9df0e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 7.33223714192708); (4.5 : 8.49658497265625); (6.25 : 8.49658497265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DMDataContext/tblRoom/tblRoom_tblGuest" />
+      <nodes>
+        <classShapeMoniker Id="85dffc60-3450-4921-82bf-5842c0bef4fa" />
+        <classShapeMoniker Id="3749dd9c-0758-4e59-ab98-1a6ea8097c75" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.69363586425781); (9.25 : 6.69363586425781)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DMDataContext/tblRoom/tblRoom_tblReceipt" />
+      <nodes>
+        <classShapeMoniker Id="85dffc60-3450-4921-82bf-5842c0bef4fa" />
+        <classShapeMoniker Id="a79cdcfc-c13e-49e3-877a-2c0ac09cc2bd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.25525024414063); (3.9687475 : 4.25525024414063); (3.9687475 : 5.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DMDataContext/tblRoomType/tblRoomType_tblRoom" />
+      <nodes>
+        <classShapeMoniker Id="51ca6711-468e-45e8-a425-a46b75e77bfd" />
+        <classShapeMoniker Id="85dffc60-3450-4921-82bf-5842c0bef4fa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.29807657877604); (3.5 : 6.29807657877604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DMDataContext/tblStatus/tblStatus_tblRoom" />
+      <nodes>
+        <classShapeMoniker Id="d1d5144a-1d08-4f83-a629-d693a722faa1" />
+        <classShapeMoniker Id="85dffc60-3450-4921-82bf-5842c0bef4fa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 3.54807657877604); (11.5 : 3.54807657877604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DMDataContext/tblPrivilege/tblPrivilege_tblUser" />
+      <nodes>
+        <classShapeMoniker Id="ec6605da-824a-4591-8627-8a7fc27033bc" />
+        <classShapeMoniker Id="977a3c59-add5-48d9-8e1a-32946fb2a9a9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

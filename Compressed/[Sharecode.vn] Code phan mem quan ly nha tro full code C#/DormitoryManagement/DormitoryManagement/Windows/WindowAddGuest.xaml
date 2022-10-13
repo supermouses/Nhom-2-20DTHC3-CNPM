@@ -1,0 +1,37 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="DormitoryManagement.Windows.WindowAddGuest"
+    Title="Thêm Khách Hàng" Height="411" Width="502" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="WindowAddGuest_Loaded" mc:Ignorable="d">
+    <Grid>
+        <TextBlock FontSize="16" FontWeight="Bold" Foreground="#FF116A98" Height="21" Margin="114,12,113,0" Text="Thêm Khách Hàng" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="11,55,0,0" x:Name="lbGuestName" VerticalAlignment="Top" Width="108" VerticalContentAlignment="Center" FontSize="12" FontWeight="Bold" Content="Tên Khách Hàng"/>
+        <TextBox Height="23" Margin="125,60,214,0" x:Name="tbGuestName" VerticalAlignment="Top" />
+        <Label FontSize="12" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="11,97,0,0" x:Name="lbAddress" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="108" Content="Địa chỉ"/>
+        <TextBox Height="23" Margin="125,102,214,0" x:Name="tbAddress" VerticalAlignment="Top" />
+        <RadioButton Height="16" HorizontalAlignment="Right" Margin="0,63,128,0" x:Name="rbMale" VerticalAlignment="Top" Width="58" IsChecked="False" Content="Nam"/>
+        <RadioButton Height="16" HorizontalAlignment="Right" Margin="0,63,55,0" x:Name="rbFeMale" VerticalAlignment="Top" Width="58" Content="Nữ"/>
+        <my:DatePicker xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit" Height="24" HorizontalAlignment="Right" Margin="0,101,19,0" x:Name="Birthday" VerticalAlignment="Top" Width="96.95" SelectedDateFormat="Short" />
+        <Label FontSize="12" FontWeight="Bold" Height="24" HorizontalAlignment="Right" Margin="0,102.26,119,0" x:Name="lbBirthday" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="66" Content="Ngày Sinh"/>
+        <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,132,0,0" x:Name="lbTelephone" VerticalContentAlignment="Center" Width="108" Content="Điện thoại bàn" VerticalAlignment="Top" Height="53"/>
+    	<TextBox Margin="126,146,213,0" x:Name="tbTelephone" Width="157" Height="24" VerticalAlignment="Top" d:LayoutOverrides="Height" />
+        <Label FontSize="12" FontWeight="Bold" Margin="0,131,126,0" x:Name="lbMobilePhone" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="56" Content="Di động" VerticalAlignment="Top" Height="53"/>
+    	<TextBox Margin="0,145.5,18,0" x:Name="tbMobilePhone" HorizontalAlignment="Right" Width="97.95" VerticalAlignment="Top" Height="24"/>
+        <ComboBox Margin="126,184,213,165" TextSearch.TextPath="Name" Height="24" x:Name="cbRoom">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding RoomID}" Width="30"/>
+                        <TextBlock Text="{Binding Name}" Width="80"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,183,0,168" x:Name="lbRoom" VerticalContentAlignment="Center" Width="108" Content="Phòng"/>
+        <Image HorizontalAlignment="Right" Margin="0,183,35,64" x:Name="pbPhoto" Stretch="Fill" Width="121" Source="/Icons/NoPicture.jpg" MouseDown="pbPhoto_MouseDown" />
+        <Label FontSize="12" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="12,0,0,123" x:Name="LbNote" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="108" Content="Ghi chú"/>
+        <TextBox Height="82" Margin="126,0,213,64" x:Name="tbNote" VerticalAlignment="Bottom" AcceptsReturn="True" />
+        <Button Height="34" Margin="97,0,0,12" Name="btOk" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="113" Click="btOk_Click">Thêm Khách Hàng</Button>
+        <Button Height="34" HorizontalAlignment="Right" Margin="0,0,113,12" Name="btBack" VerticalAlignment="Bottom" Width="101" Click="btBack_Click">Trở về</Button>
+    </Grid>
+</Window>

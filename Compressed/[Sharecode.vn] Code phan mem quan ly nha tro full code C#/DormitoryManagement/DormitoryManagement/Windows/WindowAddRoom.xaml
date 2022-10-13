@@ -1,0 +1,44 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Custom="http://schemas.microsoft.com/wpf/2008/toolkit" x:Class="DormitoryManagement.Windows.WindowAddRoom"
+    Title="Thêm  Phòng" Height="337" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <TextBlock FontSize="16" FontWeight="Bold" Foreground="#FF116A98" Height="21" Margin="120,17,126,0" Text="Thêm Phòng" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" />
+        <Label Height="23" HorizontalAlignment="Left" Margin="18,74,0,0" x:Name="lbRoomName" VerticalAlignment="Top" Width="78" FontSize="12" FontWeight="Bold" Content="Tên Phòng:"/>
+        <TextBox Height="23" Margin="104,74,0,0" x:Name="tbRoomName" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" />
+        <ComboBox Height="23" Margin="0,74,19,0" x:Name="cbRoomType" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120" SelectionChanged="cbRoomType_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding TypeID}" Width="30"/>
+                        <TextBlock Text="{Binding TypeName}" Width="80"/>
+                        <TextBlock Text="{Binding Price}" Width="80"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+    	<Label Height="23" Margin="0,74,146,0" x:Name="lbRoomType" VerticalAlignment="Top" FontSize="12" FontWeight="Bold" Content="Loại Phòng:" HorizontalAlignment="Right" Width="84" />
+    	<Label HorizontalAlignment="Left" Margin="18,120,0,0" x:Name="lbCapicity" Width="78" FontSize="12" FontWeight="Bold" Content="Sức  chứa:" VerticalAlignment="Top" Height="23"/>
+    	<TextBox Height="23" Margin="104,117,0,0" x:Name="tbCapicity" VerticalAlignment="Top" HorizontalAlignment="Left" Width="56" />
+    	<Label Height="23" Margin="0,117,146,0" x:Name="lbComingDate" VerticalAlignment="Top" FontSize="12" FontWeight="Bold" Content="Ngày Đến:" RenderTransformOrigin="0.513,1.13" HorizontalAlignment="Right" Width="84" />
+    	<Custom:DatePicker x:Name="dateCome" HorizontalAlignment="Right" Margin="0,115,19,0" VerticalAlignment="Top" Width="120" Height="23" />
+        <ComboBox Margin="0,0,20,121" TextSearch.TextPath="StatusName" IsEditable="True" x:Name="cbStatus" HorizontalAlignment="Right" Width="120" VerticalAlignment="Bottom" Height="23" LostFocus="cbStatus_LostFocus">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding StatusID}" Width="30"/>
+                        <TextBlock Text="{Binding StatusName}" Width="80"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+            <Label Height="23" Margin="0,0,152,118" x:Name="lbStatus" VerticalAlignment="Bottom" FontSize="12" FontWeight="Bold" Content="Trạng  Thái:" HorizontalAlignment="Right" Width="78"/>
+    	<Button x:Name="btOk" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="99" Content="Thêm" Margin="115,0,0,19.066" Height="36.933" Click="btOk_Click" />
+    	<Button x:Name="btBack" HorizontalAlignment="Right" Margin="0,0,115,19.066" VerticalAlignment="Bottom" Width="99" Height="36.933" Content="Quay  Lại" Click="btBack_Click" />
+        <Label FontSize="12" FontWeight="Bold" Height="23" Margin="18,0,0,118" Name="label1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="78">Số Điện</Label>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="102,0,0,118" Name="tbElectricNo" VerticalAlignment="Bottom" Width="58" />
+        <Label FontSize="12" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="18,0,0,81" Name="label2" VerticalAlignment="Bottom" Width="78">Số Nước</Label>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="102,0,0,81" Name="tbWaterNo" VerticalAlignment="Bottom" Width="58" />
+    </Grid>
+</Window>

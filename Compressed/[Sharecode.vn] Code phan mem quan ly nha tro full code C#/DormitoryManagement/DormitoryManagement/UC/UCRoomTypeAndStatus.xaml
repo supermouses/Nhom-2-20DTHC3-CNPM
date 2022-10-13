@@ -1,0 +1,61 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="DormitoryManagement.UC.UCRoomTypeAndStatus"
+    Height="Auto" Width="Auto" Loaded="UserControl_Loaded" mc:Ignorable="d">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock FontSize="16" FontWeight="Bold" Foreground="#FF116A98" Height="39" Margin="143,19,138,0" Text="Danh Sách Loại Phòng" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" />
+                <ListView ScrollViewer.VerticalScrollBarVisibility="Auto" Height="Auto" HorizontalAlignment="Center"  HorizontalContentAlignment="Right" x:Name="lvRoomType" SelectionMode="Single" Grid.Row="1">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn DisplayMemberBinding="{Binding TypeID}" Width="80" Header="Mã Loại"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding TypeName}" Width="150" Header="Tên Loại"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding Price}" Width="150" Header="Giá"/>                        
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <TextBlock VerticalAlignment="Bottom" Margin="0,10,0,0" Grid.Row="2" TextAlignment="Center">
+				    <InlineUIContainer>            	
+            		    <Button Click="btAddRoomType_Click" x:Name="btAddRoomType" Width="101" Height="30" Content="Thêm Loại"/>
+            	    </InlineUIContainer><Run Text=" "/><InlineUIContainer>
+            		    <Button Click="btEditRoomType_Click" x:Name="btEditRoomType" Content="Sửa Loại" Width="101" Height="30"/>
+            	    </InlineUIContainer><Run Text=" "/><InlineUIContainer>
+            		    <Button Click="btDeleteRoomType_Click" x:Name="btDeleteRoomType" Width="123" Height="30" Content="Xóa Loại" />
+            	    </InlineUIContainer></TextBlock>
+            </Grid>
+    		
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" MinHeight="58" />
+                    <RowDefinition Height="Auto" MinHeight="75" />
+                    <RowDefinition Height="Auto" MinHeight="20" />
+                </Grid.RowDefinitions>
+                <TextBlock FontSize="16" FontWeight="Bold" Foreground="#FF116A98" Height="39" Margin="143,50,138,0" Text="Danh Sách Trạng Thái" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" />
+                <ListView Grid.Row="1" Height="Auto" HorizontalAlignment="Center" HorizontalContentAlignment="Right" x:Name="lvRoomStatus" SelectionMode="Single" VerticalAlignment="Top">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn DisplayMemberBinding="{Binding StatusID}" Width="80" Header="Mã Trạng Thái"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding StatusName}" Width="150" Header="Tên Trạng Thái"/>                        
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <TextBlock VerticalAlignment="Bottom" Margin="0,10,0,0" Grid.Row="2" TextAlignment="Center">
+                    <Button Click="btAddStatus_Click" Height="30" x:Name="btAddStatus" Width="101" Content="Thêm Trạng Thái"/>
+                    <Button Click="btEditStatus_Click" Height="30" x:Name="btEditStatus" Content="Sửa Trạng Thái"/>
+                    <Button Click="btDeleteStatus_Click" Height="30" x:Name="btDeleteStatus" Width="123" Content="Xóa Trạng Thái"/>
+                </TextBlock>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

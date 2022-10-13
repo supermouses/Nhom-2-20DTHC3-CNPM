@@ -1,0 +1,15 @@
+﻿<Window x:Class="DormitoryManagement.Windows.WindowEditStatus"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Thay Đổi Trạng Thái" ResizeMode="NoResize" Height="183" Width="283" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid>
+            <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,57,0,60" Name="lbStatusName" Width="76">Trạng Thái</Label>
+            <TextBox HorizontalAlignment="Right" Margin="0,55,48,67" Name="tbStatus" Width="120" />
+            <TextBlock FontSize="16" FontWeight="Bold" Foreground="#FF116A98" Height="21" Margin="15,10,14,0" Text="Thay Đổi Trạng Thái" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" />
+            <Button Click="btOk_Click" Height="27" HorizontalAlignment="Left" Margin="27,0,0,18" Name="btOk" VerticalAlignment="Bottom" Width="91">Thay Đổi</Button>
+            <Button Click="btBack_Click" Height="27.201" HorizontalAlignment="Right" Margin="0,0,29,17.799" Name="btBack" VerticalAlignment="Bottom" Width="88">Quay Lại</Button>
+            <Label Height="28" HorizontalAlignment="Right" Name="lbStatusID" VerticalAlignment="Top" Width="43" FlowDirection="RightToLeft" FontSize="12" FontWeight="Bold">Label</Label>
+        </Grid>
+    </Grid>
+</Window>
