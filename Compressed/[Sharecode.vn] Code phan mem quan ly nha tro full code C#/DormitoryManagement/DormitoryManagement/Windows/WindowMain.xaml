@@ -1,0 +1,137 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  mc:Ignorable="d" xmlns:Custom="http://schemas.microsoft.com/wpf/2008/toolkit" x:Class="DormitoryManagement.WindowMain"
+    Title="Quản Lý Nhà Trọ" Loaded="MainApplication_Loaded" ResizeMode="CanResize"  Name="MainApplication" WindowState="Maximized">
+    <Grid x:Name="MainGrid">
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition/>
+    	</Grid.ColumnDefinitions>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="0.047*"/>
+    		<RowDefinition Height="0.922*"/>
+    	</Grid.RowDefinitions>
+    	<Menu x:Name="MainMenu">
+			<MenuItem x:Name="SystemMenu" Header="Hệ  Thống" FontSize="12">
+				<MenuItem x:Name="LoginMenu" Header="Đăng Nhập" FontSize="14"/>
+			</MenuItem>
+            <MenuItem x:Name="HelpMenu" Header="Trợ Giúp" FontSize="12">
+                <MenuItem x:Name="AboutMenu" Header="Giới Thiệu" FontSize="14" Click="AboutMenu_Click"/>
+            </MenuItem>
+        </Menu>
+    	<ToolBar Grid.Row="1"/>
+    	<DockPanel x:Name="Test" Grid.Row="2">
+		<Grid>
+    		<Grid.RowDefinitions>
+		        <RowDefinition/>
+    		</Grid.RowDefinitions>
+
+			<Grid Grid.Row="0">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Expander Header="Thanh Chức Năng" ExpandDirection="Right" IsExpanded="True" d:LayoutOverrides="Width, Height" HorizontalAlignment="Left" FontSize="16" Name="FeatureBar" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontFamily="/DormitoryManagement;Component/Fonts/#Trebuchet MS">
+					<StackPanel Width="200">
+					
+						<Custom:Calendar Height="166.4" Name="calendar1" FontSize="18.667" MouseDoubleClick="calendar1_MouseDoubleClick">
+							<Custom:Calendar.Background>
+								<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+									<GradientStop Color="#FFE4EAF0" Offset="0"/>
+									<GradientStop Color="#FFECF0F4" Offset="0.16"/>
+									<GradientStop Color="#FFFCFCFD" Offset="0.16"/>
+									<GradientStop Color="#FF79CEEB" Offset="1"/>
+								</LinearGradientBrush>
+							</Custom:Calendar.Background>
+							<Custom:Calendar.BorderBrush>
+								<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+									<GradientStop Color="#FFA3AEB9" Offset="0"/>
+									<GradientStop Color="#FF8399A9" Offset="0.375"/>
+									<GradientStop Color="#FF718597" Offset="0.375"/>
+									<GradientStop Color="#FF5DA6DD" Offset="1"/>
+								</LinearGradientBrush>
+							</Custom:Calendar.BorderBrush>
+						</Custom:Calendar>
+						<Expander  Height="Auto" Header="Quản  lý Phòng" IsExpanded="True" FontSize="13.333" FontWeight="Bold">
+							<StackPanel Height="Auto">								
+								<ToggleButton Name="btRoomList" Checked="btRoomList_Checked" HorizontalContentAlignment="Left" Unchecked="btRoomList_Unchecked">
+                                        <Grid VerticalAlignment="Center">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+                                            
+                                            <Image Height="32" Width="32" Source="/Icons/house.png" Grid.Column="0"/>
+                                            <Label Grid.Column="1" VerticalAlignment="Center">Danh Sách Phòng Trọ</Label>
+                                        </Grid>
+                                    </ToggleButton>
+                                    <ToggleButton Name="btRoomTypeList" Checked="btRoomTypeList_Checked" HorizontalContentAlignment="Left" Unchecked="btRoomTypeList_Unchecked">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Height="32" Width="32" Source="/Icons/house_go.png" Grid.Column="0"/>
+                                            <Label Grid.Column="1" VerticalAlignment="Center">Loại &amp; Trạng Thái</Label>
+                                        </Grid>
+                                    </ToggleButton>
+                                </StackPanel>
+						</Expander>
+
+                            <Expander  Height="Auto" Header="Quản  lý Khách Trọ" IsExpanded="True" FontSize="13.333" FontWeight="Bold">
+                                <StackPanel Height="Auto">
+                                    <ToggleButton Name="btGuestList" Checked="btGuestList_Checked" HorizontalContentAlignment="Left" Unchecked="btGuestList_Unchecked">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Height="32" Width="32" Source="/Icons/user-group-icon.png" Grid.Column="0"/>
+                                            <Label Grid.Column="1" VerticalContentAlignment="Center">Danh Sách Khách Trọ</Label>
+                                        </Grid>
+                                    </ToggleButton>                                    
+                                </StackPanel>
+                            </Expander>
+
+                            <Expander  Height="Auto" Header="Thanh Toán" IsExpanded="True" FontSize="13.333" FontWeight="Bold">
+                                <StackPanel Height="Auto">
+                                    <ToggleButton Name="btBillList" Checked="btBillList_Checked" HorizontalContentAlignment="Left" Unchecked="btBillList_Unchecked">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Height="32" Width="32" Source="/Icons/Receipt.png" Grid.Column="0"/>
+                                            <Label Grid.Column="1" VerticalContentAlignment="Center">Danh Sách Hóa Đơn</Label>
+                                        </Grid>
+                                    </ToggleButton>
+                                    <ToggleButton Name="btEW" Checked="btEW_Checked" HorizontalContentAlignment="Left" Unchecked="btEW_Unchecked">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Height="32" Width="32" Source="/Icons/thunder-icon.png" Grid.Column="0"/>
+                                            <Label Grid.Column="1" VerticalContentAlignment="Center">Điện &amp; Nước</Label>
+                                        </Grid>
+                                    </ToggleButton>
+                                </StackPanel>
+                            </Expander>
+
+                        </StackPanel>
+		
+				</Expander>
+                   <DockPanel Grid.Column="1" Name="MainFrame"></DockPanel>
+                   
+                    
+                </Grid>
+    
+    </Grid>
+    	</DockPanel>
+    </Grid>
+</Window>

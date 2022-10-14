@@ -1,0 +1,35 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="DormitoryManagement.UC.UCRoomList"
+    Height="Auto" Width="Auto" x:Name="WindowRoomList" Loaded="WindowRoomList_Loaded" mc:Ignorable="d">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Margin="165,19,164,0" VerticalAlignment="Top" Height="39" Text="Danh Sách Phòng Trọ" TextWrapping="Wrap" Foreground="#FF116A98" FontSize="16" FontWeight="Bold" TextAlignment="Center" Grid.Row="0"/>
+		    <ListView SelectionMode="Single" Margin="0,0,0,0" VerticalAlignment="Top" Name="lvRoomList" HorizontalContentAlignment="Right" HorizontalAlignment="Center" Height="Auto" Grid.Row="1">
+        	    <ListView.View>
+        		    <GridView>
+        			    <GridViewColumn Header="Mã Phòng" Width="80" DisplayMemberBinding="{Binding RoomID}"/>					
+                        <GridViewColumn Header="Tên Phòng" Width="100" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Loại Phòng" Width="100" DisplayMemberBinding="{Binding TypeName}"/>
+                        <GridViewColumn Header="Tình Trạng" Width="120" DisplayMemberBinding="{Binding StatusName}"/>
+                        <GridViewColumn Header="Sức chứa" Width="80" DisplayMemberBinding="{Binding Capacity}"/>
+                        <GridViewColumn Header="Ngày đến" Width="120" DisplayMemberBinding="{Binding ComingDate}"/>
+                        <GridViewColumn Header="Số Điện" Width="120" DisplayMemberBinding="{Binding ElectricNo}"/>
+                        <GridViewColumn Header="Số Nước" Width="120" DisplayMemberBinding="{Binding WaterNo}"/>
+        		    </GridView>
+        	    </ListView.View>                
+            </ListView>
+            <TextBlock Margin="94,0,93,23" TextAlignment="Center" Height="46" VerticalAlignment="Bottom" Grid.Row="2">
+                <Button x:Name="btAddRoom" Content="Thêm Phòng" Width="101" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="34" Click="btAddRoom_Click" />
+                <Button x:Name="btEditRoom" Content="Sửa Phòng" Width="101" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="34" Click="btEditRoom_Click" />
+                <Button x:Name="btDeleteRoom" Content="Xóa Phòng" VerticalAlignment="Bottom" Height="34" HorizontalAlignment="Right" Width="101.001" Click="btDeleteRoom_Click" />
+            </TextBlock>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

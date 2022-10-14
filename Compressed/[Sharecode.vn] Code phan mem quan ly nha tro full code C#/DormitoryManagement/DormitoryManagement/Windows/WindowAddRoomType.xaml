@@ -1,0 +1,17 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="DormitoryManagement.WindowAddRoomType"
+	Title="Thêm Loại Phòng"
+	Width="353" Height="248" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+	<Grid x:Name="LayoutRoot">
+		<TextBlock FontSize="16" FontWeight="Bold" Foreground="#FF116A98" Height="21" Margin="50,17,47,0" Text="Thêm Loại Phòng" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" />
+		<Label Height="23" HorizontalAlignment="Left" Margin="18,53,0,0" x:Name="lbTypeName" VerticalAlignment="Top" Width="78" FontSize="12" FontWeight="Bold" Content="Loại Phòng:"/>
+		<TextBox Height="23" Margin="104,53,121,0" x:Name="tbTypeName" VerticalAlignment="Top" />
+		<Label HorizontalAlignment="Left" Margin="18,99,0,92" x:Name="lbCapicity" Width="78" FontSize="12" FontWeight="Bold" Content="Giá:"/>
+		<TextBox Margin="104,96,121,95" x:Name="tbPrice" />
+		<Button x:Name="btOk" VerticalAlignment="Bottom" Content="Thêm" Margin="44,0,0,20.066" Height="36.933" HorizontalAlignment="Left" Width="99" Click="btOk_Click" />
+		<Button x:Name="btBack" HorizontalAlignment="Right" Margin="0,0,37,20.066" VerticalAlignment="Bottom" Width="99" Height="36.933" Content="Quay  Lại" Click="btBack_Click" />
+	</Grid>
+</Window>

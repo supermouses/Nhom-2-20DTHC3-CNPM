@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="DormitoryManagement.UC.UCGuestList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    Height="Auto" Width="Auto" Loaded="UserControl_Loaded">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock FontSize="16" FontWeight="Bold" Foreground="#FF116A98" Margin="234,7,234,4" Text="Danh Sách Khách Trọ" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
+                <ListView Grid.Row="1" Height="Auto" HorizontalContentAlignment="Right" Margin="0,18,0,0" x:Name="lvGuestList" ScrollViewer.VerticalScrollBarVisibility="Auto" SelectionMode="Single" VerticalAlignment="Top" Loaded="lvGuestList_Loaded">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn DisplayMemberBinding="{Binding ID}" Width="80">Mã Khách</GridViewColumn>
+                            <GridViewColumn DisplayMemberBinding="{Binding CustomerName}" Width="200">Tên Khách</GridViewColumn>
+                            <GridViewColumn DisplayMemberBinding="{Binding MobilePhone}" Width="150">Di Động</GridViewColumn>
+                            <GridViewColumn DisplayMemberBinding="{Binding Name}" Width="100">Phòng</GridViewColumn>
+                            <GridViewColumn DisplayMemberBinding="{Binding Note}" Width="200">Ghi Chú</GridViewColumn>
+                        </GridView>
+                    </ListView.View>                
+                </ListView>
+                <TextBlock Grid.Row="2" Margin="94,24,93,23" TextAlignment="Center">
+                    <Button Click="btAddGuest_Click" Height="30" Name="btAddGuest" Width="101">Thêm Khách</Button>
+                    <Button Click="btEditGuest_Click" Height="30" Name="btEditGuest" Width="150">Thay đổi thông tin Khách</Button>
+                    <Button Click="btDeleteGuest_Click" Height="30" Name="btDeleteGuest" Width="100">Xóa Khách</Button>
+                </TextBlock>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

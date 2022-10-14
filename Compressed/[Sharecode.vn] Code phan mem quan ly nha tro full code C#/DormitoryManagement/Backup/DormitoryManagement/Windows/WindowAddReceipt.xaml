@@ -1,0 +1,68 @@
+﻿<Window x:Class="DormitoryManagement.Windows.WindowAddReceipt"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Thêm Hóa Đơn" Height="540" Width="517" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36*" />
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="49*" />
+            <RowDefinition Height="77.001*" />
+            <RowDefinition Height="75.002*" />
+            <RowDefinition Height="157.004*" />
+            <RowDefinition Height="50.992*" />
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="16" FontWeight="Bold" Foreground="#FF116A98" Margin="97,14,97,2" Text="Thêm Hóa Đơn" TextAlignment="Center" TextWrapping="Wrap" />
+        <ComboBox Margin="92,23.022,0,9.669" Name="cbRoom" TextSearch.TextPath="Name" HorizontalAlignment="Left" Width="127" Grid.Row="1" SelectionChanged="cbRoom_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding RoomID}" Width="30" />
+                        <TextBlock Text="{Binding Name}" Width="80" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,18.203,0,8.85" Name="lbRoom" VerticalContentAlignment="Center" Width="55" Grid.Row="1">Phòng</Label>
+        <Label FontSize="12" FontWeight="Bold" Margin="247,23.022,177,13.669" Name="lbRoomFee" VerticalContentAlignment="Center" Grid.Row="1">Tiền Phòng</Label>
+        <TextBox Margin="0,22.203,40,10.849" Name="tbRoomFee" IsReadOnly="True" HorizontalAlignment="Right" Width="127" Grid.Row="1" IsEnabled="True" />
+        <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,12,0,0" Name="LbOldElectricNo" VerticalContentAlignment="Center" Width="76" Grid.Row="3" Height="22.001" VerticalAlignment="Top">Số Điện Cũ</Label>
+        <TextBox HorizontalAlignment="Left" IsReadOnly="True" Margin="92,12,0,0" Name="tbOldElectricNo" Width="127" Grid.Row="3" Height="24.001" VerticalAlignment="Top" TextChanged="tbOldElectricNo_TextChanged" />
+        <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,0,0,11.001" Name="label1" VerticalContentAlignment="Center" Width="76" Grid.Row="3" Height="23.001" VerticalAlignment="Bottom">Số Điện Mới</Label>
+        <TextBox HorizontalAlignment="Left" IsReadOnly="False" Margin="92,0,0,9.001" Name="tbNewElectricNo" Width="127" Grid.Row="3" TextChanged="tbNewElectricNo_TextChanged" Height="24.001" VerticalAlignment="Bottom" />
+        <Label FontSize="12" FontWeight="Bold" Margin="243,25,0,27.001" Name="lbElectricFee" VerticalContentAlignment="Center" Grid.Row="3">Electric No</Label>
+        <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label2" VerticalContentAlignment="Center" Width="76" Grid.Row="4" Height="22.001" VerticalAlignment="Top">Số Nước Cũ</Label>
+        <TextBox HorizontalAlignment="Left" IsReadOnly="True" Margin="92,10,0,0" Name="tbOldWaterNo" Width="127" Grid.Row="4" Height="24.001" VerticalAlignment="Top" TextChanged="tbOldWaterNo_TextChanged" />
+        <Label FontSize="12" FontWeight="Bold" Grid.Row="4" HorizontalAlignment="Left" Margin="10,0,0,13.001" Name="label3" VerticalContentAlignment="Center" Width="76" Height="22.001" VerticalAlignment="Bottom">Số Nước Mới</Label>
+        <TextBox Grid.Row="4" HorizontalAlignment="Left" IsReadOnly="False" Margin="92,0,0,11.001" Name="tbNewWaterNo" Width="127" TextChanged="tbNewWaterNo_TextChanged" Height="24.001" VerticalAlignment="Bottom" />
+        <Label FontSize="12" FontWeight="Bold" Margin="243,24,0,27.001" Name="lbWaterFee" VerticalContentAlignment="Center" Grid.Row="4">Water No</Label>
+        <Label FontSize="12" FontWeight="Bold" Margin="246,11.002,173,0" Name="lbOtherFee" VerticalContentAlignment="Center" Grid.Row="5" Height="21.713" VerticalAlignment="Top">Chi Phí Khác</Label>
+        <TextBox HorizontalAlignment="Right" IsReadOnly="False" Margin="0,11.002,40,0" Name="tbOtherFee" Width="127" Grid.Row="5" Height="24" VerticalAlignment="Top" TextChanged="tbOtherFee_TextChanged">0</TextBox>
+        <Label FontSize="12" FontWeight="Bold" Margin="246,44.002,173,0" Name="label4" VerticalContentAlignment="Center" Grid.Row="5" Height="24.003" VerticalAlignment="Top">Tổng Cộng</Label>
+        <TextBox HorizontalAlignment="Right" IsReadOnly="True" Margin="0,44.002,40,0" Name="tbTotal" Width="127" Grid.Row="5" Height="24.003" VerticalAlignment="Top" />
+        <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="15,72,0,63" Name="lbNote" VerticalContentAlignment="Center" Width="76" Grid.Row="5">Ghi Chú</Label>
+        <TextBox HorizontalAlignment="Left" IsReadOnly="False" Margin="92,72,0,0" Name="tbNote" Width="132" Grid.Row="5" AcceptsReturn="True" Height="57.003" VerticalAlignment="Top" />
+        <Label FontSize="12" FontWeight="Bold" Margin="246,0,173,52" Name="label5" VerticalContentAlignment="Center" Grid.Row="5" Height="22.003" VerticalAlignment="Bottom">Thanh Toán</Label>
+        <TextBox HorizontalAlignment="Right" IsReadOnly="False" Margin="0,0,40,50" Name="tbPay" Width="127" Grid.Row="5" Height="24.003" VerticalAlignment="Bottom" TextChanged="tbPay_TextChanged" />
+        <Label FontSize="12" FontWeight="Bold" Margin="246,0,173,12" Name="label6" VerticalContentAlignment="Center" Grid.Row="5" Height="23.965" VerticalAlignment="Bottom">Nợ</Label>
+        <TextBox IsReadOnly="True" Margin="0,0,40,12" Name="tbDebt" Grid.Row="5" HorizontalAlignment="Right" Width="127" Height="23.965" VerticalAlignment="Bottom" />
+        <Button HorizontalAlignment="Left" Margin="112,9.022,0,8" Name="btOk" Width="113" Grid.Row="6" Click="btOk_Click" IsDefault="True">Thêm Hóa Đơn</Button>
+        <Button Margin="0,9.022,113,8" Name="btBack" Grid.Row="6" HorizontalAlignment="Right" Width="101" Click="btBack_Click" IsCancel="True">Trở về</Button>
+        <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Right" Margin="0,0,0,15.69" Name="lbDate" VerticalContentAlignment="Center" Width="91" FlowDirection="RightToLeft">Date</Label>
+        <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,10,0,9" Name="lbMonth" VerticalContentAlignment="Center" Width="55" Grid.Row="2">Tháng</Label>
+        <Label FontSize="12" FontWeight="Bold" Margin="247,14,193,5" Name="label7" VerticalContentAlignment="Center" Grid.Row="2">Năm</Label>
+        <Label FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,19,0,0" Name="lbStatus" VerticalContentAlignment="Center" Width="76" Height="21.713" Grid.Row="5" VerticalAlignment="Top">Trạng Thái</Label>
+        <ComboBox HorizontalAlignment="Left" TextSearch.TextPath="StatusName" Margin="92,18,0,0" Name="cbStatus" Width="127" Grid.Row="5" Height="23.004" VerticalAlignment="Top">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Path=StatusID}" Width="30" />
+                        <TextBlock Text="{Binding Path=StatusName}" Width="100" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" IsReadOnly="True" Margin="92,14.999,0,10" Name="tbMonth" Width="58" Grid.Row="2" />
+        <TextBox HorizontalAlignment="Right" IsReadOnly="True" Margin="0,15.999,109,9" Name="tbYear" Width="58" Grid.Row="2" />
+    </Grid>
+</Window>

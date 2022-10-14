@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="Dormitory" Class="DMDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=YOYO;Initial Catalog=Dormitory;Integrated Security=True" SettingsObjectName="DormitoryManagement.Properties.Settings" SettingsPropertyName="DormitoryConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblElectricity" Member="tblElectricities">
+    <Type Name="tblElectricity">
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Month" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OldNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblRoom_tblElectricity" Member="tblRoom" ThisKey="RoomID" OtherKey="RoomID" Type="tblRoom" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblWater" Member="tblWaters">
+    <Type Name="tblWater">
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Month" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OldNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblRoom_tblWater" Member="tblRoom" ThisKey="RoomID" OtherKey="RoomID" Type="tblRoom" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblFee" Member="tblFees">
+    <Type Name="tblFee">
+      <Column Name="FeeName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FeeCost" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGuest" Member="tblGuests">
+    <Type Name="tblGuest">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Sex" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MobilePhone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="tblRoom_tblGuest" Member="tblRoom" ThisKey="RoomID" OtherKey="RoomID" Type="tblRoom" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPrivilege" Member="tblPrivileges">
+    <Type Name="tblPrivilege">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tblPrivilege_tblUser" Member="tblUsers" ThisKey="ID" OtherKey="UserPrivilege" Type="tblUser" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblReceipt" Member="tblReceipts">
+    <Type Name="tblReceipt">
+      <Column Name="ReceiptID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoomFee" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="WaterFee" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ElectricFee" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="OtherFee" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Debt" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblReceiptStatus_tblReceipt" Member="tblReceiptStatus" ThisKey="StatusID" OtherKey="StatusID" Type="tblReceiptStatus" IsForeignKey="true" />
+      <Association Name="tblRoom_tblReceipt" Member="tblRoom" ThisKey="RoomID" OtherKey="RoomID" Type="tblRoom" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblReceiptStatus" Member="tblReceiptStatus">
+    <Type Name="tblReceiptStatus">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tblReceiptStatus_tblReceipt" Member="tblReceipts" ThisKey="StatusID" OtherKey="StatusID" Type="tblReceipt" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblRooms" Member="tblRooms">
+    <Type Name="tblRoom">
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComingDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ElectricNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WaterNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblRoom_tblElectricity" Member="tblElectricities" ThisKey="RoomID" OtherKey="RoomID" Type="tblElectricity" />
+      <Association Name="tblRoom_tblWater" Member="tblWaters" ThisKey="RoomID" OtherKey="RoomID" Type="tblWater" />
+      <Association Name="tblRoom_tblGuest" Member="tblGuests" ThisKey="RoomID" OtherKey="RoomID" Type="tblGuest" />
+      <Association Name="tblRoom_tblReceipt" Member="tblReceipts" ThisKey="RoomID" OtherKey="RoomID" Type="tblReceipt" />
+      <Association Name="tblRoomType_tblRoom" Member="tblRoomType" ThisKey="TypeID" OtherKey="TypeID" Type="tblRoomType" IsForeignKey="true" />
+      <Association Name="tblStatus_tblRoom" Member="tblStatus" ThisKey="Status" OtherKey="StatusID" Type="tblStatus" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblRoomType" Member="tblRoomTypes">
+    <Type Name="tblRoomType">
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Association Name="tblRoomType_tblRoom" Member="tblRooms" ThisKey="TypeID" OtherKey="TypeID" Type="tblRoom" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblStatus" Member="tblStatus">
+    <Type Name="tblStatus">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tblStatus_tblRoom" Member="tblRooms" ThisKey="StatusID" OtherKey="Status" Type="tblRoom" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblUser" Member="tblUsers">
+    <Type Name="tblUser">
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="UserPrivilege" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblPrivilege_tblUser" Member="tblPrivilege" ThisKey="UserPrivilege" OtherKey="ID" Type="tblPrivilege" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.spuAddGuest" Method="spuAddGuest">
+    <Parameter Name="CustomerName" Parameter="customerName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Birthday" Parameter="birthday" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Sex" Parameter="sex" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Telephone" Parameter="telephone" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="MobilePhone" Parameter="mobilePhone" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Photo" Parameter="photo" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Note" Parameter="note" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuAddReceipt" Method="spuAddReceipt">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RoomFee" Parameter="roomFee" Type="System.Decimal" DbType="Decimal" />
+    <Parameter Name="WaterFee" Parameter="waterFee" Type="System.Decimal" DbType="Decimal" />
+    <Parameter Name="ElectricFee" Parameter="electricFee" Type="System.Decimal" DbType="Decimal" />
+    <Parameter Name="OtherFee" Parameter="otherFee" Type="System.Decimal" DbType="Decimal" />
+    <Parameter Name="Note" Parameter="note" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Debt" Parameter="debt" Type="System.Decimal" DbType="Decimal" />
+    <Parameter Name="Date" Parameter="date" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="StatusID" Parameter="statusID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuAddRoom" Method="spuAddRoom">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="TypeID" Parameter="typeID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Capacity" Parameter="capacity" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ComingDate" Parameter="comingDate" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="ElectricNo" Parameter="electricNo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="WaterNo" Parameter="waterNo" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuAddRoomType" Method="spuAddRoomType">
+    <Parameter Name="TypeName" Parameter="typeName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Price" Parameter="price" Type="System.Decimal" DbType="Decimal" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuAddStatus" Method="spuAddStatus">
+    <Parameter Name="StatusName" Parameter="statusName" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuDeleteGuest" Method="spuDeleteGuest">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuDeleteReceipt" Method="spuDeleteReceipt">
+    <Parameter Name="ReceiptID" Parameter="receiptID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuDeleteRoom" Method="spuDeleteRoom">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Info" Parameter="info" Type="System.String" DbType="NVarChar(100)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuDeleteRoomTypeByID" Method="spuDeleteRoomTypeByID">
+    <Parameter Name="TypeID" Parameter="typeID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Error" Parameter="error" Type="System.String" DbType="NVarChar(100)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuDeleteStatus" Method="spuDeleteStatus">
+    <Parameter Name="StatusID" Parameter="statusID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Info" Parameter="info" Type="System.String" DbType="NVarChar(100)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuGetElectricFee" Method="spuGetElectricFee">
+    <ElementType Name="spuGetElectricFeeResult">
+      <Column Name="FeeName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FeeCost" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetElectricNo" Method="spuGetElectricNo">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.String" DbType="NVarChar(10)" />
+    <ElementType Name="spuGetElectricNoResult">
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Month" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="OldNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetGuestByID" Method="spuGetGuestByID">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spuGetGuestByIDResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Sex" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MobilePhone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="RoomID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComingDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ElectricNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WaterNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetGuestInRoom" Method="spuGetGuestInRoom">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Count" Parameter="count" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuGetGuestList" Method="spuGetGuestList">
+    <ElementType Name="spuGetGuestListResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Sex" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MobilePhone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="RoomID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComingDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ElectricNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WaterNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetLatestMonthReceipt" Method="spuGetLatestMonthReceipt">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Date" Parameter="date" Type="System.String" DbType="NVarChar(20)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuGetOldElectricNo" Method="spuGetOldElectricNo">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="No" Parameter="no" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuGetOldWaterNo" Method="spuGetOldWaterNo">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="No" Parameter="no" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuGetReceiptByID" Method="spuGetReceiptByID">
+    <Parameter Name="ReceiptID" Parameter="receiptID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spuGetReceiptByIDResult">
+      <Column Name="ReceiptID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoomFee" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+      <Column Name="WaterFee" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ElectricFee" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+      <Column Name="OtherFee" Type="System.Decimal" DbType="Decimal(0,0)" CanBeNull="true" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Debt" Type="System.Decimal" DbType="Decimal(0,0)" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RoomID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComingDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ElectricNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WaterNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetReceiptStatus" Method="spuGetReceiptStatus">
+    <ElementType Name="spuGetReceiptStatusResult">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetRoomByID" Method="spuGetRoomByID">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spuGetRoomByIDResult">
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComingDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ElectricNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WaterNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetRooms" Method="spuGetRooms">
+    <ElementType Name="spuGetRoomsResult">
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComingDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ElectricNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WaterNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetRoomStatus" Method="spuGetRoomStatus">
+    <ElementType Name="spuGetRoomStatusResult">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetRoomStatusByID" Method="spuGetRoomStatusByID">
+    <Parameter Name="StatusID" Parameter="statusID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spuGetRoomStatusByIDResult">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetRoomType" Method="spuGetRoomType">
+    <ElementType Name="spuGetRoomTypeResult">
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetRoomTypeByID" Method="spuGetRoomTypeByID">
+    <Parameter Name="TypeID" Parameter="typeID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spuGetRoomTypeByIDResult">
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetStatusByID" Method="spuGetStatusByID">
+    <Parameter Name="StatusID" Parameter="statusID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spuGetStatusByIDResult">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetStatusIDByStatusName" Method="spuGetStatusIDByStatusName">
+    <Parameter Name="StatusName" Parameter="statusName" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="spuGetStatusIDByStatusNameResult">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetUsingRoom" Method="spuGetUsingRoom">
+    <ElementType Name="spuGetUsingRoomResult">
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComingDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ElectricNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WaterNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetWaterFee" Method="spuGetWaterFee">
+    <ElementType Name="spuGetWaterFeeResult">
+      <Column Name="FeeName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FeeCost" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuGetWaterNo" Method="spuGetWaterNo">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.String" DbType="NVarChar(10)" />
+    <ElementType Name="spuGetWaterNoResult">
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Month" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="OldNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spuUpdateElectricityFee" Method="spuUpdateElectricityFee">
+    <Parameter Name="FeeCost" Parameter="feeCost" Type="System.Decimal" DbType="Decimal" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuUpdateGuest" Method="spuUpdateGuest">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CustomerName" Parameter="customerName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Birthday" Parameter="birthday" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Sex" Parameter="sex" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Telephone" Parameter="telephone" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="MobilePhone" Parameter="mobilePhone" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Photo" Parameter="photo" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Note" Parameter="note" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuUpdateReceipt" Method="spuUpdateReceipt">
+    <Parameter Name="ReceiptID" Parameter="receiptID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RoomFee" Parameter="roomFee" Type="System.Decimal" DbType="Decimal" />
+    <Parameter Name="WaterFee" Parameter="waterFee" Type="System.Decimal" DbType="Decimal" />
+    <Parameter Name="ElectricFee" Parameter="electricFee" Type="System.Decimal" DbType="Decimal" />
+    <Parameter Name="OtherFee" Parameter="otherFee" Type="System.Decimal" DbType="Decimal" />
+    <Parameter Name="Note" Parameter="note" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Debt" Parameter="debt" Type="System.Decimal" DbType="Decimal" />
+    <Parameter Name="Date" Parameter="date" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="StatusID" Parameter="statusID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuUpdateRoom" Method="spuUpdateRoom">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="TypeID" Parameter="typeID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Capacity" Parameter="capacity" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ComingDate" Parameter="comingDate" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="ElectricNo" Parameter="electricNo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="WaterNo" Parameter="waterNo" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuUpdateRoomComingDate" Method="spuUpdateRoomComingDate">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ComingDate" Parameter="comingDate" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuUpdateRoomStatus" Method="spuUpdateRoomStatus">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuUpdateRoomType" Method="spuUpdateRoomType">
+    <Parameter Name="TypeID" Parameter="typeID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TypeName" Parameter="typeName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Price" Parameter="price" Type="System.Decimal" DbType="Decimal" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuUpdateStatus" Method="spuUpdateStatus">
+    <Parameter Name="StatusID" Parameter="statusID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StatusName" Parameter="statusName" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuUpdateWaterFee" Method="spuUpdateWaterFee">
+    <Parameter Name="FeeCost" Parameter="feeCost" Type="System.Decimal" DbType="Decimal" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuUpdateWaterNo" Method="spuUpdateWaterNo">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="NewNumber" Parameter="newNumber" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuUpdateElectricNo" Method="spuUpdateElectricNo">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="NewNumber" Parameter="newNumber" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuAddElectricNo" Method="spuAddElectricNo">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="OldNumber" Parameter="oldNumber" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NewNumber" Parameter="newNumber" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuAddWaterNo" Method="spuAddWaterNo">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="OldNumber" Parameter="oldNumber" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NewNumber" Parameter="newNumber" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuGetNoOfPeople" Method="spuGetNoOfPeople">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Count" Parameter="count" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuDeleteWater" Method="spuDeleteWater">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuDeleteElectricity" Method="spuDeleteElectricity">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spuGetReceipts" Method="spuGetReceipts">
+    <ElementType Name="spuGetReceiptsResult">
+      <Column Name="ReceiptID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoomFee" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+      <Column Name="WaterFee" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ElectricFee" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+      <Column Name="OtherFee" Type="System.Decimal" DbType="Decimal(0,0)" CanBeNull="true" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Debt" Type="System.Decimal" DbType="Decimal(0,0)" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoomID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComingDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ElectricNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WaterNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(0,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

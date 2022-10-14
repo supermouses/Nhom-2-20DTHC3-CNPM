@@ -1,0 +1,11 @@
+bin\Debug\THCongNghePhanMem.exe
+bin\Debug\THCongNghePhanMem.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\THCongNghePhanMem.Form1.resources
+obj\Debug\THCongNghePhanMem.Properties.Resources.resources
+obj\Debug\THCongNghePhanMem.csproj.GenerateResource.Cache
+obj\Debug\THCongNghePhanMem.exe
+obj\Debug\THCongNghePhanMem.pdb
+obj\Debug\THCongNghePhanMem.NhaTro.resources
+obj\Debug\THCongNghePhanMem.OTro.resources
+obj\Debug\THCongNghePhanMem.SinhVien.resources
