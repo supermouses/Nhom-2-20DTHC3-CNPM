@@ -99,7 +99,7 @@ private void btnSuaCancelKH_Click(object sender, EventArgs e)
             QlyKH qlyKH = new QlyKH();
             Hide();
             qlyKH.Show();
-            this.Close(); ;
+            this.Close();
             
         }
     }

@@ -44,7 +44,7 @@
             this.btnDangXuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(123, 54);
-            this.btnDangXuat.TabIndex = 9;
+            this.btnDangXuat.TabIndex = 8;
             this.btnDangXuat.Text = "Đăng Xuất";
             this.btnDangXuat.UseVisualStyleBackColor = true;
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
@@ -66,7 +66,7 @@
             this.btnQlyPBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQlyPBT.Name = "btnQlyPBT";
             this.btnQlyPBT.Size = new System.Drawing.Size(499, 63);
-            this.btnQlyPBT.TabIndex = 3;
+            this.btnQlyPBT.TabIndex = 5;
             this.btnQlyPBT.Text = "Quản Lý Phiếu Bồi Thường ";
             this.btnQlyPBT.UseVisualStyleBackColor = true;
             // 
@@ -89,7 +89,7 @@
             this.btnQlyHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQlyHD.Name = "btnQlyHD";
             this.btnQlyHD.Size = new System.Drawing.Size(499, 62);
-            this.btnQlyHD.TabIndex = 5;
+            this.btnQlyHD.TabIndex = 7;
             this.btnQlyHD.Text = "Quản Lý Hóa Đơn";
             this.btnQlyHD.UseVisualStyleBackColor = true;
             // 
@@ -112,7 +112,7 @@
             this.btnQlyNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQlyNV.Name = "btnQlyNV";
             this.btnQlyNV.Size = new System.Drawing.Size(499, 66);
-            this.btnQlyNV.TabIndex = 7;
+            this.btnQlyNV.TabIndex = 3;
             this.btnQlyNV.Text = "Quản Lý Nhân Viên";
             this.btnQlyNV.UseVisualStyleBackColor = true;
             this.btnQlyNV.Click += new System.EventHandler(this.btnQlyNV_Click);
