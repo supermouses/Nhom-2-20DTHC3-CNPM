@@ -75,3 +75,4 @@ C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroB
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.CopyComplete
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.exe
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.pdb
+C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.PhieuPhat.resources

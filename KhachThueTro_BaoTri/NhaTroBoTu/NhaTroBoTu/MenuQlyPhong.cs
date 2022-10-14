@@ -32,5 +32,10 @@ namespace WinFormsApp1
             dn.ShowDialog();
             this.Close();
         }
+
+        private void MenuQlyPhong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

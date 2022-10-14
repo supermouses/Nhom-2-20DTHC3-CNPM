@@ -74,7 +74,6 @@ namespace NhaTroBoTu
                 //try
                 //{
                     cmd = conn.CreateCommand();
-                    string gt;
                     cmd.CommandText = "insert into PhieuBaoTri values('" + txtMaPBT.Text + "' ,N'" + txtNVBT.Text + "', N'" + txtPhong.Text + "' ,'" + txtTN.Text + "',N'" + dtNgay.Value.ToString() + "','" + dtNgaylap.Value.ToString() + "')";
                     cmd.ExecuteNonQuery();
                     loadata();
@@ -99,7 +98,6 @@ namespace NhaTroBoTu
         private void btnSuaBT_Click(object sender, EventArgs e)
         {
             cmd = conn.CreateCommand();
-            string gt;
             cmd.CommandText = "update PhieuBaoTri set MaNV = N'" + txtNVBT.Text + "' ,MaPT=N'" + txtPhong.Text + "',MaTN=N'" + txtTN.Text + "',NgayBT=N'" + dtNgay.Value.ToString() + "',NgayLapPBT=N'" + dtNgaylap.Value.ToString() + "'where MaPBT = N'" + txtMaPBT.Text + "'";
             cmd.ExecuteNonQuery();
             loadata();

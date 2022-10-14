@@ -119,8 +119,7 @@
             // 
             // MENU
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(888, 562);
             this.Controls.Add(this.btnDangXuat);
             this.Controls.Add(this.label1);
@@ -132,6 +131,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MENU";
             this.Text = "MENU";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MENU_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
