@@ -10,7 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormsApp1
 {
@@ -45,7 +44,37 @@ namespace WinFormsApp1
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            Console.WriteLine(string.Format(System.Globalization.CultureInfo.CreateSpecificCulture("vi-vn"), "{0:ddd, dd MMM yyyy tt}", dtKH.Value));
+            txtMaKH.Enabled = false;
+            txtTenKH.Enabled = false;
+            rdNamKH.Enabled = false;
+            rdNuKH.Enabled = false;
+            rdKhacKH.Enabled = false;
+            txtSDTKH.Enabled = false;
+            txtDiaChiKH.Enabled = false;
+            txtCCCD.Enabled = false;
+            dtKH.Enabled = false;
+            int i;
+            i = dataGridView1.CurrentRow.Index;
+            txtMaKH.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
+            txtTenKH.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
+            if (dataGridView1.Rows[i].Cells[2].Value.ToString() == "Nam")
+            {
+                rdNamKH.Checked = true;
+            }
+            else if (dataGridView1.Rows[i].Cells[2].Value.ToString() == "Nữ")
+            {
+                rdNuKH.Checked = true;
 
+            }
+            else
+            {
+                rdKhacKH.Checked = false;
+            }
+            txtSDTKH.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
+            txtDiaChiKH.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
+            txtCCCD.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
+            dtKH.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
         }
 
         private void btnThemKH_Click(object sender, EventArgs e)
@@ -72,9 +101,9 @@ namespace WinFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {
-            MENU mn = new MENU();
+            MenuQlyPhong mnpl = new MenuQlyPhong();
             Hide();
-            mn.Show();
+            mnpl.Show();
             this.Close();
         }
 
@@ -112,6 +141,53 @@ namespace WinFormsApp1
             Hide();
             pp.Show();
             this.Close();
+        }
+
+        private void QlyKH_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PhieuPhat pp = new PhieuPhat();
+            Hide();
+            pp.Show();
+            this.Close();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtMaKH.Enabled = false;
+            txtTenKH.Enabled = false;
+            rdNamKH.Enabled = false;
+            rdNuKH.Enabled = false;
+            rdKhacKH.Enabled = false;
+            txtSDTKH.Enabled = false;
+            txtDiaChiKH.Enabled = false;
+            txtCCCD.Enabled = false;
+            dtKH.Enabled = false;
+            int i;
+            i = dataGridView1.CurrentRow.Index;
+            txtMaKH.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
+            txtTenKH.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
+            if (dataGridView1.Rows[i].Cells[2].Value.ToString() == "Nam")
+            {
+                rdNamKH.Checked = true;
+            }
+            else if (dataGridView1.Rows[i].Cells[2].Value.ToString() == "Nữ")
+            {
+                rdNuKH.Checked = true;
+
+            }
+            else
+            {
+                rdKhacKH.Checked = false;
+            }
+            txtSDTKH.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
+            txtDiaChiKH.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
+            txtCCCD.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
+            dtKH.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
         }
     }
 }

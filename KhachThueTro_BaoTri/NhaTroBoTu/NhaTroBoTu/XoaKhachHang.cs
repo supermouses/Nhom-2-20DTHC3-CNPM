@@ -26,7 +26,7 @@ namespace NhaTroBoTu
         void loadata()
         {
             cmd = conn.CreateCommand();
-            cmd.CommandText = "select MaKH,TenKH,GioiTinhKH,DiaChiKH,SDTKH,CCCD,NgaySinhKH from KhachThueTro";
+            cmd.CommandText = "select *from KhachThueTro";
             adapter.SelectCommand = cmd;
             dt.Clear();
             adapter.Fill(dt);
@@ -59,11 +59,14 @@ namespace NhaTroBoTu
 
         private void btnXoaKH_Click(object sender, EventArgs e)
         {
-            cmd = conn.CreateCommand();
-            cmd.CommandText = "delete from KhachThueTro where MaKH= '" + txtmaXoaKhach.Text + "'";
-            cmd.ExecuteNonQuery();
-            loadata();
-            MessageBox.Show("Xóa dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);
+            if (MessageBox.Show("Bạn chắc chưa??", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "delete from KhachThueTro where MaKH= '" + txtmaXoaKhach.Text + "'";
+                cmd.ExecuteNonQuery();
+                loadata();
+                MessageBox.Show("Xóa dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);
+            }
         }
 
         private void btnXoaCancelKH_Click(object sender, EventArgs e)
@@ -75,14 +78,44 @@ namespace NhaTroBoTu
         }
 
         private void XoaKhachHang_Load(object sender, EventArgs e)
-        {;
-            DataTable table1 = new DataTable();
-            conn = new SqlConnection(str);
-            cmd = conn.CreateCommand();
-            cmd.CommandText = "select * from MaKH";
-            adapter.SelectCommand = cmd;
-            conn.Open();
-            loadata();
+        {
+                DataTable table1 = new DataTable();
+                conn = new SqlConnection(str);
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "select * from MaKH";
+                adapter.SelectCommand = cmd;
+                conn.Open();
+                loadata();
+        }
+
+        private void XoaKhachHang_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit();
+        }
+
+        private void dataXoaKhach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = dataXoaKhach.CurrentRow.Index;
+            txtmaXoaKhach.Text = dataXoaKhach.Rows[i].Cells[0].Value.ToString();
+            txtTenXoaKH.Text = dataXoaKhach.Rows[i].Cells[1].Value.ToString();
+            if (dataXoaKhach.Rows[i].Cells[2].Value.ToString() == "Nam")
+            {
+                rdXoaNamKH.Checked = true;
+            }
+            if (dataXoaKhach.Rows[i].Cells[2].Value.ToString() == "Nữ")
+            {
+                rdXoaNUKH.Checked = true;
+
+            }
+            else
+            {
+                rdXoaKhacKH.Checked = false;
+            }
+            txtXoaSDTKH.Text = dataXoaKhach.Rows[i].Cells[3].Value.ToString();
+            txtXoaDiaChiKH.Text = dataXoaKhach.Rows[i].Cells[4].Value.ToString();
+            txtXoaCCCDKH.Text = dataXoaKhach.Rows[i].Cells[5].Value.ToString();
+            dtXoaKH.Text = dataXoaKhach.Rows[i].Cells[6].Value.ToString();
         }
     }
 }

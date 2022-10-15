@@ -25,7 +25,7 @@ namespace NhaTroBoTu
         void loadata()
         {
             cmd = conn.CreateCommand();
-            cmd.CommandText = "select MaPBT,MaNV,MaPT,MaTN,NgayBT,NgayLapPBT from PhieuBaoTri";
+            cmd.CommandText = "select *from PhieuBaoTri";
             adapter.SelectCommand = cmd;
             dt.Clear();
             adapter.Fill(dt);
@@ -37,8 +37,14 @@ namespace NhaTroBoTu
             DataTable table1 = new DataTable();
             conn = new SqlConnection(str);
             cmd = conn.CreateCommand();
-            cmd.CommandText = "select MaPBT,MaNV,MaPT,MaTN,NgayBT,NgayLapPBT from PhieuBaoTri";
+            cmd.CommandText = "select *from PhieuBaoTri";
             adapter.SelectCommand = cmd;
+            adapter.Fill(table1);
+            txtNVBT.DataSource = table1;
+            txtNVBT.DisplayMember = "MaNV";
+            txtNVBT.ValueMember = "MaNV";
+            txtNVBT.SelectedItem = true;
+            txtNVBT.Text = "";
             conn.Open();
             loadata();
         }
@@ -48,11 +54,9 @@ namespace NhaTroBoTu
             int i;
             i = dataBaoTri.CurrentRow.Index;
             txtMaPBT.Text = dataBaoTri.Rows[i].Cells[0].Value.ToString();
-            txtNVBT.Text = dataBaoTri.Rows[i].Cells[1].Value.ToString();
-            txtPhong.Text = dataBaoTri.Rows[i].Cells[2].Value.ToString();
-            txtTN.Text = dataBaoTri.Rows[i].Cells[3].Value.ToString();
-            dtNgay.Text = dataBaoTri.Rows[i].Cells[4].Value.ToString();
-            dtNgaylap.Text = dataBaoTri.Rows[i].Cells[5].Value.ToString();
+            string c = dataBaoTri.CurrentRow.Cells[1].Value.ToString();
+            txtNVBT.Text = c;
+            txtMACTBT.Text = dataBaoTri.Rows[i].Cells[2].Value.ToString();
         }
 
         private void btnCancelBT_Click(object sender, EventArgs e)
@@ -65,7 +69,7 @@ namespace NhaTroBoTu
 
         private void btnThemBT_Click(object sender, EventArgs e)
         {
-            if (txtMaPBT.Text == "" || txtNVBT.Text == "" || txtPhong.Text == "" || txtTN.Text == "")
+            if (txtMaPBT.Text == "" || txtNVBT.Text == "" || txtMACTBT.Text ==  "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -74,7 +78,7 @@ namespace NhaTroBoTu
                 //try
                 //{
                     cmd = conn.CreateCommand();
-                    cmd.CommandText = "insert into PhieuBaoTri values('" + txtMaPBT.Text + "' ,N'" + txtNVBT.Text + "', N'" + txtPhong.Text + "' ,'" + txtTN.Text + "',N'" + dtNgay.Value.ToString() + "','" + dtNgaylap.Value.ToString() + "')";
+                    cmd.CommandText = "insert into PhieuBaoTri values('" + txtMaPBT.Text + "',N'" + txtNVBT.SelectedValue.ToString() + "','" + txtMACTBT.Text + "')";
                     cmd.ExecuteNonQuery();
                     loadata();
                     MessageBox.Show("Thêm dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);
@@ -88,20 +92,52 @@ namespace NhaTroBoTu
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            cmd = conn.CreateCommand();
-            cmd.CommandText = "delete from PhieuBaoTri where MaPBT= '" + txtMaPBT.Text + "'";
-            cmd.ExecuteNonQuery();
-            loadata();
-            MessageBox.Show("Xóa dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);
+            if (MessageBox.Show("Bạn chắc chưa??", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "delete from PhieuBaoTri where MaPBT= '" + txtMaPBT.Text + "'";
+                cmd.ExecuteNonQuery();
+                loadata();
+                MessageBox.Show("Xóa dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);
+            }
         }
 
         private void btnSuaBT_Click(object sender, EventArgs e)
         {
             cmd = conn.CreateCommand();
-            cmd.CommandText = "update PhieuBaoTri set MaNV = N'" + txtNVBT.Text + "' ,MaPT=N'" + txtPhong.Text + "',MaTN=N'" + txtTN.Text + "',NgayBT=N'" + dtNgay.Value.ToString() + "',NgayLapPBT=N'" + dtNgaylap.Value.ToString() + "'where MaPBT = N'" + txtMaPBT.Text + "'";
+            cmd.CommandText = "update PhieuBaoTri set MaNV = N'" + txtNVBT.SelectedValue.ToString() + "' ,MaCTPBT=N'" + txtMACTBT.Text + "'where MaPBT = N'" + txtMaPBT.Text + "'";
             cmd.ExecuteNonQuery();
             loadata();
             MessageBox.Show("Sửa dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);
+        }
+
+        private void QlyBT_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit();
+        }
+
+        private void dataBaoTri_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //txtMaPBT.Enabled = false;
+            int i;
+            i = dataBaoTri.CurrentRow.Index;
+            txtMaPBT.Text = dataBaoTri.Rows[i].Cells[0].Value.ToString();
+            string ChucVuNV = dataBaoTri.CurrentRow.Cells[1].Value.ToString();
+            txtNVBT.Text = ChucVuNV;
+            txtMACTBT.Text = dataBaoTri.Rows[i].Cells[2].Value.ToString();
+        }
+
+        private void dataBaoTri_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string s;
+            if (MessageBox.Show("Bạn có muốn hiện thị thông tin chi tiết ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                s = dataBaoTri.CurrentRow.Cells["MaCTPBT"].Value.ToString();
+                ChiTietBaoTri ctiet = new ChiTietBaoTri();
+                ctiet.txtMACTBT = s;
+                ctiet.StartPosition = FormStartPosition.CenterParent;
+                ctiet.ShowDialog();
+            }
         }
     }
 }

@@ -27,15 +27,20 @@ namespace WinFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DangNhap dn = new DangNhap();
+            MENU mn = new MENU();
             Hide();
-            dn.ShowDialog();
+            mn.ShowDialog();
             this.Close();
         }
 
         private void MenuQlyPhong_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void MenuQlyPhong_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit();
         }
     }
 }

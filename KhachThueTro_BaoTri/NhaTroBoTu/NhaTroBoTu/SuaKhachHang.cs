@@ -27,6 +27,7 @@ namespace NhaTroBoTu
 
         private void dataXoaKhach_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            txtmaSuaKhach.Enabled = false;
             int i;
             i = dataSuaKhach.CurrentRow.Index;
             txtmaSuaKhach.Text = dataSuaKhach.Rows[i].Cells[0].Value.ToString();
@@ -102,6 +103,32 @@ private void btnSuaCancelKH_Click(object sender, EventArgs e)
             qlyKH.Show();
             this.Close();
             
+        }
+
+        private void dataSuaKhach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtmaSuaKhach.Enabled = false;
+            int i;
+            i = dataSuaKhach.CurrentRow.Index;
+            txtmaSuaKhach.Text = dataSuaKhach.Rows[i].Cells[0].Value.ToString();
+            txtTenSuaKH.Text = dataSuaKhach.Rows[i].Cells[1].Value.ToString();
+            if (dataSuaKhach.Rows[i].Cells[2].Value.ToString() == "Nam")
+            {
+                rdSuaNamKH.Checked = true;
+            }
+            else if (dataSuaKhach.Rows[i].Cells[2].Value.ToString() == "Nữ")
+            {
+                rdSuaNuKH.Checked = true;
+
+            }
+            else
+            {
+                rdSuaKhacKH.Checked = true;
+            }
+            txtSuaDiaChiKH.Text = dataSuaKhach.Rows[i].Cells[3].Value.ToString();
+            txtSuaSDTKH.Text = dataSuaKhach.Rows[i].Cells[4].Value.ToString();
+            txtSuaCCCDKH.Text = dataSuaKhach.Rows[i].Cells[5].Value.ToString();
+            dtSuaKH.Text = dataSuaKhach.Rows[i].Cells[6].Value.ToString();
         }
     }
 }

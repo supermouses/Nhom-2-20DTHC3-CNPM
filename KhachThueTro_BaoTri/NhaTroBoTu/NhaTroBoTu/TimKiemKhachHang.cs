@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp1;
 using static System.Net.Mime.MediaTypeNames;
+using Application = System.Windows.Forms.Application;
 
 namespace NhaTroBoTu
 {
@@ -110,5 +111,10 @@ private void btnQuayLai_Click(object sender, EventArgs e)
                     timten();
                 }
             }
+
+        private void TimKiemKhachHang_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit();
         }
+    }
     }

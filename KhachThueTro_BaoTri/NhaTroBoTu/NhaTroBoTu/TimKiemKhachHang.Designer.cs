@@ -170,6 +170,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TimKiemKhachHang";
             this.Text = "TimKiemKhachHang";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TimKiemKhachHang_FormClosed);
             this.Load += new System.EventHandler(this.TimKiemKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataTimKhach)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -195,7 +196,7 @@
         private System.Windows.Forms.Button btnQuayLai;
         private System.Windows.Forms.RadioButton rdTen;
         private System.Windows.Forms.RadioButton rdMa;
-        private System.Windows.Forms.BindingSource qlyTroBoTuDataSetBindingSource;
+        //private System.Windows.Forms.BindingSource qlyTroBoTuDataSetBindingSource;
         //private System.Windows.Forms.BindingSource khachThueTroBindingSource1;
     }
 }

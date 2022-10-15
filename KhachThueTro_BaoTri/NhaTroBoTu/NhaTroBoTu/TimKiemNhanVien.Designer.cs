@@ -192,7 +192,7 @@
         private System.Windows.Forms.TextBox txtTim;
         private System.Windows.Forms.ComboBox cmbTim;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.BindingSource quanLyPhongTroBoTuDataSetBindingSource;
+        //private System.Windows.Forms.BindingSource quanLyPhongTroBoTuDataSetBindingSource;
         //private QuanLyPhongTroBoTuDataSet quanLyPhongTroBoTuDataSet;
         //private System.Windows.Forms.BindingSource khachThueTroBindingSource;
         //private QuanLyPhongTroBoTuDataSetTableAdapters.KhachThueTroTableAdapter khachThueTroTableAdapter;

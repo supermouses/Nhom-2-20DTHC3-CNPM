@@ -64,8 +64,10 @@
             this.dataThemKhach.Name = "dataThemKhach";
             this.dataThemKhach.RowHeadersWidth = 51;
             this.dataThemKhach.RowTemplate.Height = 25;
+            this.dataThemKhach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataThemKhach.Size = new System.Drawing.Size(899, 284);
             this.dataThemKhach.TabIndex = 32;
+            this.dataThemKhach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataThemKhach_CellClick);
             this.dataThemKhach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnThemKH
@@ -92,7 +94,7 @@
             // 
             // txtThemSDTKH
             // 
-            this.txtThemSDTKH.Location = new System.Drawing.Point(92, 173);
+            this.txtThemSDTKH.Location = new System.Drawing.Point(92, 144);
             this.txtThemSDTKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtThemSDTKH.Name = "txtThemSDTKH";
             this.txtThemSDTKH.Size = new System.Drawing.Size(245, 22);
@@ -100,7 +102,7 @@
             // 
             // txtDiaChiKH
             // 
-            this.txtDiaChiKH.Location = new System.Drawing.Point(92, 144);
+            this.txtDiaChiKH.Location = new System.Drawing.Point(92, 174);
             this.txtDiaChiKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChiKH.Name = "txtDiaChiKH";
             this.txtDiaChiKH.Size = new System.Drawing.Size(245, 22);
@@ -302,6 +304,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ThemKhachHang";
             this.Text = "ThemKhachHang";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ThemKhachHang_FormClosed);
             this.Load += new System.EventHandler(this.ThemKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataThemKhach)).EndInit();
             this.groupBox1.ResumeLayout(false);

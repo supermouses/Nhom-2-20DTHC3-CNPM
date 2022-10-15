@@ -29,120 +29,113 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTN = new System.Windows.Forms.TextBox();
-            this.txtPhong = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtNVBT = new System.Windows.Forms.ComboBox();
+            this.btnSuaBT = new System.Windows.Forms.Button();
+            this.btnCancelBT = new System.Windows.Forms.Button();
+            this.txtMACTBT = new System.Windows.Forms.TextBox();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.txtMaPBT = new System.Windows.Forms.TextBox();
-            this.dtNgaylap = new System.Windows.Forms.DateTimePicker();
-            this.dtNgay = new System.Windows.Forms.DateTimePicker();
-            this.txtNVBT = new System.Windows.Forms.TextBox();
+            this.btnThemBT = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnThemBT = new System.Windows.Forms.Button();
-            this.btnCancelBT = new System.Windows.Forms.Button();
             this.dataBaoTri = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSuaBT = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaoTri)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtTN);
-            this.groupBox1.Controls.Add(this.txtPhong);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtMaPBT);
-            this.groupBox1.Controls.Add(this.dtNgaylap);
-            this.groupBox1.Controls.Add(this.dtNgay);
             this.groupBox1.Controls.Add(this.txtNVBT);
+            this.groupBox1.Controls.Add(this.btnSuaBT);
+            this.groupBox1.Controls.Add(this.btnCancelBT);
+            this.groupBox1.Controls.Add(this.txtMACTBT);
+            this.groupBox1.Controls.Add(this.btnXoa);
+            this.groupBox1.Controls.Add(this.txtMaPBT);
+            this.groupBox1.Controls.Add(this.btnThemBT);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Location = new System.Drawing.Point(23, 86);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(469, 284);
+            this.groupBox1.Size = new System.Drawing.Size(469, 215);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Khách";
             // 
-            // txtTN
+            // txtNVBT
             // 
-            this.txtTN.Location = new System.Drawing.Point(155, 144);
-            this.txtTN.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTN.Name = "txtTN";
-            this.txtTN.Size = new System.Drawing.Size(306, 22);
-            this.txtTN.TabIndex = 40;
+            this.txtNVBT.FormattingEnabled = true;
+            this.txtNVBT.Items.AddRange(new object[] {
+            "NV01",
+            "NV02",
+            "NV03",
+            "NV04"});
+            this.txtNVBT.Location = new System.Drawing.Point(181, 65);
+            this.txtNVBT.Name = "txtNVBT";
+            this.txtNVBT.Size = new System.Drawing.Size(278, 24);
+            this.txtNVBT.TabIndex = 42;
             // 
-            // txtPhong
+            // btnSuaBT
             // 
-            this.txtPhong.Location = new System.Drawing.Point(155, 108);
-            this.txtPhong.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPhong.Name = "txtPhong";
-            this.txtPhong.Size = new System.Drawing.Size(304, 22);
-            this.txtPhong.TabIndex = 41;
+            this.btnSuaBT.Location = new System.Drawing.Point(231, 149);
+            this.btnSuaBT.Name = "btnSuaBT";
+            this.btnSuaBT.Size = new System.Drawing.Size(86, 47);
+            this.btnSuaBT.TabIndex = 40;
+            this.btnSuaBT.Text = "Sửa";
+            this.btnSuaBT.UseVisualStyleBackColor = true;
+            this.btnSuaBT.Click += new System.EventHandler(this.btnSuaBT_Click);
             // 
-            // label2
+            // btnCancelBT
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label2.Location = new System.Drawing.Point(3, 180);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 25);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "Ngày Bảo Trì ";
+            this.btnCancelBT.Location = new System.Drawing.Point(324, 150);
+            this.btnCancelBT.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelBT.Name = "btnCancelBT";
+            this.btnCancelBT.Size = new System.Drawing.Size(85, 47);
+            this.btnCancelBT.TabIndex = 36;
+            this.btnCancelBT.Text = "Hủy";
+            this.btnCancelBT.UseVisualStyleBackColor = true;
+            this.btnCancelBT.Click += new System.EventHandler(this.btnCancelBT_Click);
             // 
-            // label4
+            // txtMACTBT
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label4.Location = new System.Drawing.Point(3, 144);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 25);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Mã Tiện Nghi";
+            this.txtMACTBT.Location = new System.Drawing.Point(181, 111);
+            this.txtMACTBT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMACTBT.Name = "txtMACTBT";
+            this.txtMACTBT.Size = new System.Drawing.Size(278, 22);
+            this.txtMACTBT.TabIndex = 41;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(138, 150);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(87, 47);
+            this.btnXoa.TabIndex = 39;
+            this.btnXoa.Text = "Xóa ";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // txtMaPBT
             // 
-            this.txtMaPBT.Location = new System.Drawing.Point(157, 26);
+            this.txtMaPBT.Location = new System.Drawing.Point(181, 26);
             this.txtMaPBT.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaPBT.Name = "txtMaPBT";
-            this.txtMaPBT.Size = new System.Drawing.Size(304, 22);
+            this.txtMaPBT.Size = new System.Drawing.Size(280, 22);
             this.txtMaPBT.TabIndex = 37;
             // 
-            // dtNgaylap
+            // btnThemBT
             // 
-            this.dtNgaylap.Location = new System.Drawing.Point(217, 224);
-            this.dtNgaylap.Margin = new System.Windows.Forms.Padding(4);
-            this.dtNgaylap.Name = "dtNgaylap";
-            this.dtNgaylap.Size = new System.Drawing.Size(244, 22);
-            this.dtNgaylap.TabIndex = 36;
-            // 
-            // dtNgay
-            // 
-            this.dtNgay.Location = new System.Drawing.Point(157, 183);
-            this.dtNgay.Margin = new System.Windows.Forms.Padding(4);
-            this.dtNgay.Name = "dtNgay";
-            this.dtNgay.Size = new System.Drawing.Size(304, 22);
-            this.dtNgay.TabIndex = 36;
-            // 
-            // txtNVBT
-            // 
-            this.txtNVBT.Location = new System.Drawing.Point(155, 65);
-            this.txtNVBT.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNVBT.Name = "txtNVBT";
-            this.txtNVBT.Size = new System.Drawing.Size(304, 22);
-            this.txtNVBT.TabIndex = 32;
+            this.btnThemBT.Location = new System.Drawing.Point(40, 149);
+            this.btnThemBT.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThemBT.Name = "btnThemBT";
+            this.btnThemBT.Size = new System.Drawing.Size(91, 47);
+            this.btnThemBT.TabIndex = 35;
+            this.btnThemBT.Text = "Thêm";
+            this.btnThemBT.UseVisualStyleBackColor = true;
+            this.btnThemBT.Click += new System.EventHandler(this.btnThemBT_Click);
             // 
             // label5
             // 
@@ -151,20 +144,9 @@
             this.label5.Location = new System.Drawing.Point(3, 108);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 25);
+            this.label5.Size = new System.Drawing.Size(170, 25);
             this.label5.TabIndex = 31;
-            this.label5.Text = "Mã Phòng Trọ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label7.Location = new System.Drawing.Point(3, 221);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(206, 25);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "Ngày Lập Phiếu Bảo Trì";
+            this.label5.Text = "Mã Chi Tiết Bảo Trì";
             // 
             // label1
             // 
@@ -173,9 +155,9 @@
             this.label1.Location = new System.Drawing.Point(3, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 25);
+            this.label1.Size = new System.Drawing.Size(154, 25);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Mã Phiếu bảo trì ";
+            this.label1.Text = "Mã Phiếu Bảo Trì";
             // 
             // label8
             // 
@@ -188,28 +170,6 @@
             this.label8.TabIndex = 29;
             this.label8.Text = "Mã Nhân Viên";
             // 
-            // btnThemBT
-            // 
-            this.btnThemBT.Location = new System.Drawing.Point(122, 378);
-            this.btnThemBT.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThemBT.Name = "btnThemBT";
-            this.btnThemBT.Size = new System.Drawing.Size(91, 47);
-            this.btnThemBT.TabIndex = 35;
-            this.btnThemBT.Text = "Thêm";
-            this.btnThemBT.UseVisualStyleBackColor = true;
-            this.btnThemBT.Click += new System.EventHandler(this.btnThemBT_Click);
-            // 
-            // btnCancelBT
-            // 
-            this.btnCancelBT.Location = new System.Drawing.Point(407, 378);
-            this.btnCancelBT.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCancelBT.Name = "btnCancelBT";
-            this.btnCancelBT.Size = new System.Drawing.Size(85, 47);
-            this.btnCancelBT.TabIndex = 36;
-            this.btnCancelBT.Text = "Hủy";
-            this.btnCancelBT.UseVisualStyleBackColor = true;
-            this.btnCancelBT.Click += new System.EventHandler(this.btnCancelBT_Click);
-            // 
             // dataBaoTri
             // 
             this.dataBaoTri.AllowUserToDeleteRows = false;
@@ -221,55 +181,35 @@
             this.dataBaoTri.Name = "dataBaoTri";
             this.dataBaoTri.RowHeadersWidth = 51;
             this.dataBaoTri.RowTemplate.Height = 25;
-            this.dataBaoTri.Size = new System.Drawing.Size(814, 358);
+            this.dataBaoTri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataBaoTri.Size = new System.Drawing.Size(557, 215);
             this.dataBaoTri.TabIndex = 37;
+            this.dataBaoTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBaoTri_CellClick);
             this.dataBaoTri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBaoTri_CellContentClick);
+            this.dataBaoTri.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBaoTri_CellDoubleClick);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.label6.Location = new System.Drawing.Point(520, 9);
+            this.label6.Location = new System.Drawing.Point(384, 9);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(349, 62);
             this.label6.TabIndex = 34;
             this.label6.Text = "Quản Lý Bảo Trì";
             // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(220, 378);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(87, 47);
-            this.btnXoa.TabIndex = 39;
-            this.btnXoa.Text = "Xóa ";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnSuaBT
-            // 
-            this.btnSuaBT.Location = new System.Drawing.Point(314, 378);
-            this.btnSuaBT.Name = "btnSuaBT";
-            this.btnSuaBT.Size = new System.Drawing.Size(86, 47);
-            this.btnSuaBT.TabIndex = 40;
-            this.btnSuaBT.Text = "Sửa";
-            this.btnSuaBT.UseVisualStyleBackColor = true;
-            this.btnSuaBT.Click += new System.EventHandler(this.btnSuaBT_Click);
-            // 
             // QlyBT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1329, 458);
-            this.Controls.Add(this.btnSuaBT);
-            this.Controls.Add(this.btnXoa);
+            this.ClientSize = new System.Drawing.Size(1072, 343);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnThemBT);
-            this.Controls.Add(this.btnCancelBT);
             this.Controls.Add(this.dataBaoTri);
             this.Controls.Add(this.label6);
             this.Name = "QlyBT";
             this.Text = "QlyBT";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.QlyBT_FormClosed);
             this.Load += new System.EventHandler(this.QlyBT_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -281,23 +221,17 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtTN;
-        private System.Windows.Forms.TextBox txtPhong;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtMACTBT;
         private System.Windows.Forms.TextBox txtMaPBT;
-        private System.Windows.Forms.DateTimePicker dtNgay;
-        private System.Windows.Forms.TextBox txtNVBT;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnThemBT;
         private System.Windows.Forms.Button btnCancelBT;
         private System.Windows.Forms.DataGridView dataBaoTri;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dtNgaylap;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSuaBT;
+        private System.Windows.Forms.ComboBox txtNVBT;
     }
 }

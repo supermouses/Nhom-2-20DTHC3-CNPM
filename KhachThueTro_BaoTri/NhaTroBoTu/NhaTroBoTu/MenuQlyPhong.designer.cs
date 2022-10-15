@@ -112,6 +112,7 @@ namespace WinFormsApp1
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuQlyPhong";
             this.Text = "Quản Lý Phòng";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuQlyPhong_FormClosed);
             this.Load += new System.EventHandler(this.MenuQlyPhong_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

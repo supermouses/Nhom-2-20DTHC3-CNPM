@@ -32,8 +32,7 @@
             this.txtMoneyPP = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtMaPP = new System.Windows.Forms.TextBox();
-            this.dtNgayPP = new System.Windows.Forms.DateTimePicker();
-            this.txtMaKHPP = new System.Windows.Forms.TextBox();
+            this.dtNgayLapPP = new System.Windows.Forms.DateTimePicker();
             this.btnThemPP = new System.Windows.Forms.Button();
             this.btnCancelPP = new System.Windows.Forms.Button();
             this.dataPhieuPhat = new System.Windows.Forms.DataGridView();
@@ -43,6 +42,7 @@
             this.btnXoaPP = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMaKHPP = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataPhieuPhat)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -59,17 +59,17 @@
             // 
             // txtMoneyPP
             // 
-            this.txtMoneyPP.Location = new System.Drawing.Point(155, 108);
+            this.txtMoneyPP.Location = new System.Drawing.Point(157, 110);
             this.txtMoneyPP.Margin = new System.Windows.Forms.Padding(4);
             this.txtMoneyPP.Name = "txtMoneyPP";
-            this.txtMoneyPP.Size = new System.Drawing.Size(304, 22);
+            this.txtMoneyPP.Size = new System.Drawing.Size(347, 22);
             this.txtMoneyPP.TabIndex = 41;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label2.Location = new System.Drawing.Point(3, 149);
+            this.label2.Location = new System.Drawing.Point(6, 152);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(192, 25);
@@ -81,24 +81,16 @@
             this.txtMaPP.Location = new System.Drawing.Point(157, 26);
             this.txtMaPP.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaPP.Name = "txtMaPP";
-            this.txtMaPP.Size = new System.Drawing.Size(304, 22);
+            this.txtMaPP.Size = new System.Drawing.Size(347, 22);
             this.txtMaPP.TabIndex = 37;
             // 
-            // dtNgayPP
+            // dtNgayLapPP
             // 
-            this.dtNgayPP.Location = new System.Drawing.Point(188, 152);
-            this.dtNgayPP.Margin = new System.Windows.Forms.Padding(4);
-            this.dtNgayPP.Name = "dtNgayPP";
-            this.dtNgayPP.Size = new System.Drawing.Size(304, 22);
-            this.dtNgayPP.TabIndex = 36;
-            // 
-            // txtMaKHPP
-            // 
-            this.txtMaKHPP.Location = new System.Drawing.Point(155, 65);
-            this.txtMaKHPP.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaKHPP.Name = "txtMaKHPP";
-            this.txtMaKHPP.Size = new System.Drawing.Size(304, 22);
-            this.txtMaKHPP.TabIndex = 32;
+            this.dtNgayLapPP.Location = new System.Drawing.Point(200, 155);
+            this.dtNgayLapPP.Margin = new System.Windows.Forms.Padding(4);
+            this.dtNgayLapPP.Name = "dtNgayLapPP";
+            this.dtNgayLapPP.Size = new System.Drawing.Size(304, 22);
+            this.dtNgayLapPP.TabIndex = 36;
             // 
             // btnThemPP
             // 
@@ -133,8 +125,10 @@
             this.dataPhieuPhat.Name = "dataPhieuPhat";
             this.dataPhieuPhat.RowHeadersWidth = 51;
             this.dataPhieuPhat.RowTemplate.Height = 25;
+            this.dataPhieuPhat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataPhieuPhat.Size = new System.Drawing.Size(657, 252);
             this.dataPhieuPhat.TabIndex = 44;
+            this.dataPhieuPhat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataPhieuPhat_CellClick);
             this.dataPhieuPhat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataPhieuPhat_CellContentClick);
             // 
             // label6
@@ -152,7 +146,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label5.Location = new System.Drawing.Point(3, 108);
+            this.label5.Location = new System.Drawing.Point(5, 110);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 25);
@@ -193,11 +187,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtMaKHPP);
             this.groupBox1.Controls.Add(this.txtMoneyPP);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtMaPP);
-            this.groupBox1.Controls.Add(this.dtNgayPP);
-            this.groupBox1.Controls.Add(this.txtMaKHPP);
+            this.groupBox1.Controls.Add(this.dtNgayLapPP);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label8);
@@ -209,6 +203,15 @@
             this.groupBox1.TabIndex = 45;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Khách";
+            // 
+            // txtMaKHPP
+            // 
+            this.txtMaKHPP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMaKHPP.FormattingEnabled = true;
+            this.txtMaKHPP.Location = new System.Drawing.Point(157, 65);
+            this.txtMaKHPP.Name = "txtMaKHPP";
+            this.txtMaKHPP.Size = new System.Drawing.Size(103, 24);
+            this.txtMaKHPP.TabIndex = 42;
             // 
             // PhieuPhat
             // 
@@ -224,6 +227,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "PhieuPhat";
             this.Text = "PhieuPhat";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PhieuPhat_FormClosed);
             this.Load += new System.EventHandler(this.PhieuPhat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataPhieuPhat)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -239,8 +243,7 @@
         private System.Windows.Forms.TextBox txtMoneyPP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMaPP;
-        private System.Windows.Forms.DateTimePicker dtNgayPP;
-        private System.Windows.Forms.TextBox txtMaKHPP;
+        private System.Windows.Forms.DateTimePicker dtNgayLapPP;
         private System.Windows.Forms.Button btnThemPP;
         private System.Windows.Forms.Button btnCancelPP;
         private System.Windows.Forms.DataGridView dataPhieuPhat;
@@ -250,5 +253,6 @@
         private System.Windows.Forms.Button btnXoaPP;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox txtMaKHPP;
     }
 }
