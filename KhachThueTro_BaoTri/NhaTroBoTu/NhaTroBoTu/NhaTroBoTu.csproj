@@ -63,6 +63,12 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhieuPhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuPhat.Designer.cs">
+      <DependentUpon>PhieuPhat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -151,6 +157,9 @@
     </Compile>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuPhat.resx">
+      <DependentUpon>PhieuPhat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QlyBT.resx">
       <DependentUpon>QlyBT.cs</DependentUpon>

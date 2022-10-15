@@ -74,7 +74,7 @@
             this.btnThemKH.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemKH.Name = "btnThemKH";
             this.btnThemKH.Size = new System.Drawing.Size(91, 47);
-            this.btnThemKH.TabIndex = 30;
+            this.btnThemKH.TabIndex = 38;
             this.btnThemKH.Text = "Thêm";
             this.btnThemKH.UseVisualStyleBackColor = true;
             this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
@@ -87,7 +87,7 @@
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(479, 62);
-            this.label6.TabIndex = 29;
+            this.label6.TabIndex = 40;
             this.label6.Text = "Thêm Khách Thuê Trọ";
             // 
             // txtThemSDTKH
@@ -96,7 +96,7 @@
             this.txtThemSDTKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtThemSDTKH.Name = "txtThemSDTKH";
             this.txtThemSDTKH.Size = new System.Drawing.Size(245, 22);
-            this.txtThemSDTKH.TabIndex = 40;
+            this.txtThemSDTKH.TabIndex = 35;
             // 
             // txtDiaChiKH
             // 
@@ -104,7 +104,7 @@
             this.txtDiaChiKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChiKH.Name = "txtDiaChiKH";
             this.txtDiaChiKH.Size = new System.Drawing.Size(245, 22);
-            this.txtDiaChiKH.TabIndex = 41;
+            this.txtDiaChiKH.TabIndex = 34;
             // 
             // label2
             // 
@@ -134,7 +134,7 @@
             this.txtThemMAKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtThemMAKH.Name = "txtThemMAKH";
             this.txtThemMAKH.Size = new System.Drawing.Size(245, 22);
-            this.txtThemMAKH.TabIndex = 37;
+            this.txtThemMAKH.TabIndex = 29;
             // 
             // dtThemKH
             // 
@@ -142,7 +142,7 @@
             this.dtThemKH.Margin = new System.Windows.Forms.Padding(4);
             this.dtThemKH.Name = "dtThemKH";
             this.dtThemKH.Size = new System.Drawing.Size(228, 22);
-            this.dtThemKH.TabIndex = 36;
+            this.dtThemKH.TabIndex = 37;
             // 
             // rdThemNUKH
             // 
@@ -151,7 +151,7 @@
             this.rdThemNUKH.Margin = new System.Windows.Forms.Padding(4);
             this.rdThemNUKH.Name = "rdThemNUKH";
             this.rdThemNUKH.Size = new System.Drawing.Size(45, 20);
-            this.rdThemNUKH.TabIndex = 35;
+            this.rdThemNUKH.TabIndex = 32;
             this.rdThemNUKH.TabStop = true;
             this.rdThemNUKH.Text = "Nữ";
             this.rdThemNUKH.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@
             this.rdThemNamKH.Margin = new System.Windows.Forms.Padding(4);
             this.rdThemNamKH.Name = "rdThemNamKH";
             this.rdThemNamKH.Size = new System.Drawing.Size(60, 20);
-            this.rdThemNamKH.TabIndex = 34;
+            this.rdThemNamKH.TabIndex = 31;
             this.rdThemNamKH.TabStop = true;
             this.rdThemNamKH.Text = "Nam ";
             this.rdThemNamKH.UseVisualStyleBackColor = true;
@@ -174,7 +174,7 @@
             this.txThemCCCDKH.Margin = new System.Windows.Forms.Padding(4);
             this.txThemCCCDKH.Name = "txThemCCCDKH";
             this.txThemCCCDKH.Size = new System.Drawing.Size(245, 22);
-            this.txThemCCCDKH.TabIndex = 33;
+            this.txThemCCCDKH.TabIndex = 36;
             // 
             // txtThemTENKH
             // 
@@ -182,7 +182,7 @@
             this.txtThemTENKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtThemTENKH.Name = "txtThemTENKH";
             this.txtThemTENKH.Size = new System.Drawing.Size(245, 22);
-            this.txtThemTENKH.TabIndex = 32;
+            this.txtThemTENKH.TabIndex = 30;
             // 
             // label5
             // 
@@ -273,7 +273,7 @@
             this.rdThemKhacKH.Margin = new System.Windows.Forms.Padding(4);
             this.rdThemKhacKH.Name = "rdThemKhacKH";
             this.rdThemKhacKH.Size = new System.Drawing.Size(58, 20);
-            this.rdThemKhacKH.TabIndex = 35;
+            this.rdThemKhacKH.TabIndex = 33;
             this.rdThemKhacKH.TabStop = true;
             this.rdThemKhacKH.Text = "Khác";
             this.rdThemKhacKH.UseVisualStyleBackColor = true;
@@ -284,7 +284,7 @@
             this.btnCancelKH.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelKH.Name = "btnCancelKH";
             this.btnCancelKH.Size = new System.Drawing.Size(85, 47);
-            this.btnCancelKH.TabIndex = 31;
+            this.btnCancelKH.TabIndex = 39;
             this.btnCancelKH.Text = "Hủy";
             this.btnCancelKH.UseVisualStyleBackColor = true;
             this.btnCancelKH.Click += new System.EventHandler(this.btnCancelKH_Click);

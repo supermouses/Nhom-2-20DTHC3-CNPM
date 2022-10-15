@@ -525,7 +525,6 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnSuaNew;
         private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.BindingSource qlyTroBoTuDataSetBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn maNVDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenNVDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sĐTNVDataGridViewTextBoxColumn;

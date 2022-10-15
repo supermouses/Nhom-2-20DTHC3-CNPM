@@ -47,5 +47,10 @@ namespace NhaTroBoTu
             Hide();
             qlyBT.Show();
         }
+
+        private void MENU_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

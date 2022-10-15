@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NhaTroBoTu;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,19 @@ namespace WinFormsApp1
             QlyKH menuQlyKH = new QlyKH();
             Hide();
             menuQlyKH.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DangNhap dn = new DangNhap();
+            Hide();
+            dn.ShowDialog();
+            this.Close();
+        }
+
+        private void MenuQlyPhong_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

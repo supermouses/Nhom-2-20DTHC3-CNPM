@@ -61,8 +61,12 @@ namespace WinFormsApp1
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnThemKH = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tùyChọnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phieuphatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -72,7 +76,7 @@ namespace WinFormsApp1
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(16, 75);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
@@ -83,7 +87,7 @@ namespace WinFormsApp1
             // btnThoatKH
             // 
             this.btnThoatKH.Location = new System.Drawing.Point(1089, 428);
-            this.btnThoatKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoatKH.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoatKH.Name = "btnThoatKH";
             this.btnThoatKH.Size = new System.Drawing.Size(96, 37);
             this.btnThoatKH.TabIndex = 20;
@@ -94,7 +98,7 @@ namespace WinFormsApp1
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(321, 406);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 59);
             this.button4.TabIndex = 19;
@@ -105,7 +109,7 @@ namespace WinFormsApp1
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(229, 406);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(84, 59);
             this.button3.TabIndex = 23;
@@ -116,7 +120,7 @@ namespace WinFormsApp1
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(136, 406);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 59);
             this.button2.TabIndex = 18;
@@ -154,9 +158,9 @@ namespace WinFormsApp1
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(531, 475);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(356, 284);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
@@ -164,7 +168,7 @@ namespace WinFormsApp1
             // txtSDTKH
             // 
             this.txtSDTKH.Location = new System.Drawing.Point(80, 140);
-            this.txtSDTKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSDTKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDTKH.Name = "txtSDTKH";
             this.txtSDTKH.Size = new System.Drawing.Size(257, 22);
             this.txtSDTKH.TabIndex = 40;
@@ -172,7 +176,7 @@ namespace WinFormsApp1
             // txtDiaChiKH
             // 
             this.txtDiaChiKH.Location = new System.Drawing.Point(92, 172);
-            this.txtDiaChiKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiaChiKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChiKH.Name = "txtDiaChiKH";
             this.txtDiaChiKH.Size = new System.Drawing.Size(245, 22);
             this.txtDiaChiKH.TabIndex = 41;
@@ -202,7 +206,7 @@ namespace WinFormsApp1
             // txtMaKH
             // 
             this.txtMaKH.Location = new System.Drawing.Point(92, 23);
-            this.txtMaKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(245, 22);
             this.txtMaKH.TabIndex = 37;
@@ -212,7 +216,7 @@ namespace WinFormsApp1
             this.dtKH.CustomFormat = "dd/MM/yyyy";
             this.dtKH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtKH.Location = new System.Drawing.Point(115, 236);
-            this.dtKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtKH.Margin = new System.Windows.Forms.Padding(4);
             this.dtKH.Name = "dtKH";
             this.dtKH.Size = new System.Drawing.Size(228, 22);
             this.dtKH.TabIndex = 36;
@@ -221,7 +225,7 @@ namespace WinFormsApp1
             // 
             this.rdKhacKH.AutoSize = true;
             this.rdKhacKH.Location = new System.Drawing.Point(251, 112);
-            this.rdKhacKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdKhacKH.Margin = new System.Windows.Forms.Padding(4);
             this.rdKhacKH.Name = "rdKhacKH";
             this.rdKhacKH.Size = new System.Drawing.Size(58, 20);
             this.rdKhacKH.TabIndex = 35;
@@ -233,7 +237,7 @@ namespace WinFormsApp1
             // 
             this.rdNuKH.AutoSize = true;
             this.rdNuKH.Location = new System.Drawing.Point(191, 111);
-            this.rdNuKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdNuKH.Margin = new System.Windows.Forms.Padding(4);
             this.rdNuKH.Name = "rdNuKH";
             this.rdNuKH.Size = new System.Drawing.Size(45, 20);
             this.rdNuKH.TabIndex = 35;
@@ -245,7 +249,7 @@ namespace WinFormsApp1
             // 
             this.rdNamKH.AutoSize = true;
             this.rdNamKH.Location = new System.Drawing.Point(123, 111);
-            this.rdNamKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdNamKH.Margin = new System.Windows.Forms.Padding(4);
             this.rdNamKH.Name = "rdNamKH";
             this.rdNamKH.Size = new System.Drawing.Size(60, 20);
             this.rdNamKH.TabIndex = 34;
@@ -256,7 +260,7 @@ namespace WinFormsApp1
             // txtCCCD
             // 
             this.txtCCCD.Location = new System.Drawing.Point(80, 204);
-            this.txtCCCD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCCCD.Margin = new System.Windows.Forms.Padding(4);
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Size = new System.Drawing.Size(257, 22);
             this.txtCCCD.TabIndex = 33;
@@ -264,7 +268,7 @@ namespace WinFormsApp1
             // txtTenKH
             // 
             this.txtTenKH.Location = new System.Drawing.Point(92, 66);
-            this.txtTenKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenKH.Name = "txtTenKH";
             this.txtTenKH.Size = new System.Drawing.Size(245, 22);
             this.txtTenKH.TabIndex = 32;
@@ -327,13 +331,39 @@ namespace WinFormsApp1
             // btnThemKH
             // 
             this.btnThemKH.Location = new System.Drawing.Point(47, 406);
-            this.btnThemKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemKH.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemKH.Name = "btnThemKH";
             this.btnThemKH.Size = new System.Drawing.Size(85, 59);
             this.btnThemKH.TabIndex = 18;
             this.btnThemKH.Text = "Thêm";
             this.btnThemKH.UseVisualStyleBackColor = true;
             this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tùyChọnToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1215, 28);
+            this.menuStrip1.TabIndex = 30;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // tùyChọnToolStripMenuItem
+            // 
+            this.tùyChọnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.phieuphatToolStripMenuItem});
+            this.tùyChọnToolStripMenuItem.Name = "tùyChọnToolStripMenuItem";
+            this.tùyChọnToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.tùyChọnToolStripMenuItem.Text = "Tùy Chọn";
+            // 
+            // phieuphatToolStripMenuItem
+            // 
+            this.phieuphatToolStripMenuItem.Name = "phieuphatToolStripMenuItem";
+            this.phieuphatToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.phieuphatToolStripMenuItem.Text = "Phiếu Phạt";
+            this.phieuphatToolStripMenuItem.Click += new System.EventHandler(this.phieuphatToolStripMenuItem_Click);
             // 
             // QlyKH
             // 
@@ -348,13 +378,17 @@ namespace WinFormsApp1
             this.Controls.Add(this.btnThemKH);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "QlyKH";
             this.Text = "Quản Lý Khách Thuê Trọ";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,6 +420,9 @@ namespace WinFormsApp1
         private TextBox txtDiaChiKH;
         private Label label2;
         private Label label4;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem tùyChọnToolStripMenuItem;
+        private ToolStripMenuItem phieuphatToolStripMenuItem;
         //private BindingSource quanLyPhongTroBoTuDataSetBindingSource;
         //private NhaTroBoTu.QuanLyPhongTroBoTuDataSet quanLyPhongTroBoTuDataSet;
         //private BindingSource khachThueTroBindingSource;

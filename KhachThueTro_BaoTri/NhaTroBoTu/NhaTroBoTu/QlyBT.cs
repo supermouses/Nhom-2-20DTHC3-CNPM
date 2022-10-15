@@ -71,19 +71,18 @@ namespace NhaTroBoTu
             }
             else
             {
-                try
-                {
+                //try
+                //{
                     cmd = conn.CreateCommand();
-                    string gt;
-                    cmd.CommandText = "insert into KhachThueTro values('" + txtMaPBT.Text + "' ,N'" + txtNVBT.Text + "', N'" + txtPhong.Text + "' ,'" + txtTN.Text + "',N'" + dtNgay.Value.ToString() + "','" + dtNgaylap.Value.ToString() + "')";
+                    cmd.CommandText = "insert into PhieuBaoTri values('" + txtMaPBT.Text + "' ,N'" + txtNVBT.Text + "', N'" + txtPhong.Text + "' ,'" + txtTN.Text + "',N'" + dtNgay.Value.ToString() + "','" + dtNgaylap.Value.ToString() + "')";
                     cmd.ExecuteNonQuery();
                     loadata();
                     MessageBox.Show("Thêm dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Đã Tồn Tại mã này.");
-                }
+                //}
+                //catch (Exception ex)
+                //{
+                //    MessageBox.Show("Đã Tồn Tại mã này.");
+                //}
             }
         }
 
@@ -99,8 +98,7 @@ namespace NhaTroBoTu
         private void btnSuaBT_Click(object sender, EventArgs e)
         {
             cmd = conn.CreateCommand();
-            string gt;
-            cmd.CommandText = "update PhieuBaoTri set MaNV = N'" + txtNVBT.Text + "' ,MaNV=N'" + txtPhong.Text + "',MaPT=N'" + txtTN.Text + "',MaTN=N'" + dtNgay.Value.ToString() + dtNgaylap.Value.ToString() + "'where MaPBT = N'" + txtMaPBT.Text + "'";
+            cmd.CommandText = "update PhieuBaoTri set MaNV = N'" + txtNVBT.Text + "' ,MaPT=N'" + txtPhong.Text + "',MaTN=N'" + txtTN.Text + "',NgayBT=N'" + dtNgay.Value.ToString() + "',NgayLapPBT=N'" + dtNgaylap.Value.ToString() + "'where MaPBT = N'" + txtMaPBT.Text + "'";
             cmd.ExecuteNonQuery();
             loadata();
             MessageBox.Show("Sửa dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);

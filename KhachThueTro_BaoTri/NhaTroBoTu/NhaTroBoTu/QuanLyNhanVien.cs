@@ -15,7 +15,7 @@ namespace NhaTroBoTu
     {
         SqlConnection conn;
         SqlCommand cmd;
-        string str = "Data Source=LAPTOP-AA8F4MMK;Initial Catalog=QuanLyNhaTroBoTu;Integrated Security=True";
+        string str = "Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QlyTroBoTu;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable dt = new DataTable();
         public QuanLyNhanVien()
@@ -25,7 +25,7 @@ namespace NhaTroBoTu
         void loaddata()
         {
             cmd = conn.CreateCommand();
-            cmd.CommandText = "select MaNV,TenNV,SĐT,DiaChi,NgaySinh,GioiTinh,TenCV from NhanVien,ChucVuNV where NhanVien.MaCV = ChucVuNV.MaCV";
+            cmd.CommandText = "select MaNV,TenNV,SĐTNV,DiaChi,NgaySinh,GioiTinh,TenCV from NhanVien,ChucVuNV where NhanVien.MaCV = ChucVuNV.MaCV";
             adapter.SelectCommand = cmd;
             dt.Clear();
             adapter.Fill(dt);
@@ -43,7 +43,6 @@ namespace NhaTroBoTu
 
         private void QuanLyNhanVien_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qlyTroBoTuDataSet.NhanVien' table. You can move, or remove it, as needed.
             DataTable table1 = new DataTable();
             conn = new SqlConnection(str);
             cmd = conn.CreateCommand();

@@ -105,5 +105,13 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void phieuphatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PhieuPhat pp = new PhieuPhat();
+            Hide();
+            pp.Show();
+            this.Close();
+        }
     }
 }

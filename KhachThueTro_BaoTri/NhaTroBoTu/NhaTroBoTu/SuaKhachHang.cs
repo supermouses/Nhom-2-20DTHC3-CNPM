@@ -19,7 +19,8 @@ namespace NhaTroBoTu
         string str = "Data Source=MSI\\MSSQLSERVER2;Initial Catalog=QlyTroBoTu;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable dt = new DataTable();
-        public SuaKhachHang()
+        // ket noi sql
+        public SuaKhachHang() 
         {
             InitializeComponent();
         }
@@ -99,7 +100,7 @@ private void btnSuaCancelKH_Click(object sender, EventArgs e)
             QlyKH qlyKH = new QlyKH();
             Hide();
             qlyKH.Show();
-            this.Close(); ;
+            this.Close();
             
         }
     }
