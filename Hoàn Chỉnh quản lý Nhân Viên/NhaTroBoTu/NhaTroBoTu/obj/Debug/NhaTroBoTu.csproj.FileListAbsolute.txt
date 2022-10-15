@@ -15,3 +15,15 @@ C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.ThemNhanVi
 C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.XoaNhanVien.resources
 C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.SuaNhanVien.resources
 C:\Users\ACER\source\repos\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.TimKiemNhanVien.resources
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.AssemblyReference.cache
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.SuggestedBindingRedirects.cache
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.DangNhap.resources
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.MENU.resources
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.QuanLyNhanVien.resources
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.SuaNhanVien.resources
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.ThemNhanVien.resources
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.TimKiemNhanVien.resources
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.XoaNhanVien.resources
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.GenerateResource.cache
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.exe
+C:\Users\ACER\Documents\GitHub\Nhom-2-20DTHC3-CNPM\Hoàn Chỉnh quản lý Nhân Viên\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.pdb
