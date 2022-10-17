@@ -1,0 +1,24 @@
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\bin\Debug\TestQLPT.exe.config
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\bin\Debug\TestQLPT.exe
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\bin\Debug\TestQLPT.pdb
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\obj\Debug\TestQLPT.csproj.AssemblyReference.cache
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\obj\Debug\TestQLPT.csproj.SuggestedBindingRedirects.cache
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\obj\Debug\TestQLPT.QlyPhong.resources
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\obj\Debug\TestQLPT.Properties.Resources.resources
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\obj\Debug\TestQLPT.csproj.GenerateResource.cache
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\obj\Debug\TestQLPT.csproj.CoreCompileInputs.cache
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\obj\Debug\TestQLPT.exe
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\obj\Debug\TestQLPT.pdb
+D:\FileCode\TH Winform\TestQLPT\TestQLPT\obj\Debug\TestQLPT.HopDong.resources
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\bin\Debug\TestQLPT.exe.config
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\bin\Debug\TestQLPT.exe
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\bin\Debug\TestQLPT.pdb
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\obj\Debug\TestQLPT.HopDong.resources
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\obj\Debug\TestQLPT.QlyPhong.resources
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\obj\Debug\TestQLPT.Properties.Resources.resources
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\obj\Debug\TestQLPT.csproj.GenerateResource.cache
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\obj\Debug\TestQLPT.csproj.CoreCompileInputs.cache
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\obj\Debug\TestQLPT.exe
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\obj\Debug\TestQLPT.pdb
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\obj\Debug\TestQLPT.csproj.AssemblyReference.cache
+D:\GitHub\first-project\QLPT\TestQLPT\TestQLPT\obj\Debug\TestQLPT.csproj.SuggestedBindingRedirects.cache
