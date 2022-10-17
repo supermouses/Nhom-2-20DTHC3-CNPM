@@ -135,7 +135,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.label6.Location = new System.Drawing.Point(430, 9);
+            this.label6.Location = new System.Drawing.Point(383, 9);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(431, 62);
@@ -202,7 +202,7 @@
             this.groupBox1.Size = new System.Drawing.Size(523, 197);
             this.groupBox1.TabIndex = 45;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông Tin Khách";
+            this.groupBox1.Text = "Thông Tin Chung";
             // 
             // txtMaKHPP
             // 
@@ -210,7 +210,7 @@
             this.txtMaKHPP.FormattingEnabled = true;
             this.txtMaKHPP.Location = new System.Drawing.Point(157, 65);
             this.txtMaKHPP.Name = "txtMaKHPP";
-            this.txtMaKHPP.Size = new System.Drawing.Size(103, 24);
+            this.txtMaKHPP.Size = new System.Drawing.Size(347, 24);
             this.txtMaKHPP.TabIndex = 42;
             // 
             // PhieuPhat

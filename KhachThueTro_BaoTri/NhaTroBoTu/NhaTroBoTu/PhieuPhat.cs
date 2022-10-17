@@ -26,8 +26,8 @@ namespace NhaTroBoTu
         void loadata()
         {
             cmd = conn.CreateCommand();
-            cmd.CommandText = "select *from PhieuPhat,KhachThueTro where PhieuPhat.MaKH = KhachThueTro.MaKH";
-            //cmd.CommandText = "select MaPP,PhiPhat,NgayLapPP from PhieuPhat,KhachThueTro where PhieuPhat.MaKH = KhachThueTro.MaKH ";
+            cmd.CommandText = "select MaPP,TenKH,PhiPhat,NgayLapPP from PhieuPhat,KhachThueTro where PhieuPhat.MaKH = KhachThueTro.MaKH";
+            //cmd.CommandText = "select MaPP,PhieuPhat.MaKH as MaKH,PhiPhat,NgayLapPP from PhieuPhat,KhachThueTro where PhieuPhat.MaKH = KhachThueTro.MaKH ";
             adapter.SelectCommand = cmd;
             dt.Clear();
             adapter.Fill(dt);
@@ -42,7 +42,7 @@ namespace NhaTroBoTu
             adapter.SelectCommand = cmd;
             adapter.Fill(table1);
             txtMaKHPP.DataSource = table1;
-            txtMaKHPP.DisplayMember = "MaKH";
+            txtMaKHPP.DisplayMember = "TenKH";
             txtMaKHPP.ValueMember = "MaKH";
             txtMaKHPP.SelectedItem = true;
             txtMaKHPP.Text = "";
@@ -52,13 +52,13 @@ namespace NhaTroBoTu
 
         private void dataPhieuPhat_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int i;
-            i = dataPhieuPhat.CurrentRow.Index;
-            txtMaPP.Text = dataPhieuPhat.Rows[i].Cells[0].Value.ToString();
+            //int i;
+            //i = dataPhieuPhat.CurrentRow.Index;
+            txtMaPP.Text = dataPhieuPhat.CurrentRow.Cells[0].Value.ToString();
             string c = dataPhieuPhat.CurrentRow.Cells[1].Value.ToString();
             txtMaKHPP.Text = c;
-            txtMoneyPP.Text = dataPhieuPhat.Rows[i].Cells[2].Value.ToString();
-            dtNgayLapPP.Text = dataPhieuPhat.Rows[i].Cells[3].Value.ToString();
+            txtMoneyPP.Text = dataPhieuPhat.CurrentRow.Cells[2].Value.ToString();
+            dtNgayLapPP.Text = dataPhieuPhat.CurrentRow.Cells[3].Value.ToString();
         }
 
         private void btnThemPP_Click(object sender, EventArgs e)
@@ -114,13 +114,13 @@ namespace NhaTroBoTu
 
         private void dataPhieuPhat_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int i;
-            i = dataPhieuPhat.CurrentRow.Index;
-            txtMaPP.Text = dataPhieuPhat.Rows[i].Cells[0].Value.ToString();
+            //int i;
+            //i = dataPhieuPhat.CurrentRow.Index;
+            txtMaPP.Text = dataPhieuPhat.CurrentRow.Cells[0].Value.ToString();
             string c = dataPhieuPhat.CurrentRow.Cells[1].Value.ToString();
             txtMaKHPP.Text = c;
-            txtMoneyPP.Text = dataPhieuPhat.Rows[i].Cells[2].Value.ToString();
-            dtNgayLapPP.Text = dataPhieuPhat.Rows[i].Cells[3].Value.ToString();
+            txtMoneyPP.Text = dataPhieuPhat.CurrentRow.Cells[2].Value.ToString();
+            dtNgayLapPP.Text = dataPhieuPhat.CurrentRow.Cells[3].Value.ToString();
             //int i;
             //i = dataPhieuPhat.CurrentRow.Index;
             //txtMaPP.Text = dataPhieuPhat.Rows[i].Cells[0].Value.ToString();

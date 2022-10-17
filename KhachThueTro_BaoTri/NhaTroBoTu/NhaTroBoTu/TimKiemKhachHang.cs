@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,7 @@ namespace NhaTroBoTu
         }
         void loadata()
         {
+            dataTimKhach.Enabled = false;
             DataTable table1 = new DataTable();
             conn = new SqlConnection(str);
             cmd = conn.CreateCommand();
@@ -41,7 +43,7 @@ namespace NhaTroBoTu
             dataTimKhach.DataSource = table1;
             conn.Open();
         }
-private void btnQuayLai_Click(object sender, EventArgs e)
+        private void btnQuayLai_Click(object sender, EventArgs e)
         {
             QlyKH qlyKH = new QlyKH();
             Hide();
@@ -50,21 +52,21 @@ private void btnQuayLai_Click(object sender, EventArgs e)
         }
         private void btnTimKiemKH_Click(object sender, EventArgs e)
         {
-            if (txtTimKiem.Text == "")
-            {
-                MessageBox.Show("Mời nhập thông tin bạn tìm", "Thông báo", MessageBoxButtons.OK);
-            }
-            else
-            {
-                if (rdMa.Checked)
-                {
-                    timma();
-                }
-                if (rdTen.Checked)
-                {
-                    timten();
-                }
-            }
+            //if (txtTimKiem.Text == "")
+            //{
+            //    MessageBox.Show("Mời nhập thông tin bạn tìm", "Thông báo", MessageBoxButtons.OK);
+            //}
+            //else
+            //{
+            //    if (rdMa.Checked)
+            //    {
+            //        timma();
+            //    }
+            //    if (rdTen.Checked)
+            //    {
+            //        timten();
+            //    }
+            //}
         }
 
         private void dataTimKhach_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -74,12 +76,12 @@ private void btnQuayLai_Click(object sender, EventArgs e)
 
         private void rdMa_CheckedChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void rdTen_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
         void timma()
         {
@@ -89,6 +91,7 @@ private void btnQuayLai_Click(object sender, EventArgs e)
             dt.Clear();
             adapter.Fill(dt);
             dataTimKhach.DataSource = dt;
+            loadata();
         }
         void timten()
         {
@@ -98,23 +101,41 @@ private void btnQuayLai_Click(object sender, EventArgs e)
             dt.Clear();
             adapter.Fill(dt);
             dataTimKhach.DataSource = dt;
+            loadata();
+        }
+        void trong()
+        {
+            //cmd = conn.CreateCommand();
+            //cmd.CommandText = "select *from KhachThueTro where MaKH is null ";
+            //adapter.SelectCommand = cmd;
+            //dt.Clear();
+            //adapter.Fill(dt);
+            //dataTimKhach.DataSource = dt;
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
+            //if (txtTimKiem.Text == "");
+            //{
+            //    trong();
+            //}
                 if (rdMa.Checked)
-                {
-                    timma();
-                }
-                if (rdTen.Checked)
-                {
-                    timten();
-                }
+            {
+                timma();
             }
-
+            if (rdTen.Checked)
+            {
+                timten();
+            }
+        }
         private void TimKiemKhachHang_FormClosed(object sender, FormClosedEventArgs e)
         {
             //Application.Exit();
+        }
+
+        private void dataTimKhach_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
     }

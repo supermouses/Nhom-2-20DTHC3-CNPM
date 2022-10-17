@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Build.Framework.XamlTypes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,7 +37,8 @@ namespace NhaTroBoTu
         {
             int i;
             i = dataXoaKhach.CurrentRow.Index;
-            txtmaXoaKhach.Text = dataXoaKhach.Rows[i].Cells[0].Value.ToString();
+            string s = dataXoaKhach.Rows[i].Cells[0].Value.ToString();
+            cmbXoaKhach.Text = s;
             txtTenXoaKH.Text = dataXoaKhach.Rows[i].Cells[1].Value.ToString();
             if (dataXoaKhach.Rows[i].Cells[2].Value.ToString() == "Nam")
             {
@@ -62,7 +64,7 @@ namespace NhaTroBoTu
             if (MessageBox.Show("Bạn chắc chưa??", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 cmd = conn.CreateCommand();
-                cmd.CommandText = "delete from KhachThueTro where MaKH= '" + txtmaXoaKhach.Text + "'";
+                cmd.CommandText = "delete from KhachThueTro where MaKH= '" + cmbXoaKhach.SelectedValue.ToString() + "'";
                 cmd.ExecuteNonQuery();
                 loadata();
                 MessageBox.Show("Xóa dữ liệu thành công!", "Thông Báo", MessageBoxButtons.OK);
@@ -82,8 +84,13 @@ namespace NhaTroBoTu
                 DataTable table1 = new DataTable();
                 conn = new SqlConnection(str);
                 cmd = conn.CreateCommand();
-                cmd.CommandText = "select * from MaKH";
+                cmd.CommandText = "select * from KhachThueTro";
                 adapter.SelectCommand = cmd;
+                adapter.Fill(table1);
+                cmbXoaKhach.DataSource = table1;
+                cmbXoaKhach.DisplayMember = "MaKH";
+                cmbXoaKhach.ValueMember = "MaKH";
+                cmbXoaKhach.SelectedItem = true;
                 conn.Open();
                 loadata();
         }
@@ -97,7 +104,7 @@ namespace NhaTroBoTu
         {
             int i;
             i = dataXoaKhach.CurrentRow.Index;
-            txtmaXoaKhach.Text = dataXoaKhach.Rows[i].Cells[0].Value.ToString();
+            cmbXoaKhach.Text = dataXoaKhach.Rows[i].Cells[0].Value.ToString();
             txtTenXoaKH.Text = dataXoaKhach.Rows[i].Cells[1].Value.ToString();
             if (dataXoaKhach.Rows[i].Cells[2].Value.ToString() == "Nam")
             {

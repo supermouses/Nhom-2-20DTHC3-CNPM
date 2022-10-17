@@ -75,11 +75,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChiTietBaoTri.cs">
+    <Compile Include="ChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChiTietBaoTri.Designer.cs">
-      <DependentUpon>ChiTietBaoTri.cs</DependentUpon>
+    <Compile Include="ChiTietHoaDon.designer.cs">
+      <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietHopDong.Designer.cs">
+      <DependentUpon>ChiTietHopDong.cs</DependentUpon>
     </Compile>
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
@@ -98,11 +104,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="QlyBT.cs">
+    <Compile Include="QlyHD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QlyBT.Designer.cs">
-      <DependentUpon>QlyBT.cs</DependentUpon>
+    <Compile Include="QlyHD.Designer.cs">
+      <DependentUpon>QlyHD.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="SuaKhachHang.cs">
@@ -180,8 +186,11 @@
     <Compile Include="XoaNhanVien.Designer.cs">
       <DependentUpon>XoaNhanVien.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChiTietBaoTri.resx">
-      <DependentUpon>ChiTietBaoTri.cs</DependentUpon>
+    <EmbeddedResource Include="ChiTietHoaDon.resx">
+      <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietHopDong.resx">
+      <DependentUpon>ChiTietHopDong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
@@ -189,8 +198,8 @@
     <EmbeddedResource Include="PhieuPhat.resx">
       <DependentUpon>PhieuPhat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QlyBT.resx">
-      <DependentUpon>QlyBT.cs</DependentUpon>
+    <EmbeddedResource Include="QlyHD.resx">
+      <DependentUpon>QlyHD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuaKhachHang.resx">
       <DependentUpon>SuaKhachHang.cs</DependentUpon>

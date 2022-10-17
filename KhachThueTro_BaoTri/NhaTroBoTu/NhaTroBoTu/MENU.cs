@@ -43,14 +43,19 @@ namespace NhaTroBoTu
 
         private void btnQlyBT_Click(object sender, EventArgs e)
         {
-            QlyBT qlyBT = new QlyBT();
-            Hide();
-            qlyBT.Show();
+
         }
 
         private void MENU_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+        }
+
+        private void btnQlyHD_Click(object sender, EventArgs e)
+        {
+            ChiTietHoaDon cthd = new ChiTietHoaDon();
+            Hide();
+            cthd.Show();
         }
     }
 }

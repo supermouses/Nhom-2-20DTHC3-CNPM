@@ -92,6 +92,7 @@
             this.btnQlyHD.TabIndex = 7;
             this.btnQlyHD.Text = "Quản Lý Hóa Đơn";
             this.btnQlyHD.UseVisualStyleBackColor = true;
+            this.btnQlyHD.Click += new System.EventHandler(this.btnQlyHD_Click);
             // 
             // btnQlyBT
             // 

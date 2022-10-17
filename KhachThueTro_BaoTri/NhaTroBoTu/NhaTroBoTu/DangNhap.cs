@@ -32,6 +32,7 @@ namespace NhaTroBoTu
                 MENU menu = new MENU();
                 Hide();
                 menu.ShowDialog();
+                //this.Close();
             }
             else
             {

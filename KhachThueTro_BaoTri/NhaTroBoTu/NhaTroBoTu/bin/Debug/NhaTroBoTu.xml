@@ -4,18 +4,35 @@
         <name>NhaTroBoTu</name>
     </assembly>
     <members>
-        <member name="F:NhaTroBoTu.ChiTietBaoTri.components">
+        <member name="F:NhaTroBoTu.ChiTietHoaDon.components">
             <summary>
             Required designer variable.
             </summary>
         </member>
-        <member name="M:NhaTroBoTu.ChiTietBaoTri.Dispose(System.Boolean)">
+        <member name="M:NhaTroBoTu.ChiTietHoaDon.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:NhaTroBoTu.ChiTietBaoTri.InitializeComponent">
+        <member name="M:NhaTroBoTu.ChiTietHoaDon.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NhaTroBoTu.ChiTietHopDong.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NhaTroBoTu.ChiTietHopDong.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NhaTroBoTu.ChiTietHopDong.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
@@ -71,18 +88,18 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
-        <member name="F:NhaTroBoTu.QlyBT.components">
+        <member name="F:NhaTroBoTu.QlyHD.components">
             <summary>
             Required designer variable.
             </summary>
         </member>
-        <member name="M:NhaTroBoTu.QlyBT.Dispose(System.Boolean)">
+        <member name="M:NhaTroBoTu.QlyHD.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:NhaTroBoTu.QlyBT.InitializeComponent">
+        <member name="M:NhaTroBoTu.QlyHD.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.

@@ -42,5 +42,12 @@ namespace WinFormsApp1
         {
             //Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            QlyHD qlyBT = new QlyHD();
+            Hide();
+            qlyBT.Show();
+        }
     }
 }

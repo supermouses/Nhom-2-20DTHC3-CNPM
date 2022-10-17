@@ -56,7 +56,6 @@ C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroB
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.AssemblyReference.cache
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.csproj.SuggestedBindingRedirects.cache
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.DangNhap.resources
-C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.QlyBT.resources
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.SuaKhachHang.resources
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.MENU.resources
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\WinFormsApp1.MenuQlyPhong.resources
@@ -128,4 +127,6 @@ C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroB
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.ChiTietBaoTri.resources
+C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.ChiTietHopDong.resources
+C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.QlyHD.resources
+C:\Users\super\Desktop\HoanChinh\Nhom-2-20DTHC3-CNPM\KhachThueTro_BaoTri\NhaTroBoTu\NhaTroBoTu\obj\Debug\NhaTroBoTu.ChiTietHoaDon.resources

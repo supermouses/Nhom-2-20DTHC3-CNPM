@@ -62,6 +62,7 @@
             this.dataTimKhach.RowHeadersWidth = 51;
             this.dataTimKhach.Size = new System.Drawing.Size(863, 325);
             this.dataTimKhach.TabIndex = 39;
+            this.dataTimKhach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTimKhach_CellContentClick_1);
             // 
             // groupBox1
             // 

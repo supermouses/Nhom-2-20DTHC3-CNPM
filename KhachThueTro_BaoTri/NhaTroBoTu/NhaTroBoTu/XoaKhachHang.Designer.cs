@@ -34,7 +34,6 @@
             this.txtXoaDiaChiKH = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtmaXoaKhach = new System.Windows.Forms.TextBox();
             this.dtXoaKH = new System.Windows.Forms.DateTimePicker();
             this.rdXoaNUKH = new System.Windows.Forms.RadioButton();
             this.rdXoaNamKH = new System.Windows.Forms.RadioButton();
@@ -49,6 +48,7 @@
             this.btnXoaCancelKH = new System.Windows.Forms.Button();
             this.dataXoaKhach = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
+            this.cmbXoaKhach = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataXoaKhach)).BeginInit();
             this.SuspendLayout();
@@ -67,11 +67,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbXoaKhach);
             this.groupBox1.Controls.Add(this.txtXoaSDTKH);
             this.groupBox1.Controls.Add(this.txtXoaDiaChiKH);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtmaXoaKhach);
             this.groupBox1.Controls.Add(this.dtXoaKH);
             this.groupBox1.Controls.Add(this.rdXoaKhacKH);
             this.groupBox1.Controls.Add(this.rdXoaNUKH);
@@ -83,7 +83,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(-1, 76);
+            this.groupBox1.Location = new System.Drawing.Point(13, 76);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -94,25 +94,25 @@
             // 
             // txtXoaSDTKH
             // 
-            this.txtXoaSDTKH.Location = new System.Drawing.Point(80, 140);
+            this.txtXoaSDTKH.Location = new System.Drawing.Point(84, 140);
             this.txtXoaSDTKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtXoaSDTKH.Name = "txtXoaSDTKH";
-            this.txtXoaSDTKH.Size = new System.Drawing.Size(257, 22);
+            this.txtXoaSDTKH.Size = new System.Drawing.Size(253, 22);
             this.txtXoaSDTKH.TabIndex = 40;
             // 
             // txtXoaDiaChiKH
             // 
-            this.txtXoaDiaChiKH.Location = new System.Drawing.Point(92, 172);
+            this.txtXoaDiaChiKH.Location = new System.Drawing.Point(84, 172);
             this.txtXoaDiaChiKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtXoaDiaChiKH.Name = "txtXoaDiaChiKH";
-            this.txtXoaDiaChiKH.Size = new System.Drawing.Size(245, 22);
+            this.txtXoaDiaChiKH.Size = new System.Drawing.Size(253, 22);
             this.txtXoaDiaChiKH.TabIndex = 41;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label2.Location = new System.Drawing.Point(8, 170);
+            this.label2.Location = new System.Drawing.Point(3, 169);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 25);
@@ -123,20 +123,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label4.Location = new System.Drawing.Point(8, 140);
+            this.label4.Location = new System.Drawing.Point(3, 140);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 25);
             this.label4.TabIndex = 39;
             this.label4.Text = "SĐT";
-            // 
-            // txtmaXoaKhach
-            // 
-            this.txtmaXoaKhach.Location = new System.Drawing.Point(92, 23);
-            this.txtmaXoaKhach.Margin = new System.Windows.Forms.Padding(4);
-            this.txtmaXoaKhach.Name = "txtmaXoaKhach";
-            this.txtmaXoaKhach.Size = new System.Drawing.Size(245, 22);
-            this.txtmaXoaKhach.TabIndex = 37;
             // 
             // dtXoaKH
             // 
@@ -172,18 +164,18 @@
             // 
             // txtXoaCCCDKH
             // 
-            this.txtXoaCCCDKH.Location = new System.Drawing.Point(80, 204);
+            this.txtXoaCCCDKH.Location = new System.Drawing.Point(84, 204);
             this.txtXoaCCCDKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtXoaCCCDKH.Name = "txtXoaCCCDKH";
-            this.txtXoaCCCDKH.Size = new System.Drawing.Size(257, 22);
+            this.txtXoaCCCDKH.Size = new System.Drawing.Size(253, 22);
             this.txtXoaCCCDKH.TabIndex = 33;
             // 
             // txtTenXoaKH
             // 
-            this.txtTenXoaKH.Location = new System.Drawing.Point(92, 66);
+            this.txtTenXoaKH.Location = new System.Drawing.Point(84, 66);
             this.txtTenXoaKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenXoaKH.Name = "txtTenXoaKH";
-            this.txtTenXoaKH.Size = new System.Drawing.Size(245, 22);
+            this.txtTenXoaKH.Size = new System.Drawing.Size(253, 22);
             this.txtTenXoaKH.TabIndex = 32;
             // 
             // label5
@@ -291,6 +283,14 @@
             this.label6.TabIndex = 34;
             this.label6.Text = "Xóa Khách Thuê Trọ";
             // 
+            // cmbXoaKhach
+            // 
+            this.cmbXoaKhach.FormattingEnabled = true;
+            this.cmbXoaKhach.Location = new System.Drawing.Point(84, 23);
+            this.cmbXoaKhach.Name = "cmbXoaKhach";
+            this.cmbXoaKhach.Size = new System.Drawing.Size(253, 24);
+            this.cmbXoaKhach.TabIndex = 42;
+            // 
             // XoaKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -322,7 +322,6 @@
         private System.Windows.Forms.TextBox txtXoaDiaChiKH;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtmaXoaKhach;
         private System.Windows.Forms.DateTimePicker dtXoaKH;
         private System.Windows.Forms.RadioButton rdXoaNUKH;
         private System.Windows.Forms.RadioButton rdXoaNamKH;
@@ -348,5 +347,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sDTKHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cCCDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox cmbXoaKhach;
     }
 }

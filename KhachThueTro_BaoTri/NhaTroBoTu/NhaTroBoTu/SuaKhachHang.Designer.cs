@@ -55,7 +55,7 @@
             // 
             // btnSuaCancelKH
             // 
-            this.btnSuaCancelKH.Location = new System.Drawing.Point(224, 427);
+            this.btnSuaCancelKH.Location = new System.Drawing.Point(185, 380);
             this.btnSuaCancelKH.Margin = new System.Windows.Forms.Padding(4);
             this.btnSuaCancelKH.Name = "btnSuaCancelKH";
             this.btnSuaCancelKH.Size = new System.Drawing.Size(85, 47);
@@ -68,7 +68,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.label6.Location = new System.Drawing.Point(464, 11);
+            this.label6.Location = new System.Drawing.Point(481, 9);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(439, 62);
@@ -131,7 +131,7 @@
             // 
             // btnSuaKH
             // 
-            this.btnSuaKH.Location = new System.Drawing.Point(97, 427);
+            this.btnSuaKH.Location = new System.Drawing.Point(61, 380);
             this.btnSuaKH.Margin = new System.Windows.Forms.Padding(4);
             this.btnSuaKH.Name = "btnSuaKH";
             this.btnSuaKH.Size = new System.Drawing.Size(91, 47);
@@ -147,7 +147,7 @@
             this.dataSuaKhach.AllowUserToResizeColumns = false;
             this.dataSuaKhach.AllowUserToResizeRows = false;
             this.dataSuaKhach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataSuaKhach.Location = new System.Drawing.Point(411, 135);
+            this.dataSuaKhach.Location = new System.Drawing.Point(407, 78);
             this.dataSuaKhach.Margin = new System.Windows.Forms.Padding(4);
             this.dataSuaKhach.Name = "dataSuaKhach";
             this.dataSuaKhach.ReadOnly = true;
@@ -263,7 +263,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(17, 135);
+            this.groupBox1.Location = new System.Drawing.Point(13, 78);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -296,7 +296,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1337, 494);
+            this.ClientSize = new System.Drawing.Size(1337, 442);
             this.Controls.Add(this.btnSuaCancelKH);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSuaKH);
